@@ -1,0 +1,1836 @@
+DDI-MedLine.d103.s13|10-18|magnesium|drug
+DDI-MedLine.d79.s5|0-8|Indinavir|drug
+DDI-MedLine.d79.s5|87-96|didanosine|drug
+DDI-MedLine.d111.s10|0-11|Theophylline|drug
+DDI-MedLine.d111.s10|38-50|acetaminophen|drug
+DDI-MedLine.d103.s12|0-8|Magnesium|drug
+DDI-MedLine.d103.s15|71-79|magnesium|drug
+DDI-MedLine.d103.s15|100-121|cardioplegic solutions|drug
+DDI-MedLine.d103.s14|88-96|magnesium|drug
+DDI-MedLine.d111.s13|87-93|ethanol|drug
+DDI-MedLine.d79.s1|29-37|indinavir|drug
+DDI-MedLine.d79.s1|43-52|didanosine|drug
+DDI-MedLine.d79.s1|101-109|indinavir|drug
+DDI-MedLine.d79.s1|145-154|didanosine|drug
+DDI-MedLine.d79.s1|171-179|indinavir|drug
+DDI-MedLine.d111.s14|15-27|acetaminophen|drug
+DDI-MedLine.d111.s14|34-45|theophylline|drug
+DDI-MedLine.d111.s14|48-60|phenobarbital|drug
+DDI-MedLine.d111.s14|67-79|acetaminophen|drug
+DDI-MedLine.d111.s14|86-98|valproic acid|drug
+DDI-MedLine.d111.s14|105-117|phenobarbital|drug
+DDI-MedLine.d79.s2|12-20|indinavir|drug
+DDI-MedLine.d79.s2|127-135|indinavir|drug
+DDI-MedLine.d79.s2|160-168|indinavir|drug
+DDI-MedLine.d79.s2|193-202|didanosine|drug
+DDI-MedLine.d111.s11|0-12|phenobarbital|drug
+DDI-MedLine.d79.s3|48-56|indinavir|drug
+DDI-MedLine.d79.s3|74-83|didanosine|drug
+DDI-MedLine.d111.s12|0-12|Valproic acid|drug
+DDI-MedLine.d111.s12|36-48|phenobarbital|drug
+DDI-MedLine.d79.s0|23-31|indinavir|drug
+DDI-MedLine.d79.s0|34-36|IDV|drug
+DDI-MedLine.d79.s0|40-49|didanosine|drug
+DDI-MedLine.d79.s0|67-69|IDV|drug
+DDI-MedLine.d103.s11|89-97|magnesium|drug
+DDI-MedLine.d80.s4|71-74|POCs|group
+DDI-MedLine.d80.s1|79-112|progestin-only oral contraceptives|group
+DDI-MedLine.d80.s1|115-117|POC|group
+DDI-MedLine.d80.s1|166-175|norgestrel|drug
+DDI-MedLine.d80.s1|192-204|norethindrone|drug
+DDI-MedLine.d45.s0|22-32|pentazocine|drug
+DDI-MedLine.d45.s0|38-51|tripelennamine|drug
+DDI-MedLine.d45.s1|68-78|pentazocine|drug
+DDI-MedLine.d45.s1|84-97|tripelennamine|drug
+DDI-MedLine.d45.s5|74-79|heroin|drug_n
+DDI-MedLine.d45.s5|93-103|pentazocine|drug
+DDI-MedLine.d45.s5|109-122|tripelennamine|drug
+DDI-MedLine.d45.s6|105-118|tripelennamine|drug
+DDI-MedLine.d45.s6|200-210|pentazocine|drug
+DDI-MedLine.d21.s8|8-14|glucose|drug
+DDI-MedLine.d21.s8|42-48|glucose|drug
+DDI-MedLine.d21.s9|0-9|Imipramine|drug
+DDI-MedLine.d21.s9|15-24|clonazepam|drug
+DDI-MedLine.d21.s6|0-9|Imipramine|drug
+DDI-MedLine.d21.s6|22-32|moclobemide|drug
+DDI-MedLine.d21.s6|46-55|clonazepam|drug
+DDI-MedLine.d21.s6|71-80|fluoxetine|drug
+DDI-MedLine.d21.s6|93-102|sertraline|drug
+DDI-MedLine.d7.s0|9-20|theophylline|drug
+DDI-MedLine.d7.s0|45-53|phenytoin|drug
+DDI-MedLine.d7.s1|41-52|theophylline|drug
+DDI-MedLine.d7.s1|102-110|phenytoin|drug
+DDI-MedLine.d7.s2|19-30|theophylline|drug
+DDI-MedLine.d7.s4|52-60|phenytoin|drug
+DDI-MedLine.d7.s4|157-168|theophylline|drug
+DDI-MedLine.d110.s0|0-21|18-Methoxycoronaridine|drug_n
+DDI-MedLine.d110.s0|24-28|18-MC|drug_n
+DDI-MedLine.d110.s0|35-42|ibogaine|drug_n
+DDI-MedLine.d110.s1|0-4|18-MC|drug_n
+DDI-MedLine.d110.s2|5-12|ibogaine|drug_n
+DDI-MedLine.d110.s2|26-30|18-MC|drug_n
+DDI-MedLine.d110.s2|92-99|morphine|drug
+DDI-MedLine.d110.s2|105-111|cocaine|drug
+DDI-MedLine.d110.s2|149-155|ethanol|drug
+DDI-MedLine.d110.s2|161-168|nicotine|drug
+DDI-MedLine.d21.s0|26-40|antidepressants|group
+DDI-MedLine.d21.s4|54-68|antidepressants|group
+DDI-MedLine.d21.s2|15-34|antidepressant drugs|group
+DDI-MedLine.d21.s2|106-124|hypoglycemic agents|group
+DDI-MedLine.d21.s3|155-175|antidepressant agents|group
+DDI-MedLine.d45.s9|22-32|pentazocine|drug
+DDI-MedLine.d45.s9|38-51|tripelennamine|drug
+DDI-MedLine.d109.s9|68-76|rofecoxib|drug
+DDI-MedLine.d109.s9|80-86|digoxin|drug
+DDI-MedLine.d109.s9|102-108|digoxin|drug
+DDI-MedLine.d109.s7|4-10|digoxin|drug
+DDI-MedLine.d109.s7|107-115|rofecoxib|drug
+DDI-MedLine.d109.s7|119-125|digoxin|drug
+DDI-MedLine.d109.s7|137-143|digoxin|drug
+DDI-MedLine.d109.s8|4-10|digoxin|drug
+DDI-MedLine.d109.s5|44-50|digoxin|drug
+DDI-MedLine.d109.s5|114-120|digoxin|drug
+DDI-MedLine.d109.s6|106-112|digoxin|drug
+DDI-MedLine.d110.s3|7-14|ibogaine|drug_n
+DDI-MedLine.d110.s3|17-21|18-MC|drug_n
+DDI-MedLine.d109.s3|29-35|digoxin|drug
+DDI-MedLine.d110.s4|5-12|ibogaine|drug_n
+DDI-MedLine.d110.s4|18-22|18-MC|drug_n
+DDI-MedLine.d110.s4|35-40|opioid|group
+DDI-MedLine.d110.s5|5-12|ibogaine|drug_n
+DDI-MedLine.d110.s5|18-22|18-MC|drug_n
+DDI-MedLine.d110.s5|101-108|ibogaine|drug_n
+DDI-MedLine.d109.s1|75-83|rofecoxib|drug
+DDI-MedLine.d109.s1|129-135|digoxin|drug
+DDI-MedLine.d110.s6|5-12|ibogaine|drug_n
+DDI-MedLine.d110.s6|18-22|18-MC|drug_n
+DDI-MedLine.d110.s6|30-37|morphine|drug
+DDI-MedLine.d110.s6|51-58|nicotine|drug
+DDI-MedLine.d109.s2|39-47|rofecoxib|drug
+DDI-MedLine.d110.s7|5-12|ibogaine|drug_n
+DDI-MedLine.d110.s7|23-29|cocaine|drug
+DDI-MedLine.d110.s8|5-12|ibogaine|drug_n
+DDI-MedLine.d110.s8|18-22|18-MC|drug_n
+DDI-MedLine.d109.s0|10-18|rofecoxib|drug
+DDI-MedLine.d109.s0|47-53|digoxin|drug
+DDI-MedLine.d110.s9|0-7|Ibogaine|drug_n
+DDI-MedLine.d110.s9|25-29|18-MC|drug_n
+DDI-MedLine.d110.s9|75-82|morphine|drug
+DDI-MedLine.d57.s8|79-93|antihistaminics|group
+DDI-MedLine.d57.s6|75-89|antihistaminics|group
+DDI-MedLine.d57.s5|134-147|antihistaminic|group
+DDI-MedLine.d57.s3|47-61|antihistaminics|group
+DDI-MedLine.d57.s2|51-65|diphenhydramine|drug
+DDI-MedLine.d57.s2|68-78|hydroxyzine|drug
+DDI-MedLine.d57.s2|81-92|orphenadrine|drug
+DDI-MedLine.d57.s2|95-104|pyrilamine|drug
+DDI-MedLine.d57.s2|107-122|phenyltoloxamine|drug_n
+DDI-MedLine.d57.s2|125-136|promethazine|drug
+DDI-MedLine.d57.s2|139-150|methdilazine|drug
+DDI-MedLine.d57.s2|157-170|tripelennamine|drug
+DDI-MedLine.d57.s1|83-97|antihistaminics|group
+DDI-MedLine.d57.s1|111-126|analgesic agents|group
+DDI-MedLine.d57.s1|141-159|analgesic adjuvants|group
+DDI-MedLine.d132.s1|27-72|non-nucleoside reverse transcriptase inhibitor|group
+DDI-MedLine.d132.s1|75-79|NNRTI|group
+DDI-MedLine.d132.s1|101-114|antiretroviral|group
+DDI-MedLine.d132.s1|147-164|protease inhibitor|group
+DDI-MedLine.d132.s1|167-168|PI|group
+DDI-MedLine.d57.s0|21-35|antihistaminics|group
+DDI-MedLine.d132.s2|0-4|NNRTI|group
+DDI-MedLine.d132.s2|54-55|PI|group
+DDI-MedLine.d132.s0|22-68|non-nucleoside reverse transcriptase inhibitors|group
+DDI-MedLine.d132.s0|73-86|antiretroviral|group
+DDI-MedLine.d132.s9|118-122|NNRTI|group
+DDI-MedLine.d132.s7|99-100|PI|group
+DDI-MedLine.d132.s8|19-27|efavirenz|drug
+DDI-MedLine.d132.s8|34-42|indinavir|drug
+DDI-MedLine.d132.s5|38-47|nevirapine|drug
+DDI-MedLine.d132.s5|72-73|PI|group
+DDI-MedLine.d132.s5|75-84|nelfinavir|drug
+DDI-MedLine.d132.s6|72-81|nevirapine|drug
+DDI-MedLine.d132.s6|87-97|delavirdine|drug
+DDI-MedLine.d132.s3|90-98|efavirenz|drug
+DDI-MedLine.d132.s3|101-110|nevirapine|drug
+DDI-MedLine.d132.s3|115-125|delavirdine|drug
+DDI-MedLine.d132.s4|5-13|efavirenz|drug
+DDI-MedLine.d132.s4|19-28|nevirapine|drug
+DDI-MedLine.d132.s4|76-77|PI|group
+DDI-MedLine.d132.s4|79-87|indinavir|drug
+DDI-MedLine.d132.s4|166-175|nevirapine|drug
+DDI-MedLine.d132.s4|216-224|efavirenz|drug
+DDI-MedLine.d107.s9|47-53|ethanol|drug
+DDI-MedLine.d107.s9|128-139|acetaldehyde|drug_n
+DDI-MedLine.d69.s6|70-84|contortrostatin|drug_n
+DDI-MedLine.d107.s5|98-105|dextrose|drug
+DDI-MedLine.d69.s4|72-86|contortrostatin|drug_n
+DDI-MedLine.d69.s5|0-9|Flavoridin|drug_n
+DDI-MedLine.d69.s5|78-92|contortrostatin|drug_n
+DDI-MedLine.d107.s3|111-117|ethanol|drug
+DDI-MedLine.d107.s3|120-127|methanol|drug_n
+DDI-MedLine.d107.s3|137-144|alcohols|drug_n
+DDI-MedLine.d107.s3|150-161|acetaldehyde|drug_n
+DDI-MedLine.d69.s2|21-35|contortrostatin|drug_n
+DDI-MedLine.d107.s4|70-76|ethanol|drug
+DDI-MedLine.d69.s3|0-9|Echistatin|drug_n
+DDI-MedLine.d69.s3|118-132|contortrostatin|drug_n
+DDI-MedLine.d107.s1|98-104|ethanol|drug
+DDI-MedLine.d107.s1|129-140|acetaldehyde|drug_n
+DDI-MedLine.d69.s0|70-84|contortrostatin|drug_n
+DDI-MedLine.d69.s0|141-150|echistatin|drug_n
+DDI-MedLine.d69.s0|156-165|flavoridin|drug_n
+DDI-MedLine.d69.s1|28-42|contortrostatin|drug_n
+DDI-MedLine.d69.s1|96-105|echistatin|drug_n
+DDI-MedLine.d69.s1|111-120|flavoridin|drug_n
+DDI-MedLine.d35.s4|17-30|antipsychotics|group
+DDI-MedLine.d35.s2|180-194|antidepressants|group
+DDI-MedLine.d94.s17|12-25|norepinephrine|drug
+DDI-MedLine.d94.s17|90-96|cocaine|drug
+DDI-MedLine.d94.s17|102-112|desipramine|drug
+DDI-MedLine.d94.s18|82-95|norepinephrine|drug
+DDI-MedLine.d120.s5|24-30|filipin|drug_n
+DDI-MedLine.d120.s5|151-164|amphotericin B|drug
+DDI-MedLine.d120.s4|0-6|filipin|drug_n
+DDI-MedLine.d120.s4|65-78|amphotericin B|drug
+DDI-MedLine.d120.s3|21-27|filipin|drug_n
+DDI-MedLine.d120.s3|58-71|amphotericin B|drug
+DDI-MedLine.d120.s3|170-188|polyene antibiotics|group
+DDI-MedLine.d120.s2|0-13|amphotericin B|drug
+DDI-MedLine.d94.s11|20-32|isoproterenol|drug
+DDI-MedLine.d94.s11|64-77|norepinephrine|drug
+DDI-MedLine.d94.s12|22-28|cocaine|drug
+DDI-MedLine.d94.s12|34-44|desipramine|drug
+DDI-MedLine.d94.s12|108-121|norepinephrine|drug
+DDI-MedLine.d94.s10|28-41|norepinephrine|drug
+DDI-MedLine.d94.s16|99-105|cocaine|drug
+DDI-MedLine.d94.s16|111-121|desipramine|drug
+DDI-MedLine.d94.s13|70-77|mazindol|drug
+DDI-MedLine.d94.s13|135-148|norepinephrine|drug
+DDI-MedLine.d70.s0|24-27|zinc|drug
+DDI-MedLine.d120.s1|10-28|polyene antibiotics|group
+DDI-MedLine.d120.s1|42-48|filipin|drug_n
+DDI-MedLine.d120.s0|46-59|amphotericin B|drug
+DDI-MedLine.d120.s0|75-81|filipin|drug_n
+DDI-MedLine.d70.s2|25-28|zinc|drug
+DDI-MedLine.d70.s5|32-34|egg|drug
+DDI-MedLine.d119.s8|25-35|fluvastatin|drug
+DDI-MedLine.d5.s5|38-46|coumaphos|drug_n
+DDI-MedLine.d5.s4|23-42|phenobarbital sodium|drug
+DDI-MedLine.d5.s4|123-131|coumaphos|drug_n
+DDI-MedLine.d5.s3|60-70|trichlorfon|drug_n
+DDI-MedLine.d5.s3|267-275|coumaphos|drug_n
+DDI-MedLine.d119.s5|31-41|fluvastatin|drug
+DDI-MedLine.d5.s2|24-32|coumaphos|drug_n
+DDI-MedLine.d5.s2|134-152|bishydroxy-coumarin|drug
+DDI-MedLine.d119.s4|33-43|fluvastatin|drug
+DDI-MedLine.d47.s1|46-55|buforin II|drug_n
+DDI-MedLine.d47.s1|87-98|azithromycin|drug
+DDI-MedLine.d47.s1|104-114|minocycline|drug
+DDI-MedLine.d5.s1|37-45|coumaphos|drug_n
+DDI-MedLine.d5.s1|48-65|bishydroxycoumarin|drug
+DDI-MedLine.d5.s1|71-83|anticoagulant|group
+DDI-MedLine.d5.s1|87-97|trichlorfon|drug_n
+DDI-MedLine.d5.s1|103-128|organophosphorous compound|group
+DDI-MedLine.d5.s1|136-155|phenobarbital sodium|drug
+DDI-MedLine.d119.s7|57-67|fluvastatin|drug
+DDI-MedLine.d47.s0|12-21|buforin II|drug_n
+DDI-MedLine.d47.s0|53-64|azithromycin|drug
+DDI-MedLine.d47.s0|70-80|minocycline|drug
+DDI-MedLine.d5.s0|32-40|coumaphos|drug_n
+DDI-MedLine.d5.s0|68-76|coumaphos|drug_n
+DDI-MedLine.d5.s0|83-100|bishydroxycoumarin|drug
+DDI-MedLine.d5.s0|103-113|trichlorfon|drug_n
+DDI-MedLine.d5.s0|120-139|phenobarbital sodium|drug
+DDI-MedLine.d47.s3|69-80|azithromycin|drug
+DDI-MedLine.d47.s3|85-95|minocycline|drug
+DDI-MedLine.d119.s1|0-10|Fluvastatin|drug
+DDI-MedLine.d119.s1|25-100|synthetic 3-hydroxy-3-methylglutaryl coenzyme A (HMGCoA) reductase inhibitor|group
+DDI-MedLine.d47.s2|0-9|Buforin II|drug_n
+DDI-MedLine.d119.s0|32-42|fluvastatin|drug
+DDI-MedLine.d119.s3|14-24|fluvastatin|drug
+DDI-MedLine.d47.s4|0-9|Buforin II|drug_n
+DDI-MedLine.d47.s4|107-118|azithromycin|drug
+DDI-MedLine.d47.s4|123-133|minocycline|drug
+DDI-MedLine.d119.s2|63-89|HMGCoA reductase inhibitors|group
+DDI-MedLine.d119.s2|92-101|lovastatin|drug
+DDI-MedLine.d119.s2|104-114|simvastatin|drug
+DDI-MedLine.d119.s2|121-131|pravastatin|drug
+DDI-MedLine.d30.s11|0-10|Haloperidol|drug
+DDI-MedLine.d30.s11|106-113|(+)-NANM|drug_n
+DDI-MedLine.d30.s11|118-120|PCP|drug_n
+DDI-MedLine.d30.s11|250-253|NANM|drug_n
+DDI-MedLine.d30.s12|88-91|NANM|drug_n
+DDI-MedLine.d30.s14|78-80|PCP|drug_n
+DDI-MedLine.d92.s1|38-57|antimicrobial agents|group
+DDI-MedLine.d92.s0|9-25|antibiotic agents|group
+DDI-MedLine.d30.s10|12-19|naloxone|drug
+DDI-MedLine.d30.s10|65-72|(-)-NANM|drug_n
+DDI-MedLine.d30.s10|75-82|(+)-NANM|drug_n
+DDI-MedLine.d30.s10|87-89|PCP|drug_n
+DDI-MedLine.d13.s0|9-19|amphetamine|drug
+DDI-MedLine.d99.s8|24-34|tolbutamide|drug
+DDI-MedLine.d99.s8|64-74|tolbutamide|drug
+DDI-MedLine.d99.s8|101-120|4-hydroxytolbutamide|drug_n
+DDI-MedLine.d99.s8|126-143|carboxytolbutamide|drug_n
+DDI-MedLine.d53.s9|90-98|vitamin-D|group
+DDI-MedLine.d53.s9|137-144|estrogen|group
+DDI-MedLine.d99.s9|31-41|fluvoxamine|drug
+DDI-MedLine.d99.s9|131-141|tolbutamide|drug
+DDI-MedLine.d13.s8|32-38|alcohol|drug
+DDI-MedLine.d13.s8|99-109|amphetamine|drug
+DDI-MedLine.d13.s8|114-119|heroin|drug_n
+DDI-MedLine.d13.s7|69-79|amphetamine|drug
+DDI-MedLine.d13.s7|247-252|heroin|drug_n
+DDI-MedLine.d53.s6|56-66|1,25(OH)2D3|drug
+DDI-MedLine.d53.s5|24-34|1,25(OH)2D3|drug
+DDI-MedLine.d53.s5|40-42|TAM|drug_n
+DDI-MedLine.d13.s1|75-86|amphetamines|drug
+DDI-MedLine.d53.s8|58-60|TAM|drug_n
+DDI-MedLine.d13.s4|72-82|amphetamine|drug
+DDI-MedLine.d53.s7|136-146|1,25(OH)2D3|drug
+DDI-MedLine.d130.s0|10-18|cisplatin|drug
+DDI-MedLine.d130.s0|25-42|sodium thiosulfate|drug
+DDI-MedLine.d130.s6|14-22|cisplatin|drug
+DDI-MedLine.d130.s6|83-93|thiosulfate|drug
+DDI-MedLine.d130.s6|147-157|thiosulfate|drug
+DDI-MedLine.d130.s6|281-289|cisplatin|drug
+DDI-MedLine.d130.s5|54-62|cisplatin|drug
+DDI-MedLine.d130.s8|58-68|thiosulfate|drug
+DDI-MedLine.d130.s8|136-144|cisplatin|drug
+DDI-MedLine.d130.s7|79-87|cisplatin|drug
+DDI-MedLine.d130.s2|0-17|Sodium thiosulfate|drug
+DDI-MedLine.d130.s2|47-55|cisplatin|drug
+DDI-MedLine.d130.s1|45-53|cisplatin|drug
+DDI-MedLine.d130.s4|0-8|Cisplatin|drug
+DDI-MedLine.d130.s4|58-68|thiosulfate|drug
+DDI-MedLine.d130.s3|34-44|thiosulfate|drug
+DDI-MedLine.d130.s3|75-83|cisplatin|drug
+DDI-MedLine.d130.s3|130-140|thiosulfate|drug
+DDI-MedLine.d130.s3|221-229|cisplatin|drug
+DDI-MedLine.d87.s7|0-7|Morphine|drug
+DDI-MedLine.d87.s7|61-70|ADL 8-2698|drug
+DDI-MedLine.d87.s8|17-26|ADL 8-2698|drug
+DDI-MedLine.d87.s8|37-44|morphine|drug
+DDI-MedLine.d25.s11|215-242|HMG-CoA reductase inhibitors|group
+DDI-MedLine.d25.s12|13-33|Macrolide antibiotics|group
+DDI-MedLine.d25.s12|61-88|HMG-CoA reductase inhibitors|group
+DDI-MedLine.d25.s12|128-139|atorvastatin|drug
+DDI-MedLine.d25.s12|142-153|cerivastatin|drug
+DDI-MedLine.d25.s12|156-165|lovastatin|drug
+DDI-MedLine.d25.s12|168-178|simvastatin|drug
+DDI-MedLine.d25.s10|34-54|macrolide antibiotics|group
+DDI-MedLine.d25.s10|66-128|hydroxymethylglutaryl coenzyme A (HMG-CoA) reductase inhibitors|group
+DDI-MedLine.d76.s10|15-19|NaCMC|drug_n
+DDI-MedLine.d76.s10|26-33|cysteine|drug
+DDI-MedLine.d76.s10|121-125|NaFlu|drug
+DDI-MedLine.d76.s10|155-164|bacitracin|drug
+DDI-MedLine.d76.s10|170-176|insulin|drug
+DDI-MedLine.d99.s0|0-10|Fluvoxamine|drug
+DDI-MedLine.d99.s0|63-73|tolbutamide|drug
+DDI-MedLine.d99.s1|64-74|fluvoxamine|drug
+DDI-MedLine.d99.s1|80-90|tolbutamide|drug
+DDI-MedLine.d99.s1|108-118|fluvoxamine|drug
+DDI-MedLine.d99.s3|43-53|tolbutamide|drug
+DDI-MedLine.d99.s5|42-52|fluvoxamine|drug
+DDI-MedLine.d99.s6|31-41|tolbutamide|drug
+DDI-MedLine.d129.s5|33-56|green tea gallocatechins|drug
+DDI-MedLine.d129.s3|0-16|n-dodecyl gallate|drug
+DDI-MedLine.d129.s3|128-138|tannic acid|drug
+DDI-MedLine.d9.s0|20-41|calcium-entry blockers|group
+DDI-MedLine.d9.s3|8-36|calcium-entry blocking agents|group
+DDI-MedLine.d9.s3|74-82|verapamil|drug
+DDI-MedLine.d9.s3|85-94|nifedipine|drug
+DDI-MedLine.d9.s3|100-108|diltiazem|drug
+DDI-MedLine.d9.s5|45-53|verapamil|drug
+DDI-MedLine.d9.s5|59-67|diltiazem|drug
+DDI-MedLine.d9.s5|87-96|nifedipine|drug
+DDI-MedLine.d9.s7|102-126|calcium-entry antagonists|group
+DDI-MedLine.d129.s1|262-269|promoter|drug
+DDI-MedLine.d129.s0|0-20|Green tea polyphenols|drug
+DDI-MedLine.d129.s0|32-40|enhancers|drug
+DDI-MedLine.d139.s3|75-86|neuroleptics|group
+DDI-MedLine.d139.s2|48-59|neuroleptics|group
+DDI-MedLine.d23.s2|35-41|ouabain|drug
+DDI-MedLine.d23.s2|111-117|Innovar|brand
+DDI-MedLine.d23.s2|120-127|ketamine|drug
+DDI-MedLine.d23.s2|133-142|droperidol|drug
+DDI-MedLine.d23.s2|176-182|fentayl|drug
+DDI-MedLine.d23.s2|199-211|pentobarbital|drug
+DDI-MedLine.d89.s8|79-88|gentamicin|drug
+DDI-MedLine.d89.s8|127-136|gentamicin|drug
+DDI-MedLine.d23.s1|19-27|digitalis|group
+DDI-MedLine.d23.s1|65-72|ketamine|drug
+DDI-MedLine.d23.s1|75-85|Innovar Vet|brand
+DDI-MedLine.d23.s1|91-103|pentobarbital|drug
+DDI-MedLine.d23.s1|120-126|ouabain|drug
+DDI-MedLine.d23.s1|213-219|ouabain|drug
+DDI-MedLine.d23.s1|227-234|ketamine|drug
+DDI-MedLine.d23.s1|239-245|Innovar|brand
+DDI-MedLine.d23.s1|257-269|pentobarbital|drug
+DDI-MedLine.d23.s0|15-22|ketamine|drug
+DDI-MedLine.d23.s0|31-37|Innovar|brand
+DDI-MedLine.d23.s0|53-61|digitalis|group
+DDI-MedLine.d43.s7|183-195|phenobarbital|drug
+DDI-MedLine.d139.s0|50-61|neuroleptics|group
+DDI-MedLine.d139.s0|173-184|neuroleptics|group
+DDI-MedLine.d97.s10|59-73|anti-helminthic|group
+DDI-MedLine.d97.s10|171-181|melarsoprol|drug
+DDI-MedLine.d140.s3|43-52|everolimus|drug
+DDI-MedLine.d140.s3|58-69|cyclosporine|drug
+DDI-MedLine.d140.s2|127-136|everolimus|drug
+DDI-MedLine.d140.s2|197-208|cyclosporine|drug
+DDI-MedLine.d140.s2|214-223|prednisone|drug
+DDI-MedLine.d140.s1|82-91|everolimus|drug
+DDI-MedLine.d140.s1|97-108|cyclosporine|drug
+DDI-MedLine.d140.s1|116-126|ciclosporin|drug
+DDI-MedLine.d55.s4|58-70|acetaminophen|drug
+DDI-MedLine.d55.s4|91-98|caffeine|drug
+DDI-MedLine.d140.s0|27-36|everolimus|drug
+DDI-MedLine.d140.s0|182-193|cyclosporine|drug
+DDI-MedLine.d55.s1|6-13|caffeine|drug
+DDI-MedLine.d55.s1|50-62|acetaminophen|drug
+DDI-MedLine.d55.s1|115-122|caffeine|drug
+DDI-MedLine.d55.s1|149-161|acetaminophen|drug
+DDI-MedLine.d140.s7|9-18|Everolimus|drug
+DDI-MedLine.d55.s2|75-82|caffeine|drug
+DDI-MedLine.d140.s6|25-36|cyclosporine|drug
+DDI-MedLine.d140.s6|89-98|everolimus|drug
+DDI-MedLine.d140.s5|0-9|Everolimus|drug
+DDI-MedLine.d55.s0|28-40|acetaminophen|drug
+DDI-MedLine.d55.s0|75-82|caffeine|drug
+DDI-MedLine.d140.s4|0-9|Everolimus|drug
+DDI-MedLine.d140.s9|56-65|everolimus|drug
+DDI-MedLine.d90.s2|11-20|atracurium|drug
+DDI-MedLine.d127.s4|54-60|digoxin|drug
+DDI-MedLine.d90.s3|0-9|Atracurium|drug
+DDI-MedLine.d90.s3|91-100|gentamycin|drug
+DDI-MedLine.d90.s4|0-9|Atracurium|drug
+DDI-MedLine.d127.s2|24-30|digoxin|drug
+DDI-MedLine.d90.s5|0-9|Gentamycin|drug
+DDI-MedLine.d90.s0|15-24|gentamycin|drug
+DDI-MedLine.d90.s0|30-39|atracurium|drug
+DDI-MedLine.d127.s6|20-37|thiazide diuretics|group
+DDI-MedLine.d127.s6|92-98|digoxin|drug
+DDI-MedLine.d90.s1|101-110|atracurium|drug
+DDI-MedLine.d90.s1|152-160|halothane|drug
+DDI-MedLine.d90.s6|33-42|gentamycin|drug
+DDI-MedLine.d127.s0|6-12|digoxin|drug
+DDI-MedLine.d90.s7|65-74|atracurium|drug
+DDI-MedLine.d90.s7|107-116|atracurium|drug
+DDI-MedLine.d90.s7|123-132|gentamycin|drug
+DDI-MedLine.d90.s8|72-81|atracurium|drug
+DDI-MedLine.d90.s8|114-123|atracurium|drug
+DDI-MedLine.d90.s8|130-139|gentamycin|drug
+DDI-MedLine.d90.s9|55-64|atracurium|drug
+DDI-MedLine.d90.s9|90-99|atracurium|drug
+DDI-MedLine.d90.s9|106-115|gentamycin|drug
+DDI-MedLine.d105.s9|60-71|azithromycin|drug
+DDI-MedLine.d105.s9|112-121|zidovudine|drug
+DDI-MedLine.d105.s9|127-140|dideoxyinosine|drug
+DDI-MedLine.d67.s5|0-7|Diazepam|drug
+DDI-MedLine.d67.s5|60-67|morphine|drug
+DDI-MedLine.d67.s5|121-128|morphine|drug
+DDI-MedLine.d105.s6|84-93|zidovudine|drug
+DDI-MedLine.d67.s4|58-71|benzodiazepine|group
+DDI-MedLine.d105.s5|0-13|Antiretroviral|group
+DDI-MedLine.d105.s5|81-90|zidovudine|drug
+DDI-MedLine.d105.s5|117-130|dideoxyinosine|drug
+DDI-MedLine.d67.s7|0-8|Midazolam|drug
+DDI-MedLine.d67.s7|92-99|morphine|drug
+DDI-MedLine.d67.s7|102-110|metamizol|drug
+DDI-MedLine.d67.s7|146-157|indomethacin|drug
+DDI-MedLine.d105.s8|0-11|Azithromycin|drug
+DDI-MedLine.d105.s8|42-55|dideoxyinosine|drug
+DDI-MedLine.d67.s6|11-18|diazepam|drug
+DDI-MedLine.d67.s6|60-68|metamizol|drug
+DDI-MedLine.d67.s6|104-115|indomethacin|drug
+DDI-MedLine.d105.s7|0-11|Azithromycin|drug
+DDI-MedLine.d105.s7|62-71|zidovudine|drug
+DDI-MedLine.d105.s7|114-123|zidovudine|drug
+DDI-MedLine.d105.s7|196-205|zidovudine|drug
+DDI-MedLine.d67.s1|17-25|midazolam|drug
+DDI-MedLine.d67.s1|31-38|diazepam|drug
+DDI-MedLine.d67.s1|69-76|morphine|drug
+DDI-MedLine.d67.s1|90-98|metamizol|drug
+DDI-MedLine.d67.s1|116-127|indomethacin|drug
+DDI-MedLine.d67.s0|10-17|diazepam|drug
+DDI-MedLine.d67.s0|23-31|midazolam|drug
+DDI-MedLine.d67.s0|66-73|morphine|drug
+DDI-MedLine.d67.s0|76-84|metamizol|drug
+DDI-MedLine.d67.s0|90-101|indomethacin|drug
+DDI-MedLine.d105.s1|80-91|azithromycin|drug
+DDI-MedLine.d105.s1|110-119|zidovudine|drug
+DDI-MedLine.d105.s1|125-138|dideoxyinosine|drug
+DDI-MedLine.d67.s3|0-14|Benzodiazepines|group
+DDI-MedLine.d67.s3|69-83|analgesic drugs|group
+DDI-MedLine.d105.s4|32-45|dideoxyinosine|drug
+DDI-MedLine.d105.s4|91-102|azithromycin|drug
+DDI-MedLine.d105.s3|4-13|zidovudine|drug
+DDI-MedLine.d105.s3|56-67|azithromycin|drug
+DDI-MedLine.d105.s3|180-189|zidovudine|drug
+DDI-MedLine.d11.s3|42-64|immunosuppressive drugs|group
+DDI-MedLine.d11.s4|41-63|immunosuppressive drugs|group
+DDI-MedLine.d11.s4|74-88|corticosteroids|group
+DDI-MedLine.d11.s4|91-101|cyclosporin|drug
+DDI-MedLine.d11.s4|104-115|azathioprine|drug
+DDI-MedLine.d11.s4|118-129|methotrexate|drug
+DDI-MedLine.d11.s4|132-147|cyclophosphamide|drug
+DDI-MedLine.d105.s0|21-32|azithromycin|drug
+DDI-MedLine.d105.s0|56-65|zidovudine|drug
+DDI-MedLine.d105.s0|71-84|dideoxyinosine|drug
+DDI-MedLine.d11.s0|0-22|Immunosuppressive drugs|group
+DDI-MedLine.d89.s2|27-36|gentamicin|drug
+DDI-MedLine.d89.s2|84-92|99mTc-MDP|drug
+DDI-MedLine.d89.s3|20-38|radiopharmaceutical|group
+DDI-MedLine.d89.s0|71-99|99mTc-methylene diphosphonate|drug
+DDI-MedLine.d89.s0|107-116|gentamicin|drug
+DDI-MedLine.d89.s1|0-9|Gentamicin|drug
+DDI-MedLine.d89.s1|17-41|aminoglycoside antibiotic|group
+DDI-MedLine.d89.s7|37-46|gentamicin|drug
+DDI-MedLine.d89.s7|89-97|99mTc-MDP|drug
+DDI-MedLine.d89.s7|106-124|radiopharmaceutical|group
+DDI-MedLine.d89.s5|48-57|gentamicin|drug
+DDI-MedLine.d33.s0|40-78|topoisomerase-targeting antitumor drugs|group
+DDI-MedLine.d98.s11|173-179|cocaine|drug
+DDI-MedLine.d85.s6|51-54|CCNU|drug
+DDI-MedLine.d85.s7|0-11|Misonidazole|drug_n
+DDI-MedLine.d85.s7|53-56|CCNU|drug
+DDI-MedLine.d85.s9|0-11|Misonidazole|drug_n
+DDI-MedLine.d85.s9|42-45|CCNU|drug
+DDI-MedLine.d126.s1|213-224|cypermethrin|drug
+DDI-MedLine.d126.s1|229-246|Type II pyrethroid|drug_n
+DDI-MedLine.d126.s0|0-11|Cypermethrin|drug
+DDI-MedLine.d126.s0|77-85|vitamin E|drug
+DDI-MedLine.d126.s0|90-100|allopurinol|drug
+DDI-MedLine.d126.s2|91-102|cypermethrin|drug
+DDI-MedLine.d126.s7|31-42|cypermethrin|drug
+DDI-MedLine.d126.s7|198-208|allopurinol|drug
+DDI-MedLine.d126.s7|214-222|Vitamin E|drug
+DDI-MedLine.d126.s6|26-36|allopurinol|drug
+DDI-MedLine.d126.s6|57-65|Vitamin E|drug
+DDI-MedLine.d126.s6|280-291|cypermethrin|drug
+DDI-MedLine.d138.s1|45-52|oxytocin|drug
+DDI-MedLine.d83.s16|14-24|risperidone|drug
+DDI-MedLine.d83.s16|27-36|olanzapine|drug
+DDI-MedLine.d138.s2|44-51|oxytocin|drug
+DDI-MedLine.d83.s15|40-49|olanzapine|drug
+DDI-MedLine.d83.s15|174-184|haloperidol|drug
+DDI-MedLine.d51.s0|11-30|xanthine derivatives|group
+DDI-MedLine.d83.s14|29-38|olanzapine|drug
+DDI-MedLine.d51.s1|63-70|caffeine|drug
+DDI-MedLine.d51.s1|73-84|theophylline|drug
+DDI-MedLine.d51.s1|87-106|8-phenyltheophylline|drug_n
+DDI-MedLine.d51.s1|113-146|8-cyclopentyl-1,3-dipropylxanthine|drug_n
+DDI-MedLine.d51.s1|149-153|DPCPX|drug_n
+DDI-MedLine.d83.s13|19-29|haloperidol|drug
+DDI-MedLine.d83.s13|95-104|olanzapine|drug
+DDI-MedLine.d83.s13|206-216|risperidone|drug
+DDI-MedLine.d83.s13|284-293|olanzapine|drug
+DDI-MedLine.d83.s12|46-55|olanzapine|drug
+DDI-MedLine.d83.s11|13-22|olanzapine|drug
+DDI-MedLine.d83.s11|86-94|clozapine|drug
+DDI-MedLine.d83.s11|155-165|risperidone|drug
+DDI-MedLine.d83.s10|0-9|Olanzapine|drug
+DDI-MedLine.d83.s10|79-89|haloperidol|drug
+DDI-MedLine.d83.s10|95-105|risperidone|drug
+DDI-MedLine.d97.s4|70-80|melarsoprol|drug
+DDI-MedLine.d97.s2|48-58|melarsoprol|drug
+DDI-MedLine.d83.s19|77-87|haloperidol|drug
+DDI-MedLine.d83.s19|93-103|risperidone|drug
+DDI-MedLine.d83.s19|180-189|olanzapine|drug
+DDI-MedLine.d83.s18|13-22|Olanzapine|drug
+DDI-MedLine.d83.s18|83-93|haloperidol|drug
+DDI-MedLine.d138.s0|20-27|oxytocin|drug
+DDI-MedLine.d83.s17|0-9|Olanzapine|drug
+DDI-MedLine.d83.s17|124-134|haloperidol|drug
+DDI-MedLine.d83.s17|171-181|risperidone|drug
+DDI-MedLine.d115.s14|112-125;146-150|antiretroviral drugs|group
+DDI-MedLine.d115.s14|131-150|antineoplastic drugs|group
+DDI-MedLine.d73.s4|0-14|Methamphetamine|drug
+DDI-MedLine.d73.s4|22-25|MPTP|drug_n
+DDI-MedLine.d73.s4|107-115|pargyline|drug
+DDI-MedLine.d73.s3|4-7|MPTP|drug
+DDI-MedLine.d73.s3|83-93|amphetamine|drug
+DDI-MedLine.d73.s3|147-157|apomorphine|drug
+DDI-MedLine.d73.s5|110-118|pargyline|drug
+DDI-MedLine.d63.s3|30-43|beta-endorphin|drug_n
+DDI-MedLine.d63.s3|49-56|morphine|drug
+DDI-MedLine.d63.s2|64-71|naloxone|drug
+DDI-MedLine.d63.s2|144-157|beta-endorphin|drug_n
+DDI-MedLine.d63.s2|163-170|morphine|drug
+DDI-MedLine.d63.s1|46-52|opioids|group
+DDI-MedLine.d63.s0|36-43|naloxone|drug
+DDI-MedLine.d63.s0|111-124|beta-endorphin|drug_n
+DDI-MedLine.d63.s0|130-137|morphine|drug
+DDI-MedLine.d51.s3|26-37|theophylline|drug
+DDI-MedLine.d51.s3|73-81|CGS 21680|drug_n
+DDI-MedLine.d51.s3|120-142|N6-cyclopentyladenosine|drug_n
+DDI-MedLine.d51.s3|145-147|CPA|drug_n
+DDI-MedLine.d51.s4|31-42|theophylline|drug
+DDI-MedLine.d51.s4|74-81|CGS21680|drug_n
+DDI-MedLine.d51.s4|142-146|DPCPX|drug_n
+DDI-MedLine.d51.s4|200-208|CGS 21680|drug
+DDI-MedLine.d51.s4|217-219|CPA|drug_n
+DDI-MedLine.d51.s6|101-112|theophylline|drug
+DDI-MedLine.d1.s1|26-55|erection-supporting medication|group
+DDI-MedLine.d1.s1|163-192|erection-supporting medication|group
+DDI-MedLine.d74.s10|71-77|glucose|drug
+DDI-MedLine.d74.s11|108-119|theophylline|drug
+DDI-MedLine.d74.s11|156-162|glucose|drug
+DDI-MedLine.d104.s8|49-51|PCP|drug_n
+DDI-MedLine.d104.s8|171-173|PCP|drug_n
+DDI-MedLine.d104.s8|176-181|DCG-IV|drug_n
+DDI-MedLine.d104.s8|188-194|L-CCG-1|drug_n
+DDI-MedLine.d104.s4|15-20|DCG-IV|drug_n
+DDI-MedLine.d104.s4|68-70|PCP|drug_n
+DDI-MedLine.d104.s5|15-21|L-CCG-1|drug_n
+DDI-MedLine.d104.s6|22-24|PCP|drug_n
+DDI-MedLine.d85.s0|0-11|Misonidazole|drug_n
+DDI-MedLine.d85.s0|80-83|CCNU|drug
+DDI-MedLine.d104.s0|15-20|DCG-IV|drug_n
+DDI-MedLine.d104.s0|26-32|L-CCG-1|drug_n
+DDI-MedLine.d104.s0|39-51|phencyclidine|drug_n
+DDI-MedLine.d104.s0|54-56|PCP|drug_n
+DDI-MedLine.d85.s1|12-22|nitrosourea|group
+DDI-MedLine.d85.s1|24-27|CCNU|drug
+DDI-MedLine.d85.s1|184-187|CCNU|drug
+DDI-MedLine.d85.s1|246-257|misonidazole|drug_n
+DDI-MedLine.d104.s2|13-25|phencyclidine|drug_n
+DDI-MedLine.d104.s2|28-30|PCP|drug_n
+DDI-MedLine.d85.s3|14-25|nitrosoureas|group
+DDI-MedLine.d104.s3|71-76|DCG-IV|drug_n
+DDI-MedLine.d104.s3|82-88|L-CCG-1|drug_n
+DDI-MedLine.d104.s3|134-136|PCP|drug_n
+DDI-MedLine.d1.s5|0-9|Sildenafil|drug
+DDI-MedLine.d1.s5|48-67|long-acting nitrates|group
+DDI-MedLine.d1.s5|92-112|short-acting nitrates|group
+DDI-MedLine.d1.s4|85-94|sildenafil|drug
+DDI-MedLine.d1.s6|40-61|beta-receptor blockers|group
+DDI-MedLine.d1.s6|64-82|calcium antagonists|group
+DDI-MedLine.d1.s6|85-92;103-111|thiazide diuretics|group
+DDI-MedLine.d1.s6|98-111|loop diuretics|group
+DDI-MedLine.d1.s6|117-130|ACE inhibitors|group
+DDI-MedLine.d75.s0|30-35|opioid|group
+DDI-MedLine.d75.s3|44-46;70-86|mu-selective opioids|group
+DDI-MedLine.d75.s3|49-57;70-86|delta(1)-selective opioids|group
+DDI-MedLine.d75.s3|64-86|kappa-selective opioids|group
+DDI-MedLine.d75.s1|221-245|selective opioid agonists|group
+DDI-MedLine.d75.s2|64-69|opioid|group
+DDI-MedLine.d28.s10|89-98|glitazones|group
+DDI-MedLine.d63.s7|35-42|naloxone|drug
+DDI-MedLine.d63.s7|109-122|beta-endorphin|drug_n
+DDI-MedLine.d63.s7|132-139|morphine|drug
+DDI-MedLine.d63.s7|206-219|beta-endorphin|drug_n
+DDI-MedLine.d63.s7|225-232|morphine|drug
+DDI-MedLine.d63.s6|30-37|naloxone|drug
+DDI-MedLine.d63.s6|173-186|beta-endorphin|drug_n
+DDI-MedLine.d63.s6|192-199|morphine|drug
+DDI-MedLine.d102.s7|63-75|noradrenaline|drug
+DDI-MedLine.d63.s5|31-38|naloxone|drug
+DDI-MedLine.d63.s5|145-152|morphine|drug
+DDI-MedLine.d102.s6|42-50|estradiol|drug
+DDI-MedLine.d102.s6|80-92|noradrenaline|drug
+DDI-MedLine.d102.s6|121-132|progesterone|drug
+DDI-MedLine.d102.s6|139-150|progesterone|drug
+DDI-MedLine.d102.s6|159-167|estradiol|drug
+DDI-MedLine.d63.s4|25-32|naloxone|drug
+DDI-MedLine.d63.s4|184-197|beta-endorphin|drug_n
+DDI-MedLine.d63.s4|219-226|naloxone|drug
+DDI-MedLine.d63.s4|317-330|beta-endorphin|drug_n
+DDI-MedLine.d63.s8|38-51|beta-endorphin|drug_n
+DDI-MedLine.d63.s8|57-64|morphine|drug
+DDI-MedLine.d102.s1|78-86|estradiol|drug
+DDI-MedLine.d102.s1|96-107|progesterone|drug
+DDI-MedLine.d102.s1|128-140|noradrenaline|drug
+DDI-MedLine.d102.s0|13-21|estradiol|drug
+DDI-MedLine.d102.s0|27-38|progesterone|drug
+DDI-MedLine.d102.s0|84-96|noradrenaline|drug
+DDI-MedLine.d14.s1|89-100|pentagastrin|drug
+DDI-MedLine.d14.s1|113-121|histamine|drug
+DDI-MedLine.d87.s1|0-9|ADL-8-2698|drug
+DDI-MedLine.d87.s1|22-62|peripherally restricted opioid antagonist|group
+DDI-MedLine.d87.s1|93-98|opioid|group
+DDI-MedLine.d14.s0|45-55|angiotensin|drug_n
+DDI-MedLine.d14.s0|184-196|angiotensin 1|drug_n
+DDI-MedLine.d14.s0|202-214|angiotensin 2|drug_n
+DDI-MedLine.d14.s0|219-230|pentagastrin|drug
+DDI-MedLine.d14.s0|237-245|histamine|drug
+DDI-MedLine.d87.s0|0-9|ADL 8-2698|drug
+DDI-MedLine.d87.s0|114-121|morphine|drug
+DDI-MedLine.d102.s5|70-78|estradiol|drug
+DDI-MedLine.d102.s5|109-121|noradrenaline|drug
+DDI-MedLine.d87.s3|0-7|Morphine|drug
+DDI-MedLine.d102.s4|145-157|noradrenaline|drug
+DDI-MedLine.d87.s2|157-164|morphine|drug
+DDI-MedLine.d87.s2|195-204|ADL 8-2698|drug
+DDI-MedLine.d87.s2|229-236|morphine|drug
+DDI-MedLine.d102.s3|45-53|estradiol|drug
+DDI-MedLine.d102.s3|96-107|progesterone|drug
+DDI-MedLine.d87.s5|89-98|ADL 8-2698|drug
+DDI-MedLine.d87.s5|134-141|morphine|drug
+DDI-MedLine.d87.s4|0-7|Morphine|drug
+DDI-MedLine.d87.s4|106-115|ADL 8-2698|drug
+DDI-MedLine.d132.s10|0-8|Efavirenz|drug
+DDI-MedLine.d132.s10|44-53|nelfinavir|drug
+DDI-MedLine.d132.s11|20-25|NNRTIs|group
+DDI-MedLine.d14.s2|127-138|angiotensins|drug_n
+DDI-MedLine.d14.s2|167-177|angiotensin|drug_n
+DDI-MedLine.d132.s12|36-41|NNRTIs|group
+DDI-MedLine.d114.s1|15-27|ruthenium red|drug_n
+DDI-MedLine.d114.s1|30-31|RR|drug_n
+DDI-MedLine.d114.s1|37-64|inositol 1,4,5-trisphosphate|drug_n
+DDI-MedLine.d114.s1|67-73|InsP(3)|drug_n
+DDI-MedLine.d114.s2|24-30|InsP(3)|drug_n
+DDI-MedLine.d114.s0|22-34|ruthenium red|drug_n
+DDI-MedLine.d114.s5|47-48|RR|drug_n
+DDI-MedLine.d114.s6|57-58|RR|drug_n
+DDI-MedLine.d114.s6|77-83|InsP(3)|drug_n
+DDI-MedLine.d114.s3|14-20|InsP(3)|drug_n
+DDI-MedLine.d114.s3|36-37|RR|drug_n
+DDI-MedLine.d114.s4|50-51|RR|drug_n
+DDI-MedLine.d114.s4|80-86|InsP(3)|drug_n
+DDI-MedLine.d97.s8|92-104|thiabendazole|drug
+DDI-MedLine.d97.s8|143-153|melarsoprol|drug
+DDI-MedLine.d114.s7|80-81|RR|drug_n
+DDI-MedLine.d114.s8|32-33|RR|drug_n
+DDI-MedLine.d114.s8|94-100|InsP(3)|drug_n
+DDI-MedLine.d53.s2|51-61|1,25(OH)2D3|drug
+DDI-MedLine.d53.s1|2-31|25-Dihydroxycholecalciferol D3|drug
+DDI-MedLine.d53.s1|34-44|1,25(OH)2D3|drug
+DDI-MedLine.d53.s1|73-81|vitamin D|group
+DDI-MedLine.d53.s4|22-24|TAM|drug_n
+DDI-MedLine.d53.s4|92-102|1,25(OH)2D3|drug
+DDI-MedLine.d53.s3|71-81|1,25(OH)2D3|drug
+DDI-MedLine.d53.s3|91-102|antiestrogen|group
+DDI-MedLine.d53.s3|104-121|4-hydroxytamoxifen|drug_n
+DDI-MedLine.d53.s3|124-126|TAM|drug_n
+DDI-MedLine.d53.s0|61-69|vitamin D|group
+DDI-MedLine.d53.s0|75-87|antiestrogens|group
+DDI-MedLine.d99.s10|110-120|tolbutamide|drug
+DDI-MedLine.d99.s11|26-45|4-hydroxytolbutamide|drug_n
+DDI-MedLine.d99.s11|51-68|carboxytolbutamide|drug_n
+DDI-MedLine.d99.s11|179-189|tolbutamide|drug
+DDI-MedLine.d99.s11|265-275|tolbutamide|drug
+DDI-MedLine.d99.s12|119-129|fluvoxamine|drug
+DDI-MedLine.d99.s13|12-22|Fluvoxamine|drug
+DDI-MedLine.d112.s0|10-20|dofetillide|drug
+DDI-MedLine.d112.s0|49-55|digoxin|drug
+DDI-MedLine.d112.s2|13-22|dofetilide|drug
+DDI-MedLine.d112.s2|105-111|digoxin|drug
+DDI-MedLine.d112.s1|14-23|dofetilide|drug
+DDI-MedLine.d112.s1|65-71|digoxin|drug
+DDI-MedLine.d112.s3|22-31|dofetilide|drug
+DDI-MedLine.d112.s3|71-77|digoxin|drug
+DDI-MedLine.d36.s0|0-12|Carbamazepine|drug
+DDI-MedLine.d36.s0|39-62|tricyclic antidepressant|group
+DDI-MedLine.d36.s2|73-85|carbamazepine|drug
+DDI-MedLine.d36.s2|112-135|tricyclic antidepressant|group
+DDI-MedLine.d36.s2|190-202|carbamazepine|drug
+DDI-MedLine.d36.s2|233-257|tricyclic antidepressants|group
+DDI-MedLine.d3.s10|42-50|rifabutin|drug
+DDI-MedLine.d3.s10|56-63|rifampin|drug
+DDI-MedLine.d3.s11|0-9|Amprenavir|drug
+DDI-MedLine.d3.s11|16-23|rifampin|drug
+DDI-MedLine.d3.s12|0-9|Amprenavir|drug
+DDI-MedLine.d3.s12|16-24|rifabutin|drug
+DDI-MedLine.d3.s13|0-7|Rifampin|drug
+DDI-MedLine.d3.s13|55-64|amprenavir|drug
+DDI-MedLine.d3.s14|0-9|Amprenavir|drug
+DDI-MedLine.d3.s14|48-56|rifabutin|drug
+DDI-MedLine.d3.s14|62-84|25-O-desacetylrifabutin|drug_n
+DDI-MedLine.d3.s15|0-9|Amprenavir|drug
+DDI-MedLine.d3.s15|35-42|rifampin|drug
+DDI-MedLine.d3.s15|48-56|rifabutin|drug
+DDI-MedLine.d18.s4|93-99|solvent|group
+DDI-MedLine.d18.s2|21-30|budesonide|drug
+DDI-MedLine.d18.s2|55-61|ethanol|drug
+DDI-MedLine.d18.s1|16-35|pulmonary surfactant|group
+DDI-MedLine.d18.s1|63-70|Survanta|brand
+DDI-MedLine.d18.s1|121-130|budesonide|drug
+DDI-MedLine.d18.s0|42-51|budesonide|drug
+DDI-MedLine.d18.s0|56-63|Survanta|brand
+DDI-MedLine.d18.s0|74-88|lung surfactant|group
+DDI-MedLine.d83.s1|0-9|Olanzapine|drug
+DDI-MedLine.d83.s1|14-44|thienobenzodiazepine derivative|group
+DDI-MedLine.d83.s1|52-99|second generation (atypical) antipsychotic agent|group
+DDI-MedLine.d83.s0|0-9|Olanzapine|drug
+DDI-MedLine.d18.s9|24-38|lung surfactant|group
+DDI-MedLine.d18.s8|33-42|budesonide|drug
+DDI-MedLine.d18.s8|121-130|budesonide|drug
+DDI-MedLine.d18.s8|144-151|Survanta|brand
+DDI-MedLine.d18.s7|0-7|Survanta|brand
+DDI-MedLine.d18.s7|68-89|sodium dodecyl sulfate|drug_n
+DDI-MedLine.d18.s6|0-7|Survanta|brand
+DDI-MedLine.d18.s6|48-57|budesonide|drug
+DDI-MedLine.d85.s10|28-38|nitrosourea|group
+DDI-MedLine.d42.s11|13-22|Sildenafil|drug
+DDI-MedLine.d42.s10|99-108|sildenafil|drug
+DDI-MedLine.d42.s10|199-208|sildenafil|drug
+DDI-MedLine.d85.s14|98-101|CCNU|drug
+DDI-MedLine.d85.s14|119-130|misonidazole|drug_n
+DDI-MedLine.d48.s0|79-107|Clostridium difficile toxin A|drug_n
+DDI-MedLine.d85.s13|24-34|nitrosourea|group
+DDI-MedLine.d85.s12|0-10|nitrosourea|group
+DDI-MedLine.d48.s2|39-45|toxin A|drug_n
+DDI-MedLine.d85.s11|0-11|Misonidazole|drug_n
+DDI-MedLine.d48.s1|0-28|Clostridium difficile toxin A|drug_n
+DDI-MedLine.d124.s6|26-34|oxycodone|drug
+DDI-MedLine.d124.s6|39-50|levofloxacin|drug
+DDI-MedLine.d48.s4|16-22|toxin A|drug_n
+DDI-MedLine.d48.s4|29-49|diethyl pyrocarbonate|drug_n
+DDI-MedLine.d48.s3|0-20|Diethyl pyrocarbonate|drug_n
+DDI-MedLine.d48.s3|94-100|toxin A|drug_n
+DDI-MedLine.d48.s6|15-35|diethyl pyrocarbonate|drug_n
+DDI-MedLine.d48.s6|58-70|hydroxylamine|drug_n
+DDI-MedLine.d124.s9|173-184|levofloxacin|drug
+DDI-MedLine.d124.s9|193-204|levofloxacin|drug
+DDI-MedLine.d124.s9|206-214|oxycodone|drug
+DDI-MedLine.d48.s5|13-19|toxin A|drug_n
+DDI-MedLine.d48.s5|34-54|diethyl pyrocarbonate|drug_n
+DDI-MedLine.d48.s8|84-90|toxin A|drug_n
+DDI-MedLine.d48.s7|54-60|toxin A|drug_n
+DDI-MedLine.d93.s8|42-44|TML|drug_n
+DDI-MedLine.d124.s0|28-39|levofloxacin|drug
+DDI-MedLine.d124.s0|45-53|oxycodone|drug
+DDI-MedLine.d93.s5|80-86|ethanol|drug
+DDI-MedLine.d124.s1|90-102|trovafloxacin|drug
+DDI-MedLine.d124.s1|108-120|ciprofloxacin|drug
+DDI-MedLine.d124.s1|174-179|opiate|group
+DDI-MedLine.d124.s1|189-196|morphine|drug
+DDI-MedLine.d93.s6|24-30|alcohol|drug
+DDI-MedLine.d93.s6|83-89|ethanol|drug
+DDI-MedLine.d124.s2|67-79|trovafloxacin|drug
+DDI-MedLine.d124.s2|85-97|ciprofloxacin|drug
+DDI-MedLine.d93.s3|11-17|alcohol|drug
+DDI-MedLine.d124.s3|74-82|oxycodone|drug
+DDI-MedLine.d124.s3|88-99|levofloxacin|drug
+DDI-MedLine.d93.s4|109-122|trimethyl lead|drug_n
+DDI-MedLine.d93.s4|125-127|TML|drug_n
+DDI-MedLine.d124.s4|94-102|oxycodone|drug
+DDI-MedLine.d93.s1|0-12|Ethyl alcohol|drug
+DDI-MedLine.d124.s5|9-20|levofloxacin|drug
+DDI-MedLine.d93.s9|53-56|lead|drug_n
+DDI-MedLine.d93.s9|129-135|alcohol|drug
+DDI-MedLine.d71.s1|0-13|Acetylcysteine|drug
+DDI-MedLine.d71.s5|68-81|acetylcysteine|drug
+DDI-MedLine.d122.s4|85-91|alcohol|drug
+DDI-MedLine.d122.s4|97-104|nicotine|drug
+DDI-MedLine.d95.s9|54-64|resveratrol|drug_n
+DDI-MedLine.d95.s9|190-200|resveratrol|drug_n
+DDI-MedLine.d95.s7|0-11|Indomethacin|drug
+DDI-MedLine.d95.s7|46-56|resveratrol|drug_n
+DDI-MedLine.d95.s8|3-15|noradrenaline|drug
+DDI-MedLine.d95.s8|78-88|resveratrol|drug_n
+DDI-MedLine.d61.s0|34-40|digoxin|drug
+DDI-MedLine.d61.s0|42-51|amiodarone|drug
+DDI-MedLine.d61.s1|0-9|Amiodarone|drug
+DDI-MedLine.d61.s1|35-41|digoxin|drug
+DDI-MedLine.d95.s6|9-14|L-NAME|drug_n
+DDI-MedLine.d95.s6|70-81|reseveratrol|drug_n
+DDI-MedLine.d95.s4|0-10|Resveratrol|drug_n
+DDI-MedLine.d95.s4|116-128|noradrenaline|drug
+DDI-MedLine.d95.s4|148-150|KCl|drug
+DDI-MedLine.d122.s3|18-24|alcohol|drug
+DDI-MedLine.d122.s3|29-36|nicotine|drug
+DDI-MedLine.d122.s1|21-27|alcohol|drug
+DDI-MedLine.d122.s1|33-40|nicotine|drug
+DDI-MedLine.d3.s4|23-32|amprenavir|drug
+DDI-MedLine.d3.s4|39-47|rifabutin|drug
+DDI-MedLine.d3.s4|84-93|amprenavir|drug
+DDI-MedLine.d3.s4|100-107|rifampin|drug
+DDI-MedLine.d3.s5|51-60|amprenavir|drug
+DDI-MedLine.d3.s5|63-71|rifabutin|drug
+DDI-MedLine.d3.s5|78-85|rifampin|drug
+DDI-MedLine.d3.s5|97-122|25-O-desacetyl metabolites|drug_n
+DDI-MedLine.d3.s3|22-31|amprenavir|drug
+DDI-MedLine.d3.s3|123-131|rifabutin|drug
+DDI-MedLine.d3.s3|172-179|rifampin|drug
+DDI-MedLine.d3.s0|36-45|amprenavir|drug
+DDI-MedLine.d3.s0|51-59|rifabutin|drug
+DDI-MedLine.d3.s0|64-71|rifampin|drug
+DDI-MedLine.d3.s1|92-101|amprenavir|drug
+DDI-MedLine.d3.s1|117-125|rifabutin|drug
+DDI-MedLine.d3.s1|130-137|rifampin|drug
+DDI-MedLine.d28.s0|53-62|glitazones|group
+DDI-MedLine.d134.s4|31-41|perchlorate|drug_n
+DDI-MedLine.d134.s1|29-39|perchlorate|drug_n
+DDI-MedLine.d134.s1|116-128|pertechnetate|drug
+DDI-MedLine.d134.s1|237-254|radiopertechnetate|drug
+DDI-MedLine.d134.s2|28-38|perchlorate|drug_n
+DDI-MedLine.d134.s2|116-128|pertechnetate|drug
+DDI-MedLine.d134.s0|50-67|radiopertechnetate|drug
+DDI-MedLine.d134.s0|72-89|sodium perchlorate|drug_n
+DDI-MedLine.d134.s0|170-187|sodium perchlorate|drug_n
+DDI-MedLine.d134.s0|267-284|radiopertechnetate|drug
+DDI-MedLine.d28.s7|4-21|thiazolidinediones|group
+DDI-MedLine.d28.s7|24-36|rosiglitazone|drug
+DDI-MedLine.d28.s7|42-53|pioglitazone|drug
+DDI-MedLine.d28.s7|77-95|antidiabetic agents|group
+DDI-MedLine.d3.s8|0-7|Rifampin|drug
+DDI-MedLine.d3.s8|48-57|amprenavir|drug
+DDI-MedLine.d3.s8|71-80|amprenavir|drug
+DDI-MedLine.d3.s8|99-106|rifampin|drug
+DDI-MedLine.d3.s9|0-9|Amprenavir|drug
+DDI-MedLine.d3.s6|0-8|Rifabutin|drug
+DDI-MedLine.d3.s6|39-48|amprenavir|drug
+DDI-MedLine.d3.s7|0-9|Amprenavir|drug
+DDI-MedLine.d3.s7|89-97|rifabutin|drug
+DDI-MedLine.d3.s7|131-153|25-O-desacetylrifabutin|drug_n
+DDI-MedLine.d83.s9|30-39|olanzapine|drug
+DDI-MedLine.d83.s9|158-167|olanzapine|drug
+DDI-MedLine.d83.s8|99-108|olanzapine|drug
+DDI-MedLine.d83.s8|114-124|risperidone|drug
+DDI-MedLine.d83.s7|53-62|olanzapine|drug
+DDI-MedLine.d83.s7|204-214|risperidone|drug
+DDI-MedLine.d83.s7|219-229|haloperidol|drug
+DDI-MedLine.d83.s6|75-85|risperidone|drug
+DDI-MedLine.d83.s6|117-126|olanzapine|drug
+DDI-MedLine.d73.s0|52-95|1-methyl-4-phenyl-1,2,5,6-tetrahydropyridine|drug_n
+DDI-MedLine.d73.s0|98-101|MPTP|drug_n
+DDI-MedLine.d73.s0|108-122|methamphetamine|drug
+DDI-MedLine.d83.s5|57-66|olanzapine|drug
+DDI-MedLine.d83.s5|72-82|risperidone|drug
+DDI-MedLine.d83.s5|85-94|olanzapine|drug
+DDI-MedLine.d83.s5|159-169|risperidone|drug
+DDI-MedLine.d83.s4|76-85|olanzapine|drug
+DDI-MedLine.d83.s4|97-107|haloperidol|drug
+DDI-MedLine.d73.s2|21-24|MPTP|drug_n
+DDI-MedLine.d73.s2|143-151|pargyline|drug
+DDI-MedLine.d83.s3|86-95|olanzapine|drug
+DDI-MedLine.d83.s3|142-152|haloperidol|drug
+DDI-MedLine.d73.s1|56-59|MPTP|drug_n
+DDI-MedLine.d73.s1|144-158|methamphetamine|drug
+DDI-MedLine.d83.s2|14-40|conventional antipsychotics|group
+DDI-MedLine.d38.s3|44-57|hydrocortisone|drug
+DDI-MedLine.d38.s3|116-128|d-amphetamine|drug
+DDI-MedLine.d38.s2|35-49|glucocorticoids|group
+DDI-MedLine.d38.s2|95-110|psychostimulants|group
+DDI-MedLine.d38.s1|22-36|glucocorticoids|group
+DDI-MedLine.d38.s0|6-19|hydrocortisone|drug
+DDI-MedLine.d38.s0|76-88|d-amphetamine|drug
+DDI-MedLine.d38.s7|9-22|Hydrocortisone|drug
+DDI-MedLine.d38.s5|49-71|rantidine hydrochloride|drug
+DDI-MedLine.d38.s4|9-22|Hydrocortisone|drug
+DDI-MedLine.d38.s4|37-49|d-amphetamine|drug
+DDI-MedLine.d38.s9|43-57|glucocorticoids|group
+DDI-MedLine.d38.s9|184-196|d-amphetamine|drug
+DDI-MedLine.d38.s8|9-22|hydrocortisone|drug
+DDI-MedLine.d38.s8|115-127|d-amphetamine|drug
+DDI-MedLine.d61.s4|7-16|amiodarone|drug
+DDI-MedLine.d61.s4|56-62|digoxin|drug
+DDI-MedLine.d95.s1|0-10|Resveratrol|drug_n
+DDI-MedLine.d100.s7|35-50|calcium blockers|group
+DDI-MedLine.d95.s2|51-61|resveratrol|drug_n
+DDI-MedLine.d61.s3|34-40|digoxin|drug
+DDI-MedLine.d61.s3|93-99|digoxin|drug
+DDI-MedLine.d61.s3|140-149|amiodarone|drug
+DDI-MedLine.d100.s5|0-28|Slow-channel calcium blockers|group
+DDI-MedLine.d100.s5|39-47|verapamil|drug
+DDI-MedLine.d100.s5|50-58|diltiazem|drug
+DDI-MedLine.d100.s5|64-73|nifedipine|drug
+DDI-MedLine.d95.s0|17-27|resveratrol|drug_n
+DDI-MedLine.d61.s8|0-9|Amiodarone|drug
+DDI-MedLine.d61.s8|172-178|digoxin|drug
+DDI-MedLine.d61.s9|21-27|digoxin|drug
+DDI-MedLine.d61.s9|58-67|amiodarone|drug
+DDI-MedLine.d61.s9|99-105|digoxin|drug
+DDI-MedLine.d61.s6|0-6|Digoxin|drug
+DDI-MedLine.d100.s8|17-32|calcium blockers|group
+DDI-MedLine.d61.s7|0-6|Digoxin|drug
+DDI-MedLine.d16.s2|29-36|ketamine|drug
+DDI-MedLine.d16.s3|9-17|halothane|drug
+DDI-MedLine.d16.s3|169-176|ketamine|drug
+DDI-MedLine.d16.s0|15-22|ketamine|drug
+DDI-MedLine.d16.s0|28-36|halothane|drug
+DDI-MedLine.d16.s1|44-51|ketamine|drug
+DDI-MedLine.d16.s1|107-115|halothane|drug
+DDI-MedLine.d100.s0|13-36|calcium-channel blockers|group
+DDI-MedLine.d16.s6|21-28|ketamine|drug
+DDI-MedLine.d16.s6|87-95|halothane|drug
+DDI-MedLine.d16.s4|57-64|ketamine|drug
+DDI-MedLine.d16.s4|96-103|ketamine|drug
+DDI-MedLine.d16.s5|17-24|ketamine|drug
+DDI-MedLine.d16.s5|76-84|halothane|drug
+DDI-MedLine.d16.s5|96-103|ketamine|drug
+DDI-MedLine.d56.s7|0-2|PTX|drug_n
+DDI-MedLine.d56.s6|98-100|PTX|drug_n
+DDI-MedLine.d56.s5|5-11|ouabain|drug
+DDI-MedLine.d56.s5|58-69|phentolamine|drug
+DDI-MedLine.d56.s5|119-121|PTX|drug_n
+DDI-MedLine.d56.s4|19-30|phentolamine|drug
+DDI-MedLine.d56.s2|19-25|ouabain|drug
+DDI-MedLine.d56.s2|39-41|PTX|drug_n
+DDI-MedLine.d56.s1|0-8|Palytoxin|drug_n
+DDI-MedLine.d56.s1|11-13|PTX|drug_n
+DDI-MedLine.d56.s0|15-21|ouabain|drug
+DDI-MedLine.d56.s0|30-38|palytoxin|drug_n
+DDI-MedLine.d91.s3|16-22|cocaine|drug
+DDI-MedLine.d91.s0|50-56|cocaine|drug
+DDI-MedLine.d91.s2|118-124|cocaine|drug
+DDI-MedLine.d91.s1|30-36|cocaine|drug
+DDI-MedLine.d91.s7|5-11|cocaine|drug
+DDI-MedLine.d56.s9|67-69|PTX|drug_n
+DDI-MedLine.d56.s8|26-32|ouabain|drug
+DDI-MedLine.d56.s8|68-70|PTX|drug_n
+DDI-MedLine.d6.s8|11-18|etodolac|drug
+DDI-MedLine.d6.s7|163-170|etodolac|drug
+DDI-MedLine.d6.s6|6-13|etodolac|drug
+DDI-MedLine.d6.s5|106-113|etodolac|drug
+DDI-MedLine.d6.s4|0-7|Etodolac|drug
+DDI-MedLine.d6.s2|0-7|Etodolac|drug
+DDI-MedLine.d6.s1|24-31|etodolac|drug
+DDI-MedLine.d6.s0|27-34|etodolac|drug
+DDI-MedLine.d34.s1|34-39|cobalt|drug
+DDI-MedLine.d34.s1|45-48|iron|drug
+DDI-MedLine.d34.s1|271-272|Co|drug
+DDI-MedLine.d34.s1|297-298|Fe|drug
+DDI-MedLine.d34.s0|16-21|cobalt|drug
+DDI-MedLine.d34.s0|27-30|iron|drug
+DDI-MedLine.d34.s5|53-56|iron|drug
+DDI-MedLine.d34.s4|0-5|Cobalt|drug
+DDI-MedLine.d34.s4|47-52|cobalt|drug
+DDI-MedLine.d34.s7|11-14|iron|drug
+DDI-MedLine.d34.s7|58-63|cobalt|drug
+DDI-MedLine.d34.s7|81-86|cobalt|drug
+DDI-MedLine.d34.s9|28-31|iron|drug
+DDI-MedLine.d34.s9|53-58|cobalt|drug
+DDI-MedLine.d119.s18|46-51|niacin|drug
+DDI-MedLine.d119.s18|57-67|propranolol|drug
+DDI-MedLine.d119.s18|105-115|fluvastatin|drug
+DDI-MedLine.d119.s18|197-203|digoxin|drug
+DDI-MedLine.d119.s18|267-273|digoxin|drug
+DDI-MedLine.d34.s8|60-61|Fe|drug
+DDI-MedLine.d34.s8|83-84|Fe|drug
+DDI-MedLine.d34.s8|141-146|cobalt|drug
+DDI-MedLine.d119.s17|30-37|warfarin|drug
+DDI-MedLine.d119.s17|132-139|warfarin|drug
+DDI-MedLine.d119.s17|145-155|fluvastatin|drug
+DDI-MedLine.d119.s16|41-54|cholestyramine|drug
+DDI-MedLine.d119.s16|83-93|fluvastatin|drug
+DDI-MedLine.d119.s15|0-13|Cholestyramine|drug
+DDI-MedLine.d119.s15|103-113|fluvastatin|drug
+DDI-MedLine.d119.s19|71-81|fluvastatin|drug
+DDI-MedLine.d68.s3|44-53|cimetidine|drug
+DDI-MedLine.d68.s3|58-68|verografine|drug
+DDI-MedLine.d68.s3|74-81|iodamide|drug
+DDI-MedLine.d68.s1|11-21|verografine|drug
+DDI-MedLine.d68.s1|27-34|iodamide|drug
+DDI-MedLine.d68.s2|9-18|cimetidine|drug
+DDI-MedLine.d68.s2|47-57|cardiotrast|drug
+DDI-MedLine.d119.s10|24-34|fluvastatin|drug
+DDI-MedLine.d68.s0|15-24|cimetidine|drug
+DDI-MedLine.d68.s0|52-61|verografin|drug
+DDI-MedLine.d68.s0|67-74|iodamide|drug
+DDI-MedLine.d68.s0|115-124|cimetidine|drug
+DDI-MedLine.d68.s0|157-167|verografine|drug
+DDI-MedLine.d68.s0|173-180|iodamide|drug
+DDI-MedLine.d119.s14|45-55|fluvastatin|drug
+DDI-MedLine.d119.s13|38-48|fluvastatin|drug
+DDI-MedLine.d119.s11|61-71|fluvastatin|drug
+DDI-MedLine.d81.s7|71-77|ethanol|drug
+DDI-MedLine.d81.s6|47-53|ethanol|drug
+DDI-MedLine.d81.s6|97-103|ethanol|drug
+DDI-MedLine.d80.s11|197-200|POCs|group
+DDI-MedLine.d81.s4|58-64|ethanol|drug
+DDI-MedLine.d81.s3|58-64|ethanol|drug
+DDI-MedLine.d81.s3|142-148|ethanol|drug
+DDI-MedLine.d81.s2|71-77|ethanol|drug
+DDI-MedLine.d81.s2|117-126|disulfiram|drug
+DDI-MedLine.d81.s2|147-153|ethanol|drug
+DDI-MedLine.d81.s1|88-97|disulfiram|drug
+DDI-MedLine.d81.s1|99-105|ethanol|drug
+DDI-MedLine.d46.s0|33-42|fluoxetine|drug
+DDI-MedLine.d46.s0|47-55|cisapride|drug
+DDI-MedLine.d81.s0|31-40|disulfiram|drug
+DDI-MedLine.d81.s0|42-48|ethanol|drug
+DDI-MedLine.d46.s1|43-52|fluoxetine|drug
+DDI-MedLine.d46.s1|107-115|cisapride|drug
+DDI-MedLine.d131.s1|59-69|neurotensin|drug_n
+DDI-MedLine.d131.s1|80-90|enkephalins|drug_n
+DDI-MedLine.d131.s1|118-142|D-Ala2-metenkephalinamide|drug_n
+DDI-MedLine.d131.s1|148-154|tuftsin|drug_n
+DDI-MedLine.d131.s0|50-60|neurotensin|drug_n
+DDI-MedLine.d131.s0|66-76|enkephalins|drug_n
+DDI-MedLine.d131.s0|81-87|tuftsin|drug_n
+DDI-MedLine.d46.s6|20-28|cisapride|drug
+DDI-MedLine.d46.s8|22-31|fluoxetine|drug
+DDI-MedLine.d46.s15|0-8|Cisapride|drug
+DDI-MedLine.d46.s15|61-70|fluoxetine|drug
+DDI-MedLine.d20.s7|65-71|glycine|drug
+DDI-MedLine.d46.s14|96-104|cisapride|drug
+DDI-MedLine.d46.s14|120-129|fluoxetine|drug
+DDI-MedLine.d46.s16|12-20|Cisapride|drug
+DDI-MedLine.d46.s16|98-107|fluoxetine|drug
+DDI-MedLine.d20.s6|23-29|glycine|drug
+DDI-MedLine.d131.s3|18-28|neurotensin|drug_n
+DDI-MedLine.d131.s3|82-92|enkephalins|drug_n
+DDI-MedLine.d46.s10|153-161|cisapride|drug
+DDI-MedLine.d131.s5|21-31|neurotensin|drug_n
+DDI-MedLine.d131.s5|132-138|tuftsin|drug_n
+DDI-MedLine.d46.s13|20-29|fluoxetine|drug
+DDI-MedLine.d46.s13|55-63|cisapride|drug
+DDI-MedLine.d131.s4|17-27|neurotensin|drug_n
+DDI-MedLine.d131.s4|33-39|tuftsin|drug_n
+DDI-MedLine.d127.s10|111-117|digoxin|drug
+DDI-MedLine.d93.s0|26-32|alcohol|drug
+DDI-MedLine.d20.s0|20-26|glycine|drug
+DDI-MedLine.d20.s0|32-40|glutamate|drug
+DDI-MedLine.d20.s3|4-12|glutamate|drug
+DDI-MedLine.d20.s4|30-36|glycine|drug
+DDI-MedLine.d20.s4|75-83|glutamate|drug
+DDI-MedLine.d20.s4|246-254|glutamate|drug
+DDI-MedLine.d20.s1|43-49|glycine|drug
+DDI-MedLine.d20.s2|30-36|glycine|drug
+DDI-MedLine.d46.s9|26-34|cisapride|drug
+DDI-MedLine.d46.s9|72-81|fluoxetine|drug
+DDI-MedLine.d80.s28|130-133|POCs|group
+DDI-MedLine.d58.s8|71-82|ginsenosides|drug_n
+DDI-MedLine.d58.s8|171-177|ginseng|drug
+DDI-MedLine.d58.s7|24-35|ginsenosides|drug_n
+DDI-MedLine.d58.s7|135-154|omega-conotoxin GVIA|drug_n
+DDI-MedLine.d58.s7|187-204|omega-agatoxin IVA|drug_n
+DDI-MedLine.d58.s7|237-246|nimodipine|drug
+DDI-MedLine.d58.s7|248-267|omega-conotoxin GVIA|drug_n
+DDI-MedLine.d58.s7|269-286|omega-agatoxin VIA|drug_n
+DDI-MedLine.d58.s6|0-9|Nimodipine|drug
+DDI-MedLine.d58.s6|28-39|ginsenosides|drug_n
+DDI-MedLine.d58.s4|22-33|ginsenosides|drug_n
+DDI-MedLine.d58.s3|44-55|ginsenosides|drug_n
+DDI-MedLine.d58.s3|129-161|selective Ca(2+) channel blockers|group
+DDI-MedLine.d58.s3|163-172|nimodipine|drug
+DDI-MedLine.d58.s3|184-203|omega-conotoxin GVIA|drug_n
+DDI-MedLine.d58.s3|218-235|omega-agatoxin IVA|drug_n
+DDI-MedLine.d58.s2|44-55|ginsenosides|drug_n
+DDI-MedLine.d58.s1|39-50|ginsenosides|drug_n
+DDI-MedLine.d58.s0|10-21|ginsenosides|drug_n
+DDI-MedLine.d109.s12|82-90|rofecoxib|drug
+DDI-MedLine.d109.s13|0-8|Rofecoxib|drug
+DDI-MedLine.d109.s13|102-108|digoxin|drug
+DDI-MedLine.d109.s10|0-6|Digoxin|drug
+DDI-MedLine.d109.s11|61-67|digoxin|drug
+DDI-MedLine.d109.s11|101-109|rofecoxib|drug
+DDI-MedLine.d19.s4|50-70|anticonvulsant agents|group
+DDI-MedLine.d19.s4|81-94|phenobarbitone|drug
+DDI-MedLine.d19.s4|100-108|phenytoin|drug
+DDI-MedLine.d19.s5|96-113|anaesthetic agents|group
+DDI-MedLine.d56.s10|93-99|ouabain|drug
+DDI-MedLine.d56.s10|299-305|ouabain|drug
+DDI-MedLine.d108.s0|18-24|lithium|drug
+DDI-MedLine.d56.s11|31-33|PTX|drug_n
+DDI-MedLine.d108.s1|91-107|lithium carbonate|drug
+DDI-MedLine.d141.s4|24-27|zinc|drug
+DDI-MedLine.d141.s3|38-41|zinc|drug
+DDI-MedLine.d141.s1|25-28|zinc|drug
+DDI-MedLine.d88.s1|82-95|benzodiazepine|group
+DDI-MedLine.d88.s1|98-113|chlordiazepoxide|drug
+DDI-MedLine.d42.s4|84-93|sildenafil|drug
+DDI-MedLine.d42.s4|291-300|sildenafil|drug
+DDI-MedLine.d42.s4|303-308|Viagra|brand
+DDI-MedLine.d42.s3|64-73|sildenafil|drug
+DDI-MedLine.d88.s0|15-30|chlordiazepoxide|drug
+DDI-MedLine.d88.s0|33-43|amphetamine|drug
+DDI-MedLine.d88.s0|49-55|cocaine|drug
+DDI-MedLine.d42.s1|85-102|sildenafil citrate|drug
+DDI-MedLine.d88.s5|63-78|chlordiazepoxide|drug
+DDI-MedLine.d42.s0|0-17|Sildenafil citrate|drug
+DDI-MedLine.d88.s4|41-47|cocaine|drug
+DDI-MedLine.d88.s4|52-62|amphetamine|drug
+DDI-MedLine.d76.s9|37-46|bacitracin|drug
+DDI-MedLine.d76.s9|52-58|insulin|drug
+DDI-MedLine.d76.s9|76-80|NaCMC|drug_n
+DDI-MedLine.d76.s9|173-179|CMC-Cys|drug_n
+DDI-MedLine.d76.s8|0-4|NaCMC|drug_n
+DDI-MedLine.d76.s8|42-49|cysteine|drug
+DDI-MedLine.d76.s8|95-99|NaFlu|drug
+DDI-MedLine.d76.s8|113-117|NaCMC|drug_n
+DDI-MedLine.d76.s7|32-38|CMC-Cys|drug_n
+DDI-MedLine.d76.s7|78-85|cysteine|drug
+DDI-MedLine.d76.s7|153-157|NaFlu|drug
+DDI-MedLine.d76.s6|0-7|Cysteine|drug
+DDI-MedLine.d141.s0|24-27|zinc|drug
+DDI-MedLine.d76.s1|56-84|sodium carboxymethylcellulose|drug_n
+DDI-MedLine.d76.s1|87-91|NaCMC|drug_n
+DDI-MedLine.d76.s1|98-128|carboxymethylcellulose-cysteine|drug_n
+DDI-MedLine.d76.s1|131-137|CMC-Cys|drug_n
+DDI-MedLine.d76.s1|183-200|sodium fluorescein|drug
+DDI-MedLine.d76.s1|203-207|NaFlu|drug
+DDI-MedLine.d76.s1|235-244|bacitracin|drug
+DDI-MedLine.d76.s1|250-256|insulin|drug
+DDI-MedLine.d76.s0|0-31|Thiolated carboxymethylcellulose|drug_n
+DDI-MedLine.d76.s5|11-15|NaCMC|drug_n
+DDI-MedLine.d76.s5|108-112|NaFlu|drug
+DDI-MedLine.d76.s5|134-138|NaCMC|drug_n
+DDI-MedLine.d76.s5|156-163|cysteine|drug
+DDI-MedLine.d76.s3|95-102|cysteine|drug
+DDI-MedLine.d76.s2|0-7|Cysteine|drug
+DDI-MedLine.d76.s2|57-61|NaCMC|drug_n
+DDI-MedLine.d42.s9|81-87|nitrate|group
+DDI-MedLine.d42.s9|179-188|sildenafil|drug
+DDI-MedLine.d42.s8|27-36|sildenafil|drug
+DDI-MedLine.d42.s7|105-114|sildenafil|drug
+DDI-MedLine.d42.s6|85-88|SSRI|group
+DDI-MedLine.d42.s5|9-18|Sildenafil|drug
+DDI-MedLine.d42.s5|205-243|selective serotonin reuptake inhibitors|group
+DDI-MedLine.d42.s5|246-250|SSRIs|group
+DDI-MedLine.d128.s10|62-67|dmPGE2|drug_n
+DDI-MedLine.d128.s10|179-184|dmPGE2|drug_n
+DDI-MedLine.d106.s6|0-11|Barbiturates|group
+DDI-MedLine.d106.s6|17-28|glutethimide|drug
+DDI-MedLine.d106.s6|79-92|coumarin drugs|group
+DDI-MedLine.d128.s12|0-9|Loperamide|drug
+DDI-MedLine.d128.s12|15-22|morphine|drug
+DDI-MedLine.d106.s9|21-35|chloral hydrate|drug
+DDI-MedLine.d106.s9|41-52|methaqualone|drug
+DDI-MedLine.d106.s9|151-163|anticoagulant|group
+DDI-MedLine.d106.s8|0-14|Chloral hydrate|drug
+DDI-MedLine.d106.s8|20-31|methaqualone|drug
+DDI-MedLine.d106.s8|85-104|anticoagulant agents|group
+DDI-MedLine.d128.s14|0-19|N-methyllevallorphan|drug_n
+DDI-MedLine.d128.s13|0-9|Loperamide|drug
+DDI-MedLine.d128.s13|15-22|morphine|drug
+DDI-MedLine.d128.s13|64-69|dmPGE2|drug_n
+DDI-MedLine.d106.s2|60-67|warfarin|drug
+DDI-MedLine.d128.s16|50-55|dmPGE2|drug_n
+DDI-MedLine.d106.s5|81-95|chloral hydrate|drug
+DDI-MedLine.d106.s5|101-112|methaqualone|drug
+DDI-MedLine.d128.s15|0-19|N-methyllevallorphan|drug_n
+DDI-MedLine.d128.s15|85-94|loperamide|drug
+DDI-MedLine.d128.s15|133-140|morphine|drug
+DDI-MedLine.d106.s4|67-79|phenobarbital|drug
+DDI-MedLine.d106.s4|82-93|secobarbital|drug
+DDI-MedLine.d106.s4|99-110|glutethimide|drug
+DDI-MedLine.d106.s1|45-57|anticoagulant|group
+DDI-MedLine.d106.s1|75-87|phenobarbital|drug
+DDI-MedLine.d106.s1|90-101|secobarbital|drug
+DDI-MedLine.d106.s1|104-115|glutethimide|drug
+DDI-MedLine.d106.s1|118-132|chloral hydrate|drug
+DDI-MedLine.d106.s1|138-149|methaqualone|drug
+DDI-MedLine.d106.s1|209-216|coumarin|group
+DDI-MedLine.d106.s0|25-32|warfarin|drug
+DDI-MedLine.d106.s0|57-65|sedatives|group
+DDI-MedLine.d54.s4|0-6|Ethanol|drug
+DDI-MedLine.d54.s2|151-157|alcohol|drug
+DDI-MedLine.d54.s2|228-234|alcohol|drug
+DDI-MedLine.d54.s3|110-116|ethanol|drug
+DDI-MedLine.d54.s3|130-142|physostigmine|drug
+DDI-MedLine.d54.s3|159-166|atropine|drug
+DDI-MedLine.d54.s0|20-26|alcohol|drug
+DDI-MedLine.d118.s3|97-105|sirolimus|drug
+DDI-MedLine.d118.s3|128-139|cyclosporine|drug
+DDI-MedLine.d118.s3|144-153|tacrolimus|drug
+DDI-MedLine.d118.s3|249-260|cyclosporine|drug
+DDI-MedLine.d118.s3|265-274|tacrolimus|drug
+DDI-MedLine.d118.s0|0-8|Sirolimus|drug
+DDI-MedLine.d118.s0|31-39|rapamycin|drug
+DDI-MedLine.d118.s2|0-8|Sirolimus|drug
+DDI-MedLine.d118.s2|37-54|immunosuppressants|group
+DDI-MedLine.d118.s2|148-156|sirolimus|drug
+DDI-MedLine.d118.s2|231-242|cyclosporine|drug
+DDI-MedLine.d118.s2|247-256|tacrolimus|drug
+DDI-MedLine.d140.s13|0-11|Cyclosporine|drug
+DDI-MedLine.d140.s13|152-161|everolimus|drug
+DDI-MedLine.d140.s14|13-22|Everolimus|drug
+DDI-MedLine.d140.s12|100-109|everolimus|drug
+DDI-MedLine.d140.s15|22-31|everolimus|drug
+DDI-MedLine.d140.s15|77-88|cyclosporine|drug
+DDI-MedLine.d12.s4|25-37|dexamethasone|drug
+DDI-MedLine.d12.s4|62-76|retinyl acetate|drug
+DDI-MedLine.d12.s4|136-138|EGF|drug_n
+DDI-MedLine.d12.s5|0-12|Dexamethasone|drug
+DDI-MedLine.d12.s5|54-60|insulin|drug
+DDI-MedLine.d12.s6|9-23|retinyl acetate|drug
+DDI-MedLine.d12.s6|105-111|insulin|drug
+DDI-MedLine.d12.s7|32-44|dexamethasone|drug
+DDI-MedLine.d12.s7|50-64|retinyl acetate|drug
+DDI-MedLine.d12.s7|86-100|glucocorticoids|group
+DDI-MedLine.d12.s7|106-114|retinoids|group
+DDI-MedLine.d12.s7|223-229|insulin|drug
+DDI-MedLine.d12.s7|235-237|EGF|drug_n
+DDI-MedLine.d54.s8|0-12|Physostigmine|drug
+DDI-MedLine.d54.s8|62-68|alcohol|drug
+DDI-MedLine.d54.s8|123-129|alcohol|drug
+DDI-MedLine.d12.s0|0-12|Dexamethasone|drug
+DDI-MedLine.d12.s0|18-32|retinyl acetate|drug
+DDI-MedLine.d12.s0|66-68|EGF|drug_n
+DDI-MedLine.d12.s0|74-80|insulin|drug
+DDI-MedLine.d54.s9|18-25|atropine|drug
+DDI-MedLine.d12.s1|101-111|transferrin|drug_n
+DDI-MedLine.d12.s1|131-133|EGF|drug_n
+DDI-MedLine.d12.s1|151-157|insulin|drug
+DDI-MedLine.d54.s6|0-12|Physostigmine|drug
+DDI-MedLine.d12.s2|17-29|dexamethasone|drug
+DDI-MedLine.d12.s2|35-49|retinyl acetate|drug
+DDI-MedLine.d12.s2|125-135|transferrin|drug_n
+DDI-MedLine.d12.s2|180-182|EGF|drug_n
+DDI-MedLine.d12.s2|188-194|insulin|drug
+DDI-MedLine.d54.s7|13-20|atropine|drug
+DDI-MedLine.d12.s3|0-12|Dexamethasone|drug
+DDI-MedLine.d12.s3|30-44|retinyl acetate|drug
+DDI-MedLine.d12.s3|105-107|EGF|drug_n
+DDI-MedLine.d116.s4|14-21|rifampin|drug
+DDI-MedLine.d116.s4|37-44|warfarin|drug
+DDI-MedLine.d116.s3|34-41|rifampin|drug
+DDI-MedLine.d116.s3|47-54|warfarin|drug
+DDI-MedLine.d116.s3|119-126|warfarin|drug
+DDI-MedLine.d116.s2|0-7|Rifampin|drug
+DDI-MedLine.d116.s2|43-50|warfarin|drug
+DDI-MedLine.d116.s1|29-36|warfarin|drug
+DDI-MedLine.d116.s1|42-49|rifampin|drug
+DDI-MedLine.d116.s6|14-21|rifampin|drug
+DDI-MedLine.d116.s6|30-37|warfarin|drug
+DDI-MedLine.d116.s6|125-132|rifampin|drug
+DDI-MedLine.d116.s6|178-185|rifampin|drug
+DDI-MedLine.d116.s5|46-53|rifampin|drug
+DDI-MedLine.d116.s5|113-120|warfarin|drug
+DDI-MedLine.d116.s0|0-7|Rifampin|drug
+DDI-MedLine.d116.s0|13-20|warfarin|drug
+DDI-MedLine.d54.s12|48-54|ethanol|drug
+DDI-MedLine.d54.s10|0-7|Atropine|drug
+DDI-MedLine.d54.s10|46-52|alcohol|drug
+DDI-MedLine.d8.s0|21-28|KRM-1648|drug_n
+DDI-MedLine.d8.s0|68-76|ofloxacin|drug
+DDI-MedLine.d8.s1|30-49|benzoxazinorifamycin|drug_n
+DDI-MedLine.d8.s1|52-59|KRM-1648|drug_n
+DDI-MedLine.d8.s1|98-106|ofloxacin|drug
+DDI-MedLine.d8.s4|86-93|KRM-1648|drug_n
+DDI-MedLine.d8.s5|74-83|rifampicin|drug
+DDI-MedLine.d8.s5|89-97|rifabutin|drug
+DDI-MedLine.d8.s6|19-27|ofloxacin|drug
+DDI-MedLine.d8.s6|30-37|KRM-1648|drug_n
+DDI-MedLine.d8.s6|143-152|rifampicin|drug
+DDI-MedLine.d8.s6|158-166|rifabutin|drug
+DDI-MedLine.d8.s6|173-181|ofloxacin|drug
+DDI-MedLine.d8.s7|27-34|KRM-1648|drug_n
+DDI-MedLine.d48.s10|96-102|toxin A|drug_n
+DDI-MedLine.d48.s11|22-28|toxin A|drug_n
+DDI-MedLine.d48.s11|48-51|zinc|drug
+DDI-MedLine.d48.s11|150-156|toxin A|drug_n
+DDI-MedLine.d48.s11|164-167|zinc|drug
+DDI-MedLine.d66.s0|42-69|synthetic steroidal estrogen|group
+DDI-MedLine.d66.s0|42-60;75-85|synthetic steroidal progestogen|group
+DDI-MedLine.d66.s2|149-162|levonorgestrel|drug
+DDI-MedLine.d66.s2|219-235|ethynyl estradiol|drug
+DDI-MedLine.d66.s1|53-69|ethynyl estradiol|drug
+DDI-MedLine.d66.s1|75-88|levonorgestrel|drug
+DDI-MedLine.d44.s0|11-20|etofibrate|drug
+DDI-MedLine.d44.s2|30-39|etofibrate|drug
+DDI-MedLine.d44.s2|401-410|etofibrate|drug
+DDI-MedLine.d44.s5|6-15|etofibrate|drug
+DDI-MedLine.d44.s6|0-9|Etofibrate|drug
+DDI-MedLine.d44.s6|44-50|heparin|drug
+DDI-MedLine.d128.s4|47-52|dmPGE2|drug_n
+DDI-MedLine.d128.s5|17-22|dmPGE2|drug_n
+DDI-MedLine.d128.s2|0-5|dmPGE2|drug_n
+DDI-MedLine.d128.s8|105-110|dmPGE2|drug_n
+DDI-MedLine.d128.s9|24-29|dmPGE2|drug_n
+DDI-MedLine.d128.s6|0-9|Castor oil|drug
+DDI-MedLine.d128.s0|12-41|16,16-dimethylprostaglandin E2|drug_n
+DDI-MedLine.d128.s1|4-33|16,16-dimethylprostaglandin E2|drug_n
+DDI-MedLine.d128.s1|36-41|dmPGE2|drug_n
+DDI-MedLine.d78.s4|4-19|fluoroquinolones|group
+DDI-MedLine.d78.s0|4-19|fluoroquinolones|group
+DDI-MedLine.d78.s1|4-19|fluoroquinolones|group
+DDI-MedLine.d78.s1|52-62|antibiotics|group
+DDI-MedLine.d78.s2|24-34|norfloxacin|drug
+DDI-MedLine.d78.s2|37-49|ciprofloxacin|drug
+DDI-MedLine.d78.s2|52-60|ofloxacin|drug
+DDI-MedLine.d78.s2|63-70|enoxacin|drug
+DDI-MedLine.d78.s2|77-88|lomefloxacin|drug
+DDI-MedLine.d78.s3|36-46|antibiotics|group
+DDI-MedLine.d78.s3|180-190|antibiotics|drug
+DDI-MedLine.d22.s1|0-7|Spermine|drug
+DDI-MedLine.d22.s2|13-22|spermidine|drug_n
+DDI-MedLine.d22.s2|35-44|putrescine|drug_n
+DDI-MedLine.d22.s0|0-7|Spermine|drug
+DDI-MedLine.d22.s3|0-7|Spermine|drug
+DDI-MedLine.d22.s3|34-43|spermidine|drug_n
+DDI-MedLine.d44.s7|71-80|etofibrate|drug
+DDI-MedLine.d44.s8|30-39|etofibrate|drug
+DDI-MedLine.d27.s1|17-26|picrotoxin|drug_n
+DDI-MedLine.d27.s0|117-126|picrotoxin|drug_n
+DDI-MedLine.d27.s0|174-181|diazepam|drug
+DDI-MedLine.d27.s0|184-193|phenazepam|drug_n
+DDI-MedLine.d27.s0|196-203|phenibut|drug_n
+DDI-MedLine.d27.s0|209-214|amizyl|drug_n
+DDI-MedLine.d27.s0|242-253|phentolamine|drug
+DDI-MedLine.d27.s2|34-43|picrotoxin|drug_n
+DDI-MedLine.d62.s6|183-186|METH|drug
+DDI-MedLine.d62.s5|0-3|METH|drug
+DDI-MedLine.d62.s4|46-49|METH|drug
+DDI-MedLine.d62.s4|234-242|SCH-23390|drug_n
+DDI-MedLine.d62.s4|258-277|atypical neuroleptic|group
+DDI-MedLine.d62.s4|279-287|clozapine|drug
+DDI-MedLine.d62.s3|31-34|METH|drug
+DDI-MedLine.d103.s7|107-115|magnesium|drug
+DDI-MedLine.d103.s8|79-87|magnesium|drug
+DDI-MedLine.d103.s8|155-163|magnesium|drug
+DDI-MedLine.d103.s9|22-30|magnesium|drug
+DDI-MedLine.d103.s3|94-102|magnesium|drug
+DDI-MedLine.d103.s3|140-148|magnesium|drug
+DDI-MedLine.d103.s3|184-192|magnesium|drug
+DDI-MedLine.d103.s3|260-268|magnesium|drug
+DDI-MedLine.d103.s3|336-344|magnesium|drug
+DDI-MedLine.d103.s4|19-27|magnesium|drug
+DDI-MedLine.d103.s4|77-85|magnesium|drug
+DDI-MedLine.d103.s5|19-27|magnesium|drug
+DDI-MedLine.d103.s5|110-123|magnesium salt|drug
+DDI-MedLine.d103.s6|37-45|magnesium|drug
+DDI-MedLine.d103.s6|86-112|magnesium sparing diuretics|group
+DDI-MedLine.d103.s6|140-149|vitamin B6|drug
+DDI-MedLine.d103.s6|175-183|vitamin D|group
+DDI-MedLine.d103.s6|192-199|selenium|drug
+DDI-MedLine.d103.s0|0-8|Magnesium|drug
+DDI-MedLine.d103.s1|36-44|magnesium|drug
+DDI-MedLine.d103.s1|75-83|magnesium|drug
+DDI-MedLine.d103.s1|144-152|magnesium|drug
+DDI-MedLine.d103.s1|193-201|magnesium|drug
+DDI-MedLine.d103.s1|230-238|magnesium|drug
+DDI-MedLine.d103.s1|302-310|magnesium|drug
+DDI-MedLine.d103.s2|22-30|magnesium|drug
+DDI-MedLine.d103.s2|98-106|magnesium|drug
+DDI-MedLine.d39.s1|36-44|estradiol|drug
+DDI-MedLine.d39.s1|141-149|endotoxin|drug_n
+DDI-MedLine.d39.s1|216-224|endotoxin|drug_n
+DDI-MedLine.d39.s2|13-21|estradiol|drug
+DDI-MedLine.d39.s2|56-64|endotoxin|drug_n
+DDI-MedLine.d39.s2|129-137|endotoxin|drug_n
+DDI-MedLine.d39.s3|37-45|estradiol|drug
+DDI-MedLine.d39.s3|49-57|endotoxin|drug_n
+DDI-MedLine.d39.s3|109-117|endotoxin|drug_n
+DDI-MedLine.d39.s4|37-45|estradiol|drug
+DDI-MedLine.d39.s4|49-57|endotoxin|drug_n
+DDI-MedLine.d39.s4|117-125|endotoxin|drug_n
+DDI-MedLine.d62.s1|141-155|methamphetamine|drug
+DDI-MedLine.d62.s1|158-161|METH|drug
+DDI-MedLine.d62.s0|54-68|methamphetamine|drug
+DDI-MedLine.d39.s0|10-18|estradiol|drug
+DDI-MedLine.d39.s0|23-31|endotoxin|drug_n
+DDI-MedLine.d39.s6|10-18|estradiol|drug
+DDI-MedLine.d39.s6|65-73|endotoxin|drug_n
+DDI-MedLine.d39.s7|71-79|endotoxin|drug_n
+DDI-MedLine.d39.s8|61-68|estrogen|group
+DDI-MedLine.d39.s8|108-116|estrogens|group
+DDI-MedLine.d137.s0|0-6|Glucose|drug
+DDI-MedLine.d137.s0|12-18|insulin|drug
+DDI-MedLine.d137.s1|40-46|insulin|drug
+DDI-MedLine.d137.s1|52-58|glucose|drug
+DDI-MedLine.d137.s2|87-93|insulin|drug
+DDI-MedLine.d137.s4|111-117|insulin|drug
+DDI-MedLine.d137.s5|81-92|somatostatin|drug
+DDI-MedLine.d137.s7|9-15|Insulin|drug
+DDI-MedLine.d96.s3|79-85|jacalin|drug_n
+DDI-MedLine.d96.s1|105-111|jacalin|drug_n
+DDI-MedLine.d96.s0|0-6|Jacalin|drug_n
+DDI-MedLine.d15.s1|34-45|neuroleptics|group
+DDI-MedLine.d15.s1|72-79|cerulein|drug_n
+DDI-MedLine.d15.s1|164-178|3H-spiroperidol|drug_n
+DDI-MedLine.d40.s1|4-18|antifungal drug|group
+DDI-MedLine.d40.s1|21-38|miconazole nitrate|drug
+DDI-MedLine.d15.s2|49-63|3H-spiroperidol|drug_n
+DDI-MedLine.d15.s2|101-111|apomorphine|drug
+DDI-MedLine.d15.s2|190-201|neuroleptics|group
+DDI-MedLine.d15.s0|16-23|cerulein|drug_n
+DDI-MedLine.d15.s0|75-89|3H-spiroperidol|drug_n
+DDI-MedLine.d15.s0|137-148|neuroleptics|group
+DDI-MedLine.d15.s0|269-279|haloperidol|drug
+DDI-MedLine.d15.s0|298-309|pyreneperone|drug_n
+DDI-MedLine.d15.s0|368-382|3H-spiroperidol|drug_n
+DDI-MedLine.d15.s0|419-429|apomorphine|drug
+DDI-MedLine.d15.s0|466-480|3H-spiroperidol|drug_n
+DDI-MedLine.d15.s0|527-537|apomorphine|drug
+DDI-MedLine.d40.s0|38-47|miconazole|drug
+DDI-MedLine.d40.s0|60-69|miconazole|drug
+DDI-MedLine.d74.s6|0-7|Arginine|drug
+DDI-MedLine.d74.s6|28-34|glucose|drug
+DDI-MedLine.d74.s6|39-50|theophylline|drug
+DDI-MedLine.d137.s9|24-30|glucose|drug
+DDI-MedLine.d137.s9|36-42|insulin|drug
+DDI-MedLine.d137.s9|63-74|somatostatin|drug
+DDI-MedLine.d74.s4|0-6|Glucose|drug
+DDI-MedLine.d74.s4|38-49|theophylline|drug
+DDI-MedLine.d74.s5|0-7|Arginine|drug
+DDI-MedLine.d74.s5|29-35|glucose|drug
+DDI-MedLine.d74.s5|41-52|theophylline|drug
+DDI-MedLine.d74.s8|12-19|arginine|drug
+DDI-MedLine.d15.s3|84-95|neuroleptics|group
+DDI-MedLine.d74.s9|110-117|arginine|drug
+DDI-MedLine.d115.s2|244-259|cyclophosphamide|drug
+DDI-MedLine.d115.s2|262-272|doxorubicin|drug
+DDI-MedLine.d115.s2|275-285|vincristine|drug
+DDI-MedLine.d115.s2|292-301|prednisone|drug
+DDI-MedLine.d115.s2|440-455|cyclophosphamide|drug
+DDI-MedLine.d115.s2|458-468|doxorubicin|drug
+DDI-MedLine.d115.s2|471-480|teniposide|drug
+DDI-MedLine.d115.s2|487-496|prednisone|drug
+DDI-MedLine.d115.s2|503-513|vincristine|drug
+DDI-MedLine.d115.s2|520-528|bleomycin|drug
+DDI-MedLine.d115.s2|549-562|antiretroviral|group
+DDI-MedLine.d115.s1|73-100|highly active antiretroviral|group
+DDI-MedLine.d115.s0|12-27|cyclophosphamide|drug
+DDI-MedLine.d115.s0|30-40|doxorubicin|drug
+DDI-MedLine.d115.s0|43-53|vincristine|drug
+DDI-MedLine.d115.s0|60-69|prednisone|drug
+DDI-MedLine.d115.s0|89-116|highly active antiretroviral|group
+DDI-MedLine.d74.s2|216-223|arginine|drug
+DDI-MedLine.d74.s2|233-239|glucose|drug
+DDI-MedLine.d74.s2|275-286|theophylline|drug
+DDI-MedLine.d74.s3|0-11|Theophylline|drug
+DDI-MedLine.d74.s0|13-20|arginine|drug
+DDI-MedLine.d115.s5|0-13|Antiretroviral|group
+DDI-MedLine.d115.s5|41-72|reverse transcriptase inhibitors|group
+DDI-MedLine.d115.s5|82-99|protease inhibitor|group
+DDI-MedLine.d96.s7|0-6|Jacalin|drug_n
+DDI-MedLine.d96.s5|73-79|jacalin|drug_n
+DDI-MedLine.d0.s0|27-35|phenytoin|drug
+DDI-MedLine.d0.s0|92-101|quetiapine|drug
+DDI-MedLine.d52.s1|52-61|vancomycin|drug
+DDI-MedLine.d52.s0|15-24|vancomycin|drug
+DDI-MedLine.d98.s0|33-39|cocaine|drug
+DDI-MedLine.d98.s0|107-119|pentobarbital|drug
+DDI-MedLine.d0.s1|0-18|Quetiapine fumarate|drug
+DDI-MedLine.d0.s1|22-29|Seroquel|brand
+DDI-MedLine.d0.s1|55-76|atypical antipsychotic|group
+DDI-MedLine.d98.s1|82-94|pentobarbital|drug
+DDI-MedLine.d98.s1|225-231|cocaine|drug
+DDI-MedLine.d52.s2|99-108|vancomycin|drug
+DDI-MedLine.d98.s2|75-81|cocaine|drug
+DDI-MedLine.d98.s3|9-15|cocaine|drug
+DDI-MedLine.d98.s4|15-21|cocaine|drug
+DDI-MedLine.d137.s10|28-34|Glucose|drug
+DDI-MedLine.d137.s10|40-46|insulin|drug
+DDI-MedLine.d0.s4|71-79|phenytoin|drug
+DDI-MedLine.d0.s4|134-143|quetiapine|drug
+DDI-MedLine.d0.s3|92-101|quetiapine|drug
+DDI-MedLine.d0.s5|49-58|quetiapine|drug
+DDI-MedLine.d113.s0|30-38|temazepam|drug
+DDI-MedLine.d113.s0|65-71|ethanol|drug
+DDI-MedLine.d113.s1|4-18|benzodiazepines|group
+DDI-MedLine.d113.s1|36-45|anxiolytic|group
+DDI-MedLine.d113.s1|51-64|hypnotic drugs|group
+DDI-MedLine.d113.s5|111-117|alcohol|drug
+DDI-MedLine.d113.s5|123-150|3-hydroxy-1,4-benzodiazepine|group
+DDI-MedLine.d113.s2|29-35|ethanol|drug
+DDI-MedLine.d113.s3|105-113|temazepam|drug
+DDI-MedLine.d113.s3|118-131|benzodiazepine|group
+DDI-MedLine.d113.s3|138-144|ethanol|drug
+DDI-MedLine.d98.s6|57-63|cocaine|drug
+DDI-MedLine.d98.s7|110-116|cocaine|drug
+DDI-MedLine.d98.s8|102-108|cocaine|drug
+DDI-MedLine.d113.s6|19-25|ethanol|drug
+DDI-MedLine.d98.s9|121-127|cocaine|drug
+DDI-MedLine.d25.s0|55-65|simvastatin|drug
+DDI-MedLine.d25.s0|71-84|clarithromycin|drug
+DDI-MedLine.d25.s1|80-93|clarithromycin|drug
+DDI-MedLine.d25.s1|99-109|simvastatin|drug
+DDI-MedLine.d34.s11|27-32|cobalt|drug
+DDI-MedLine.d34.s11|67-70|iron|drug
+DDI-MedLine.d34.s11|108-113|cobalt|drug
+DDI-MedLine.d34.s11|118-121|iron|drug
+DDI-MedLine.d34.s12|15-18|iron|drug
+DDI-MedLine.d34.s12|189-190|Fe|drug
+DDI-MedLine.d25.s9|12-25|Clarithromycin|drug
+DDI-MedLine.d25.s9|93-103|simvastatin|drug
+DDI-MedLine.d25.s3|65-78|clarithromycin|drug
+DDI-MedLine.d25.s4|31-41|simvastatin|drug
+DDI-MedLine.d25.s5|56-73|sodium bicarbonate|drug
+DDI-MedLine.d86.s0|57-65|diltiazem|drug
+DDI-MedLine.d86.s0|71-79|sirolimus|drug
+DDI-MedLine.d86.s2|82-104|immunosuppressive drugs|group
+DDI-MedLine.d86.s2|154-172|calcium antagonists|group
+DDI-MedLine.d86.s1|60-68|sirolimus|drug
+DDI-MedLine.d86.s1|73-99|macrolide immunosuppressant|group
+DDI-MedLine.d86.s1|132-154|calcium channel blocker|group
+DDI-MedLine.d86.s1|156-164|diltiazem|drug
+DDI-MedLine.d86.s3|176-184|sirolimus|drug
+DDI-MedLine.d86.s3|216-224|diltiazem|drug
+DDI-MedLine.d30.s0|38-57|N-allylnormetazocine|drug_n
+DDI-MedLine.d30.s1|47-66|N-allylnormetazocine|drug_n
+DDI-MedLine.d30.s1|69-72|NANM|drug_n
+DDI-MedLine.d30.s1|103-115|phencyclidine|drug_n
+DDI-MedLine.d30.s1|118-120|PCP|drug_n
+DDI-MedLine.d30.s2|22-29|(+)-NANM|drug_n
+DDI-MedLine.d30.s2|34-36|PCP|drug_n
+DDI-MedLine.d30.s4|31-38|(-)-NANM|drug_n
+DDI-MedLine.d30.s5|15-22|(-)-NANM|drug_n
+DDI-MedLine.d30.s6|12-19|(-)-NANM|drug_n
+DDI-MedLine.d30.s6|57-64|(+)-NANM|drug_n
+DDI-MedLine.d30.s6|111-118|(-)-NANM|drug_n
+DDI-MedLine.d30.s6|146-153|(+)-NANM|drug_n
+DDI-MedLine.d30.s7|17-24|(-)-NANM|drug_n
+DDI-MedLine.d30.s7|35-42|(+)-NANM|drug_n
+DDI-MedLine.d30.s7|88-95|morphine|drug
+DDI-MedLine.d30.s8|27-34|(-)-NANM|drug_n
+DDI-MedLine.d30.s8|45-52|(+)-NANM|drug_n
+DDI-MedLine.d30.s8|57-59|PCP|drug_n
+DDI-MedLine.d30.s8|82-89|naloxone|drug
+DDI-MedLine.d30.s9|13-20|naloxone|drug
+DDI-MedLine.d30.s9|60-67|(-)-NANM|drug_n
+DDI-MedLine.d30.s9|150-157|morphine|drug
+DDI-MedLine.d86.s6|54-62|sirolimus|drug
+DDI-MedLine.d86.s6|111-119|sirolimus|drug
+DDI-MedLine.d86.s6|136-144|diltiazem|drug
+DDI-MedLine.d125.s8|62-77|4-methylpyrazole|drug
+DDI-MedLine.d125.s8|108-130|1,3-difluoro-2-propanol|drug_n
+DDI-MedLine.d125.s8|224-246|1,3-difluoro-2-propanol|drug_n
+DDI-MedLine.d125.s8|251-269|1,3-difluoroacetone|drug_n
+DDI-MedLine.d86.s5|66-74|sirolimus|drug
+DDI-MedLine.d86.s5|253-261|diltiazem|drug
+DDI-MedLine.d86.s5|323-331|sirolimus|drug
+DDI-MedLine.d125.s7|27-42|4-methylpyrazole|drug
+DDI-MedLine.d125.s7|96-114|1,3-difluoroacetone|drug_n
+DDI-MedLine.d125.s7|174-198|(-)-erythro-fluorocitrate|drug_n
+DDI-MedLine.d86.s8|25-33|diltiazem|drug
+DDI-MedLine.d86.s8|68-76|sirolimus|drug
+DDI-MedLine.d86.s8|145-153|sirolimus|drug
+DDI-MedLine.d86.s7|87-95|diltiazem|drug
+DDI-MedLine.d86.s7|98-115|desacetyldiltiazem|drug_n
+DDI-MedLine.d86.s7|122-139|desmethyldiltiazem|drug_n
+DDI-MedLine.d86.s7|182-190|sirolimus|drug
+DDI-MedLine.d86.s7|231-239|diltiazem|drug
+DDI-MedLine.d90.s10|27-37|edrophonium|drug
+DDI-MedLine.d86.s9|72-80|sirolimus|drug
+DDI-MedLine.d86.s9|82-90|diltiazem|drug
+DDI-MedLine.d86.s9|117-125|sirolimus|drug
+DDI-MedLine.d90.s11|32-41|gentamycin|drug
+DDI-MedLine.d90.s11|85-94|atracurium|drug
+DDI-MedLine.d125.s0|42-48|gliftor|drug_n
+DDI-MedLine.d125.s0|69-87|1,3-difluoroacetone|drug_n
+DDI-MedLine.d125.s0|92-116|(-)-erythro-fluorocitrate|drug_n
+DDI-MedLine.d125.s2|91-109|1,3-difluoroacetone|drug_n
+DDI-MedLine.d125.s2|114-138|(-)-erythro-fluorocitrate|drug_n
+DDI-MedLine.d125.s1|30-48|1,3-difluoroacetone|drug_n
+DDI-MedLine.d125.s1|111-117|Gliftor|drug_n
+DDI-MedLine.d125.s1|120-142|1,3-difluoro-2-propanol|drug_n
+DDI-MedLine.d125.s4|19-37|1,3-difluoroacetone|drug_n
+DDI-MedLine.d125.s4|88-112|(-)-erythro-fluorocitrate|drug_n
+DDI-MedLine.d125.s4|201-223|1,3-difluoro-2-propanol|drug_n
+DDI-MedLine.d125.s3|18-36|1,3-difluoroacetone|drug_n
+DDI-MedLine.d125.s3|94-118|(-)-erythro-fluorocitrate|drug_n
+DDI-MedLine.d125.s6|24-39|4-methylpyrazole|drug
+DDI-MedLine.d125.s6|107-129|1,3-difluoro-2-propanol|drug_n
+DDI-MedLine.d125.s6|162-186|(-)-erythro-fluorocitrate|drug_n
+DDI-MedLine.d125.s6|257-279|1,3-difluoro-2-propanol|drug_n
+DDI-MedLine.d125.s5|38-60|1,3-difluoro-2-propanol|drug_n
+DDI-MedLine.d125.s5|65-83|1,3-difluoroacetone|drug_n
+DDI-MedLine.d125.s5|181-205|(-)-erythro-fluorocitrate|drug_n
+DDI-MedLine.d125.s5|212-234|1,3-difluoro-2-propanol|drug_n
+DDI-MedLine.d64.s0|53-62|paroxetine|drug
+DDI-MedLine.d4.s2|34-43|sandimmune|brand
+DDI-MedLine.d4.s0|15-24|sandimmune|brand
+DDI-MedLine.d4.s0|119-134|immunodepressant|group
+DDI-MedLine.d4.s0|146-155|sandimmune|brand
+DDI-MedLine.d94.s0|26-39|norepinephrine|drug
+DDI-MedLine.d135.s5|18-26|clozapine|drug
+DDI-MedLine.d135.s5|70-72|PCP|drug_n
+DDI-MedLine.d135.s4|0-2|PCP|drug_n
+DDI-MedLine.d135.s4|87-89|PCP|drug_n
+DDI-MedLine.d135.s3|26-47|atypical antipsychotic|group
+DDI-MedLine.d135.s3|49-57|clozapine|drug
+DDI-MedLine.d135.s3|108-110|PCP|drug_n
+DDI-MedLine.d135.s2|133-135|PCP|drug_n
+DDI-MedLine.d135.s1|0-12|Phencyclidine|drug_n
+DDI-MedLine.d135.s1|15-17|PCP|drug_n
+DDI-MedLine.d135.s0|16-24|clozapine|drug
+DDI-MedLine.d135.s0|30-42|phencyclidine|drug_n
+DDI-MedLine.d59.s0|77-85|carbachol|drug
+DDI-MedLine.d135.s8|61-74|antipsychotics|group
+DDI-MedLine.d135.s8|183-185|PCP|drug_n
+DDI-MedLine.d59.s1|93-103|aminopyrine|drug
+DDI-MedLine.d135.s7|55-57|PCP|drug_n
+DDI-MedLine.d59.s2|31-39|carbachol|drug
+DDI-MedLine.d135.s6|45-53|clozapine|drug
+DDI-MedLine.d135.s6|111-113|PCP|drug_n
+DDI-MedLine.d59.s3|38-46|carbachol|drug
+DDI-MedLine.d59.s4|0-13|Cytochalasin D|drug_n
+DDI-MedLine.d59.s4|75-83|carbachol|drug
+DDI-MedLine.d59.s5|0-13|Cytochalasin D|drug_n
+DDI-MedLine.d59.s5|29-37|carbachol|drug
+DDI-MedLine.d59.s6|29-42|cytochalasin D|drug_n
+DDI-MedLine.d123.s5|35-42|galangin|drug
+DDI-MedLine.d123.s8|66-75|vancomycin|drug
+DDI-MedLine.d94.s9|21-34|norepinephrine|drug
+DDI-MedLine.d94.s7|12-25|norepinephrine|drug
+DDI-MedLine.d94.s5|25-38|norepinephrine|drug
+DDI-MedLine.d123.s2|35-42|galangin|drug
+DDI-MedLine.d123.s2|73-82|vancomycin|drug
+DDI-MedLine.d94.s2|55-68|norepinephrine|drug
+DDI-MedLine.d123.s4|8-17|vancomycin|drug
+DDI-MedLine.d29.s4|93-103|cloxacillin|drug
+DDI-MedLine.d29.s4|122-131|probenecid|drug
+DDI-MedLine.d29.s2|49-59|penicillins|group
+DDI-MedLine.d29.s2|65-77|cephaloridine|drug
+DDI-MedLine.d29.s2|111-120|probenecid|drug
+DDI-MedLine.d29.s3|21-30|probenecid|drug
+DDI-MedLine.d29.s3|75-85|cloxacillin|drug
+DDI-MedLine.d29.s3|124-134|cloxacillin|drug
+DDI-MedLine.d29.s3|274-283|probenecid|drug
+DDI-MedLine.d29.s0|10-19|probenecid|drug
+DDI-MedLine.d29.s0|79-89|cloxacillin|drug
+DDI-MedLine.d60.s3|7-15|phenytoin|drug
+DDI-MedLine.d60.s3|77-85|phenytoin|drug
+DDI-MedLine.d60.s4|17-22|CYP2C9|drug
+DDI-MedLine.d60.s4|127-132|CYP2C9|drug
+DDI-MedLine.d60.s1|61-71|fluvoxamine|drug
+DDI-MedLine.d60.s2|27-35|phenytoin|drug
+DDI-MedLine.d60.s2|93-103|fluvoxamine|drug
+DDI-MedLine.d60.s2|154-162|phenytoin|drug
+DDI-MedLine.d60.s2|174-178|drugs|drug
+DDI-MedLine.d29.s8|41-50|probenecid|drug
+DDI-MedLine.d29.s8|74-84|cloxacillin|drug
+DDI-MedLine.d60.s5|54-59|CYP2C9|drug
+DDI-MedLine.d60.s5|73-83|fluvoxamine|drug
+DDI-MedLine.d29.s6|27-37|cloxacillin|drug
+DDI-MedLine.d29.s7|134-143|probenecid|drug
+DDI-MedLine.d82.s0|25-32|arsenate|drug_n
+DDI-MedLine.d82.s8|0-9|Vitamin D3|drug
+DDI-MedLine.d82.s8|95-102|arsenate|drug_n
+DDI-MedLine.d82.s7|13-20|arsenate|drug_n
+DDI-MedLine.d82.s7|26-34|phosphate|drug
+DDI-MedLine.d82.s6|26-30|As(V)|drug_n
+DDI-MedLine.d82.s5|39-43|As(V)|drug_n
+DDI-MedLine.d82.s5|137-141|As(V)|drug_n
+DDI-MedLine.d82.s4|10-14|As(V)|drug_n
+DDI-MedLine.d82.s4|90-94|As(V)|drug_n
+DDI-MedLine.d82.s3|63-67|As(V)|drug_n
+DDI-MedLine.d82.s2|40-47|arsenate|drug_n
+DDI-MedLine.d82.s2|123-127|As(V)|drug_n
+DDI-MedLine.d82.s1|29-36|arsenate|drug_n
+DDI-MedLine.d82.s1|38-42|As(V)|drug_n
+DDI-MedLine.d110.s12|0-4|18-MC|drug_n
+DDI-MedLine.d110.s13|0-7|Ibogaine|drug_n
+DDI-MedLine.d110.s13|18-22|18-MC|drug_n
+DDI-MedLine.d110.s14|6-10|18-MC|drug_n
+DDI-MedLine.d110.s14|16-23|ibogaine|drug_n
+DDI-MedLine.d110.s14|100-104|18-MC|drug_n
+DDI-MedLine.d110.s14|137-144|ibogaine|drug_n
+DDI-MedLine.d110.s15|5-9|18-MC|drug_n
+DDI-MedLine.d110.s15|15-22|ibogaine|drug_n
+DDI-MedLine.d110.s15|57-64|ibogaine|drug_n
+DDI-MedLine.d110.s15|67-71|18-MC|drug_n
+DDI-MedLine.d37.s2|0-13|Anticoagulants|group
+DDI-MedLine.d60.s0|34-44|fluvoxamine|drug
+DDI-MedLine.d37.s1|36-49|anticoagulants|group
+DDI-MedLine.d110.s10|25-32|morphine|drug
+DDI-MedLine.d110.s10|56-63|morphine|drug
+DDI-MedLine.d37.s0|0-13|Anticoagulants|group
+DDI-MedLine.d110.s11|0-7|Ibogaine|drug_n
+DDI-MedLine.d110.s16|22-26|18-MC|drug_n
+DDI-MedLine.d110.s16|124-131|ibogaine|drug_n
+DDI-MedLine.d21.s14|41-50|sertraline|drug
+DDI-MedLine.d21.s13|7-16|sertraline|drug
+DDI-MedLine.d21.s13|61-67|glucose|drug
+DDI-MedLine.d21.s15|0-9|Clonazepam|drug
+DDI-MedLine.d21.s10|0-9|Fluoxetine|drug
+DDI-MedLine.d21.s10|15-25|moclobemide|drug
+DDI-MedLine.d21.s10|43-49|glucose|drug
+DDI-MedLine.d21.s12|149-155|glucose|drug
+DDI-MedLine.d21.s12|180-186|glucose|drug
+DDI-MedLine.d21.s11|0-9|Sertraline|drug
+DDI-MedLine.d21.s11|64-70|glucose|drug
+DDI-MedLine.d17.s4|0-8|PGF2alpha|drug
+DDI-MedLine.d17.s4|93-100|oxytocin|drug
+DDI-MedLine.d17.s3|34-47|norepinephrine|drug
+DDI-MedLine.d17.s3|53-60|oxytocin|drug
+DDI-MedLine.d17.s3|67-75|PGF2alpha|drug
+DDI-MedLine.d17.s1|19-39|prostaglandin F2alpha|drug
+DDI-MedLine.d17.s1|55-62|oxytocin|drug
+DDI-MedLine.d17.s0|24-44|prostaglandin F2alpha|drug
+DDI-MedLine.d17.s0|50-57|oxytocin|drug
+DDI-MedLine.d84.s0|26-50|Ganoderma lucidum extract|drug_n
+DDI-MedLine.d84.s0|87-97|antibiotics|group
+DDI-MedLine.d84.s1|26-27|GL|drug_n
+DDI-MedLine.d84.s2|72-73|GL|drug_n
+DDI-MedLine.d17.s9|39-47|PGF2alpha|drug
+DDI-MedLine.d17.s9|91-98|oxytocin|drug
+DDI-MedLine.d17.s7|19-32|norepinephrine|drug
+DDI-MedLine.d17.s6|43-51|PGF2alpha|drug
+DDI-MedLine.d17.s5|52-59|oxytocin|drug
+DDI-MedLine.d49.s2|191-201|clindamycin|drug
+DDI-MedLine.d49.s3|0-9|Gentamicin|drug
+DDI-MedLine.d49.s3|50-60|clindamycin|drug
+DDI-MedLine.d49.s0|15-25|clindamycin|drug
+DDI-MedLine.d49.s0|31-40|gentamicin|drug
+DDI-MedLine.d49.s1|41-51|clindamycin|drug
+DDI-MedLine.d49.s1|57-66|gentamicin|drug
+DDI-MedLine.d49.s6|16-26|clindamycin|drug
+DDI-MedLine.d49.s6|32-41|gentamicin|drug
+DDI-MedLine.d84.s3|60-61|GL|drug_n
+DDI-MedLine.d84.s3|82-92|antibiotics|group
+DDI-MedLine.d84.s3|95-104|ampicillin|drug
+DDI-MedLine.d84.s3|107-115|cefazolin|drug
+DDI-MedLine.d84.s3|118-132|oxytetracycline|drug
+DDI-MedLine.d84.s3|138-152|chloramphenicol|drug
+DDI-MedLine.d49.s7|155-165|clindamycin|drug
+DDI-MedLine.d49.s7|230-239|gentamicin|drug
+DDI-MedLine.d84.s4|34-35|GL|drug_n
+DDI-MedLine.d84.s4|47-57|antibiotics|group
+DDI-MedLine.d84.s5|28-29|GL|drug_n
+DDI-MedLine.d84.s5|49-57|cefazolin|drug
+DDI-MedLine.d49.s5|116-125|gentamicin|drug
+DDI-MedLine.d49.s8|16-26|clindamycin|drug
+DDI-MedLine.d49.s8|32-41|gentamicin|drug
+DDI-MedLine.d49.s9|11-21|clindamycin|drug
+DDI-MedLine.d2.s3|0-7|Neomycin|drug
+DDI-MedLine.d2.s3|71-74|ACTH|group
+DDI-MedLine.d50.s0|0-12|Ascorbic acid|drug
+DDI-MedLine.d2.s1|32-39|neomycin|drug
+DDI-MedLine.d2.s1|84-105|adrenocortical steroid|group
+DDI-MedLine.d2.s1|141-144|ACTH|drug
+DDI-MedLine.d2.s2|20-27|neomycin|drug
+DDI-MedLine.d2.s2|32-35|ACTH|group
+DDI-MedLine.d124.s10|27-35|oxycodone|drug
+DDI-MedLine.d124.s10|41-52|levofloxacin|drug
+DDI-MedLine.d2.s0|11-18|neomycin|drug
+DDI-MedLine.d2.s0|30-33|ACTH|group
+DDI-MedLine.d133.s2|100-102|AOM|drug_n
+DDI-MedLine.d133.s2|159-166|bombesin|drug_n
+DDI-MedLine.d133.s2|260-268|verapamil|drug
+DDI-MedLine.d133.s3|9-16|Bombesin|drug_n
+DDI-MedLine.d133.s0|15-23|verapamil|drug
+DDI-MedLine.d133.s0|28-35|bombesin|drug_n
+DDI-MedLine.d133.s0|109-120|azoxymethane|drug_n
+DDI-MedLine.d133.s1|54-61|bombesin|drug_n
+DDI-MedLine.d133.s1|67-89|verapamil hydrochloride|drug
+DDI-MedLine.d133.s1|92-100|verapamil|drug
+DDI-MedLine.d133.s1|106-128|calcium channel blocker|group
+DDI-MedLine.d133.s1|214-225|azoxymethane|drug_n
+DDI-MedLine.d133.s1|228-230|AOM|drug_n
+DDI-MedLine.d133.s6|41-49|verapamil|drug
+DDI-MedLine.d133.s4|9-17|verapamil|drug
+DDI-MedLine.d133.s4|122-129|bombesin|drug_n
+DDI-MedLine.d133.s5|0-8|Verapamil|drug
+DDI-MedLine.d133.s5|117-124|bombesin|drug_n
+DDI-MedLine.d111.s1|40-46|ethanol|drug
+DDI-MedLine.d111.s0|35-41|ethanol|drug
+DDI-MedLine.d111.s2|0-12|Acetaminophen|drug
+DDI-MedLine.d111.s2|15-23|lidocaine|drug
+DDI-MedLine.d111.s2|26-38|phenobarbital|drug
+DDI-MedLine.d111.s2|41-49|quinidine|drug
+DDI-MedLine.d111.s2|52-63|theophylline|drug
+DDI-MedLine.d111.s2|70-82|valproic acid|drug
+DDI-MedLine.d111.s5|0-12|acetaminophen|drug
+DDI-MedLine.d111.s5|14-25|theophylline|drug
+DDI-MedLine.d111.s5|28-36|lidocaine|drug
+DDI-MedLine.d111.s5|38-46|quinidine|drug
+DDI-MedLine.d111.s5|49-61|phenobarbital|drug
+DDI-MedLine.d111.s5|63-75|acetaminophen|drug
+DDI-MedLine.d111.s5|78-90|phenobarbital|drug
+DDI-MedLine.d111.s5|92-104|valproic acid|drug
+DDI-MedLine.d111.s5|107-115|quinidine|drug
+DDI-MedLine.d111.s5|117-125|lidocaine|drug
+DDI-MedLine.d111.s5|128-139|theophylline|drug
+DDI-MedLine.d111.s5|141-153|acetaminophen|drug
+DDI-MedLine.d111.s5|160-172|valproic acid|drug
+DDI-MedLine.d111.s5|174-186|phenobarbital|drug
+DDI-MedLine.d111.s4|70-82|acetaminophen|drug
+DDI-MedLine.d111.s4|84-96|phenobarbital|drug
+DDI-MedLine.d111.s7|24-36|phenobarbital|drug
+DDI-MedLine.d111.s7|39-47|quinidine|drug
+DDI-MedLine.d111.s7|54-65|theophylline|drug
+DDI-MedLine.d111.s7|127-133|ethanol|drug
+DDI-MedLine.d111.s9|0-12|Acetaminophen|drug
+DDI-MedLine.d111.s9|40-51|theophylline|drug
+DDI-MedLine.d50.s2|92-104|ascorbic acid|drug
+DDI-MedLine.d50.s3|74-86|ascorbic acid|drug
+DDI-MedLine.d50.s4|139-151|ascorbic acid|drug
+DDI-MedLine.d50.s5|24-36|ascorbic acid|drug
