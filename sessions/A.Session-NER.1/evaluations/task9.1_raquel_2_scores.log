@@ -1,0 +1,52 @@
+SCORES FOR THE GROUP: raquel RUN=2
+
+Strict matching (boundaries + type)
+cor	inc	par	mis	spu	total	prec	recall	F1
+329	250	0	1257	315	1836	0.37	0.18	0.24
+
+
+
+Exact matching
+cor	inc	par	mis	spu	total	prec	recall	F1
+485	94	0	1257	315	1836	0.54	0.26	0.36
+
+
+
+Partial matching
+cor	inc	par	mis	spu	total	prec	recall	F1
+485	0	94	1257	315	1836	0.54	0.29	0.38
+
+
+
+type matching
+cor	inc	par	mis	spu	total	prec	recall	F1
+336	243	0	1257	315	1836	0.38	0.18	0.25
+
+
+
+SCORES FOR ENTITY TYPE
+Exact matching on drug
+cor	inc	par	mis	spu	total	prec	recall	F1
+329	7	0	892	36	1228	0.88	0.27	0.41
+
+
+Exact matching on brand
+cor	inc	par	mis	spu	total	prec	recall	F1
+0	0	0	14	4	14	0	0	0
+
+
+Exact matching on group
+cor	inc	par	mis	spu	total	prec	recall	F1
+0	0	0	193	0	193	0	0	0
+
+
+Exact matching on drug_n
+cor	inc	par	mis	spu	total	prec	recall	F1
+0	0	0	401	0	401	0	0	0
+
+
+MACRO-AVERAGE MEASURES:
+P	R	F1
+0.22	0.07	0.1
+________________________________________________________________________
+

@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 python baseline-NER.py \
-    '/home/bscuser/Documentos/second_term/ahlt/data/Train/MedLine/'
+    '../../data/Train/MedLine/' > 'evaluations/task9.1_raquel_2.txt'

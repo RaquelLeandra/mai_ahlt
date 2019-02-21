@@ -8,14 +8,18 @@ from nltk.tokenize import word_tokenize
 
 # -------- classify_token ----------
 # -- check if a token is a drug, and of which type
-suffixes = ['azole', 'amine', 'idine', 'mycin']
+suffixes = ['azole', 'idine', 'farin', 'amine', 'navir', 'goxin', 'mycin', 'ytoin',
+            'thium', 'lline', 'amide', 'epine', 'etine', 'xacin', 'zolam', 'ipine',
+            'cohol', 'orine', ' acid', 'tatin']
+
+prefixes = ['phen', 'warf', 'digo', 'keto', 'lith', 'theo', 'meth', 'cycl', 'cime',
+            'carb']
 
 
 # cat datapath.xml | xmllint -format - | grep entity | awk '{print $(NF -1),$NF}'
 
 def classify_token(txt):
     # Baseline approach
-    # Todo: Add more rules
     if txt.isupper():
         return True, "brand"
     elif txt[-5:] in suffixes:
