@@ -10,6 +10,7 @@ from nltk.tokenize import word_tokenize
 # -- check if a token is a drug, and of which type
 suffixes = ['azole', 'amine', 'idine', 'mycin']
 
+
 # cat datapath.xml | xmllint -format - | grep entity | awk '{print $(NF -1),$NF}'
 
 def classify_token(txt):
