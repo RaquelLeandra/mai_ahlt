@@ -5,6 +5,7 @@ from os import listdir
 
 from xml.dom.minidom import parse
 from nltk.tokenize import word_tokenize
+from nltk import pos_tag
 
 ## -------- classify_token ----------
 ## -- check if a token is a drug, and of which type
@@ -14,8 +15,8 @@ def classify_token(txt):
    ## depending on whether the token is a drug name or not
    return False,""
 
-   
-## --------- tokenize sentence ----------- 
+
+## --------- tokenize sentence -----------
 ## -- Tokenize sentence, returning tokens and span offsets
 
 def tokenize(txt):
@@ -33,7 +34,7 @@ def tokenize(txt):
     return tks
 
 
-## --------- get tag ----------- 
+## --------- get tag -----------
 ##  Find out whether given token is marked as part of an entity in the XML
 
 def get_tag(token, spans) :
@@ -43,11 +44,11 @@ def get_tag(token, spans) :
       elif start>=spanS and end<=spanE : return "I-"+spanT
 
    return "O"
- 
-## --------- Feature extractor ----------- 
+
+## --------- Feature extractor -----------
 ## -- Extract features for each token in given sentence
 
-def extract_features(tokens) :
+def extract_features(tokens, pos_tags) :
 
    # for each token, generate list of features and add it to the result
    result = []
@@ -69,6 +70,7 @@ def extract_features(tokens) :
          tokenFeatures.append("formlowerPrev="+tPrev.lower())
          tokenFeatures.append("suf3Prev="+tPrev[-3:])
          tokenFeatures.append("suf4Prev="+tPrev[-4:])
+         tokenFeatures.append("postagPrev="+pos_tags[k-1][1])
          if (t.isupper()) : tokenFeatures.append("isUpperPrev")
          if (t.istitle()) : tokenFeatures.append("isTitlePrev")
          if (t.isdigit()) : tokenFeatures.append("isDigitPrev")
@@ -81,18 +83,19 @@ def extract_features(tokens) :
          tokenFeatures.append("formlowerNext="+tNext.lower())
          tokenFeatures.append("suf3Next="+tNext[-3:])
          tokenFeatures.append("suf4Next="+tNext[-4:])
+         tokenFeatures.append("postagNext="+pos_tags[k+1][1])
          if (t.isupper()) : tokenFeatures.append("isUpperNext")
          if (t.istitle()) : tokenFeatures.append("isTitleNext")
          if (t.isdigit()) : tokenFeatures.append("isDigitNext")
       else:
          tokenFeatures.append("EoS")
-    
+
       result.append(tokenFeatures)
-    
+
    return result
 
 
-## --------- MAIN PROGRAM ----------- 
+## --------- MAIN PROGRAM -----------
 ## --
 ## -- Usage:  baseline-NER.py target-dir
 ## --
@@ -105,10 +108,10 @@ datadir = sys.argv[1]
 
 # process each file in directory
 for f in listdir(datadir) :
-   
+
    # parse XML file, obtaining a DOM tree
    tree = parse(datadir+"/"+f)
-   
+
    # process each sentence in the file
    sentences = tree.getElementsByTagName("sentence")
    for s in sentences :
@@ -122,17 +125,18 @@ for f in listdir(datadir) :
          (start,end) = e.attributes["charOffset"].value.split(";")[0].split("-")
          typ =  e.attributes["type"].value
          spans.append((int(start),int(end),typ))
-         
+
 
       # convert the sentence to a list of tokens
       tokens = tokenize(stext)
+      pos_tags = pos_tag([x for (x,_,_) in tokens])
       # extract sentence features
-      features = extract_features(tokens)
+      features = extract_features(tokens, pos_tags)
 
       # print features in format expected by crfsuite trainer
       for i in range (0,len(tokens)) :
          # see if the token is part of an entity
-         tag = get_tag(tokens[i], spans) 
+         tag = get_tag(tokens[i], spans)
          print (sid, tokens[i][0], tokens[i][1], tokens[i][2], tag, "\t".join(features[i]), sep='\t')
 
       # blank line to separate sentences
