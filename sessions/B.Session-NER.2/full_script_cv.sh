@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FINAL_TEST_FILE=task9.1_CRF.txt
+FINAL_TEST_FILE=task9.1_CRF_cv.txt
 
 rm $FINAL_TEST_FILE
 
