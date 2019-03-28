@@ -63,6 +63,10 @@ def extract_features(tokens, pos_tags) :
       if (t.isupper()) : tokenFeatures.append("isUpper")
       if (t.istitle()) : tokenFeatures.append("isTitle")
       if (t.isdigit()) : tokenFeatures.append("isDigit")
+      if '-' in t: tokenFeatures.append("hasDash")
+
+      
+
 
       if k>0 :
          tPrev = tokens[k-1][0]
@@ -71,9 +75,9 @@ def extract_features(tokens, pos_tags) :
          tokenFeatures.append("suf3Prev="+tPrev[-3:])
          tokenFeatures.append("suf4Prev="+tPrev[-4:])
          tokenFeatures.append("postagPrev="+pos_tags[k-1][1])
-         if (t.isupper()) : tokenFeatures.append("isUpperPrev")
-         if (t.istitle()) : tokenFeatures.append("isTitlePrev")
-         if (t.isdigit()) : tokenFeatures.append("isDigitPrev")
+         if (tPrev.isupper()) : tokenFeatures.append("isUpperPrev")
+         if (tPrev.istitle()) : tokenFeatures.append("isTitlePrev")
+         if (tPrev.isdigit()) : tokenFeatures.append("isDigitPrev")
       else :
          tokenFeatures.append("BoS")
 
@@ -84,9 +88,9 @@ def extract_features(tokens, pos_tags) :
          tokenFeatures.append("suf3Next="+tNext[-3:])
          tokenFeatures.append("suf4Next="+tNext[-4:])
          tokenFeatures.append("postagNext="+pos_tags[k+1][1])
-         if (t.isupper()) : tokenFeatures.append("isUpperNext")
-         if (t.istitle()) : tokenFeatures.append("isTitleNext")
-         if (t.isdigit()) : tokenFeatures.append("isDigitNext")
+         if (tNext.isupper()) : tokenFeatures.append("isUpperNext")
+         if (tNext.istitle()) : tokenFeatures.append("isTitleNext")
+         if (tNext.isdigit()) : tokenFeatures.append("isDigitNext")
       else:
          tokenFeatures.append("EoS")
 
