@@ -15,15 +15,20 @@ suffixes = ['azole', 'idine', 'farin', 'amine', 'navir', 'goxin', 'mycin', 'ytoi
 prefixes = ['phen', 'warf', 'digo', 'keto', 'lith', 'theo', 'meth', 'cycl', 'cime',
             'carb']
 
-
+groups_suffixes = ['lis', 'ics', 'sts', 'ers', 'nts', 'ors']
 # cat datapath.xml | xmllint -format - | grep entity | awk '{print $(NF -1),$NF}'
+
 
 def classify_token(txt):
     # Baseline approach
-    if txt.isupper():
-        return True, "brand"
-    elif txt[-5:] in suffixes:
+    if txt[-5:] in suffixes:
         return True, "drug"
+    elif txt[0].isupper() and len(txt) > 3:
+        return True, "brand"
+    elif txt[-3:] in groups_suffixes:
+        return True, "group"
+    elif '-' in txt or txt.isupper():
+        return True, "drug_n"
     else:
         return False, ""
 
@@ -56,6 +61,7 @@ def extract_entities(stext):
 
     # for each token, check whether it is a drug name or not
     result = []
+
     for t in tokens:
         tokenTxt = t[0]
         (is_drug, tk_type) = classify_token(tokenTxt)
@@ -69,6 +75,7 @@ def extract_entities(stext):
                  "text": stext[drug_start:drug_end],
                  "type": drug_type}
             result.append(e)
+
 
     return result
 
