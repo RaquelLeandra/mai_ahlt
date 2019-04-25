@@ -6,10 +6,10 @@ rm $FINAL_TEST_FILE
 
 python3 extract-features.py ../../data/Train/All/ > train_all.features
 
-for i in {0..9}
+for i in {0..5}
 do
     python3 update_feature_files.py $i
-    python3 train-crf.py mymodel.crf < train_cv.features
+    python3 train-crf.py mymodel.crf < train_cv.features > /dev/null
     python3 predict-crf.py mymodel.crf < test_cv.features >>$FINAL_TEST_FILE
 done
 

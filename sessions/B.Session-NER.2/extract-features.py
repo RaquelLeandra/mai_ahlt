@@ -6,6 +6,7 @@ from os import listdir
 from xml.dom.minidom import parse
 from nltk.tokenize import word_tokenize
 from nltk import pos_tag
+import pandas as pd
 
 
 # -------- classify_token ----------
@@ -52,12 +53,13 @@ def get_tag(token, spans):
 # --------- Feature extractor -----------
 # -- Extract features for each token in given sentence
 
-def extract_features(tokens, pos_tags):
+def extract_features(tokens, pos_tags, info_lists):
     # for each token, generate list of features and add it to the result
     result = []
     for k in range(0, len(tokens)):
         tokenFeatures = []
         t = tokens[k][0]
+
 
         tokenFeatures.append("form=" + t)
         tokenFeatures.append("formlower=" + t.lower())
@@ -76,6 +78,10 @@ def extract_features(tokens, pos_tags):
             tokenFeatures.append("isDigit")
         if '-' in t:
             tokenFeatures.append("hasDash")
+        if t.lower() in info_lists['drug_list']:
+            tokenFeatures.append('inDrugList')
+        #if t.lower() in info_lists['common_suffixes']:
+        #    tokenFeatures.append('commonSuffix')
 
         if k > 0:
             tPrev = tokens[k - 1][0]
@@ -84,9 +90,9 @@ def extract_features(tokens, pos_tags):
             tokenFeatures.append("suf3Prev=" + tPrev[-3:])
             tokenFeatures.append("suf4Prev=" + tPrev[-4:])
             tokenFeatures.append("postagPrev=" + pos_tags[k - 1][1])
-            if (tPrev.isupper()): tokenFeatures.append("isUpperPrev")
-            if (tPrev.istitle()): tokenFeatures.append("isTitlePrev")
-            if (tPrev.isdigit()): tokenFeatures.append("isDigitPrev")
+            #if (tPrev.isupper()): tokenFeatures.append("isUpperPrev")
+            #if (tPrev.istitle()): tokenFeatures.append("isTitlePrev")
+            #if (tPrev.isdigit()): tokenFeatures.append("isDigitPrev")
         else:
             tokenFeatures.append("BoS")
 
@@ -97,15 +103,29 @@ def extract_features(tokens, pos_tags):
             tokenFeatures.append("suf3Next=" + tNext[-3:])
             tokenFeatures.append("suf4Next=" + tNext[-4:])
             tokenFeatures.append("postagNext=" + pos_tags[k + 1][1])
-            if (tNext.isupper()): tokenFeatures.append("isUpperNext")
-            if (tNext.istitle()): tokenFeatures.append("isTitleNext")
-            if (tNext.isdigit()): tokenFeatures.append("isDigitNext")
+            #if (tNext.isupper()): tokenFeatures.append("isUpperNext")
+            #if (tNext.istitle()): tokenFeatures.append("isTitleNext")
+            #if (tNext.isdigit()): tokenFeatures.append("isDigitNext")
         else:
             tokenFeatures.append("EoS")
 
         result.append(tokenFeatures)
 
     return result
+
+from collections import Counter
+def get_info_lists():
+    d = {}
+    # list of drug names
+    path = 'drug_FDA_database.csv'
+    df = pd.read_csv(path, sep=';')
+    drug_list = df.DrugName.apply(str.lower).values
+    d['drug_list'] = set(drug_list)
+    # list of common 4-char suffixes
+    suffixes = [x[-4:] for x in drug_list]
+    common_suffixes = [x[0] for x in Counter(suffixes).most_common()[:100]]
+    d['common_suffixes'] = common_suffixes
+    return d
 
 
 # --------- MAIN PROGRAM -----------
@@ -118,6 +138,9 @@ def extract_features(tokens, pos_tags):
 
 # directory with files to process
 datadir = sys.argv[1]
+
+# other work
+info_lists = get_info_lists()
 
 # process each file in directory
 for f in listdir(datadir):
@@ -143,7 +166,7 @@ for f in listdir(datadir):
         tokens = tokenize(stext)
         pos_tags = pos_tag([x for (x, _, _) in tokens])
         # extract sentence features
-        features = extract_features(tokens, pos_tags)
+        features = extract_features(tokens, pos_tags, info_lists)
 
         # print features in format expected by crfsuite trainer
         for i in range(0, len(tokens)):
