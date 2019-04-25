@@ -1,14 +1,14 @@
-SCORES FOR THE GROUP: raquel RUN=0
+SCORES FOR THE GROUP: raquel RUN=5
 Gold Dataset: /DrugBank
 
 Partial Evaluation: only detection of DDI (regadless to the type)
 tp	fp	fn	total	prec	recall	F1
-0	0	884	884	0	0	0
+0	0	0	0	0	0	0
 
 
 Detection and Classification of DDI
 tp	fp	fn	total	prec	recall	F1
-0	0	884	884	0	0	0
+0	0	0	0	0	0	0
 
 
 ________________________________________________________________________
