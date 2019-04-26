@@ -6,7 +6,11 @@ from xml.dom.minidom import parse
 from os import listdir
 import pandas as pd
 
-datadir = '../../data/Train/All'
+#datadir = '../../data/Train/All'
+#save_path = 'train_set.csv'
+datadir = '../../data/Test-NER/All'
+save_path = 'test_set.csv'
+
 
 def tokenize_sentence(sid, stext):
     l = []
@@ -15,7 +19,8 @@ def tokenize_sentence(sid, stext):
     while i < len(stext):
         start = i
         word_ix = word_count
-        while i < len(stext) and stext[i] not in [' ',',',';','.']:
+        # TODO: Include '(' and ')'
+        while i < len(stext) and stext[i] not in [' ',',',';','.','(',')','\n']:
             i += 1
         end = i-1
         if start < end:
@@ -45,6 +50,8 @@ for f in listdir(datadir):
         entities = s.getElementsByTagName("entity")
         for e in entities:
             (start, end) = e.attributes["charOffset"].value.split(";")[0].split("-")
+            start = int(start)
+            end = int(end)
             etype = e.attributes["type"].value
             for w in ts:
                 if end == w[3] and start != w[2]:
@@ -55,4 +62,5 @@ for f in listdir(datadir):
 
 # create dataframe and transform it to csv
 df = pd.DataFrame(data)
-df.to_csv(index=False)
+df.columns = ['sentence_id', 'word_ix', 'offset_start', 'offset_end', 'word', 'tag']
+df.to_csv(path_or_buf=save_path, index=False)
