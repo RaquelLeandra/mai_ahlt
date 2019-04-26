@@ -28,6 +28,11 @@ def get_preprocessed_data(train_csv_path, test_csv_path):
     tags = list(set(df["tag"].values))
     n_words = len(words)
     n_tags = len(tags)
+
+    # max_length = max([len(s) for s in x])
+    # ALTERNATIVE: MAX LENGTH TO REASONABLE VALUE AND CROP IF SENTENCE IS LONGER
+    max_length = 50
+    x = [s[:50] for s in x]
     # 0 is reserved for padding
     word2idx = {w: i + 1 for i, w in enumerate(words)}
     tag2idx = {t: i for i, t in enumerate(tags)}
@@ -35,7 +40,6 @@ def get_preprocessed_data(train_csv_path, test_csv_path):
     from keras.preprocessing.sequence import pad_sequences
     x = [[word2idx[w] for w in s] for s in x]
     # TODO: Probably we don't need such a long max_length just for a few sentences (101)
-    max_length = max([len(s) for s in x])
     x = pad_sequences(maxlen=max_length, sequences=x, padding="post", value=0)
 
     y = [[tag2idx[t] for t in s] for s in y]
@@ -75,6 +79,7 @@ if UPDATE_DATA:
 
 f = open('data.pkl', 'rb')
 d = pickle.load(f)
+f.close()
 x_train = d['x_train']
 y_train = d['y_train']
 x_test = d['x_test']
@@ -141,7 +146,80 @@ print(classification_report(flattened_pred_labels, flattened_test_labels))
 # iterate through sentences of test data set and for each one look at the predictions.
 # when one named entity is found, look at the char offset in the data frame, and
 # construct the line sentence_id|char_offset|text|entity_type
+df_test = pd.read_csv(test_csv_path)
+df_test['sentence_ix'] = pd.factorize(df_test['sentence_id'])[0]
+sentence_lengths = df_test.groupby(df_test['sentence_ix'])['word_ix'].max().values
 
+unpadded_pred_labels = [pred_labels[i][:sentence_lengths[i]] for i in range(len(pred_labels))]
+
+def get_tag(tag):
+    return tag.split('-')[1]
+
+def write_entity_to_file(s_ix, start_word_ix, end_word_ix, current_tag):
+    df_entity = df_test[df_test['sentence_ix'] == s_ix]\
+                       [df_test['word_ix'].isin(range(start_word_ix, end_word_ix+1))]
+    sentence_id = df_entity.iloc[0].sentence_id
+    offset_start = df_entity.iloc[0].offset_start
+    offset_end = df_entity.iloc[-1].offset_end
+    words = ' '.join(df_entity.word.values)
+    tag = current_tag
+    with open('testset_results.txt','a') as f:
+        f.write('{}|{}-{}|{}|{}\n'.format(sentence_id, offset_start,
+                offset_end, words, tag))
+
+# remove test result file
+os.remove('testset_results.txt')
+
+for s_ix in range(len(unpadded_pred_labels)):
+    s = unpadded_pred_labels[s_ix]
+    start_word_ix = None
+    end_word_ix = None
+    current_tag = None
+    for w_ix in range(len(s)):
+        # CASE 1: FOUND ENTITY TAG AND NO CURRENT ENTITY ACTIVE
+        # ACTION: INITIALIZE NEW ENTITY
+        if (start_word_ix is None and s[w_ix] != 'O'):
+            # initialize current entity
+            start_word_ix = w_ix
+            end_word_ix = w_ix
+            current_tag = get_tag(s[w_ix])
+        # CASE 2: THERE IS AN ACTIVE ENTITY BUT CURRENT TAG IS 'O'
+        # ACTION: END ENTITY SEARCH, WRITE IT TO FILE, RESET ENTITY VARIABLES
+        elif (s[w_ix] == 'O' and start_word_ix is not None):
+            #write row
+            write_entity_to_file(s_ix, start_word_ix, end_word_ix, current_tag)
+            #reset variables
+            start_word_ix = None
+            end_word_ix = None
+            current_tag = None
+        # CASE 3: THERE IS AN ACTIVE ENTITY AND NEXT TAG IS A CONTINUATION
+        # ACTION: ENLARGE/UPDATE CURRENT ACTIVE ENTITY
+        elif (current_tag is not None and current_tag == get_tag(s[w_ix]) and s[w_ix][0] == 'I'):
+            # update current entity info
+            end_word_ix = w_ix
+        # CASE 4: THERE IS AN ACTIVE ENTITY BUT NEXT TAG IS NOT A CONTINUATION
+        # ACTION: WRITE CURRENT ACTIVE ENTITY TO FILE, START A NEW ACTIVE ENTITY
+        elif (current_tag is not None):
+           #write past row to file
+           write_entity_to_file(s_ix, start_word_ix, end_word_ix, current_tag)
+           #start new row info
+           start_word_ix = w_ix
+           end_word_ix = w_ix
+           current_tag = get_tag(s[w_ix])
+
+
+
+"""
+for _, row in df_test.iterrows():
+    tag = pred_labels[row['sentence_ix']][row['word_ix']]
+    if tag != 'O':
+        f.write('{}|{}-{}|{}|{}\n'.format(row['sentence_id'], row['offset_start'],
+                row['offset_end'], row['word'], tag.split('-')[1]))
+"""
+
+# print results
+
+os.system('java -jar ../../eval/evaluateNER.jar ../../data/Test-NER/All testset_results.txt')
 
 
 
