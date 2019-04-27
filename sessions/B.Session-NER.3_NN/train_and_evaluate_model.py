@@ -3,6 +3,7 @@
 import pandas as pd
 import numpy as np
 import pickle
+import os
 
 # read csv data set and transform it in order to feed to the network
 # example:
@@ -13,6 +14,7 @@ def get_preprocessed_data(train_csv_path, test_csv_path):
     df_train = pd.read_csv(train_csv_path)
     df_test = pd.read_csv(test_csv_path)
     df = pd.concat([df_train, df_test])
+    df['tag'].values[pd.isnull(df['tag'].values)] = 'O'
 
     x = []
     y = []
@@ -32,9 +34,11 @@ def get_preprocessed_data(train_csv_path, test_csv_path):
     # max_length = max([len(s) for s in x])
     # ALTERNATIVE: MAX LENGTH TO REASONABLE VALUE AND CROP IF SENTENCE IS LONGER
     max_length = 50
-    x = [s[:50] for s in x]
+    x = [s[:max_length] for s in x]
+    y = [s[:max_length] for s in y]
     # 0 is reserved for padding
     word2idx = {w: i + 1 for i, w in enumerate(words)}
+    # NaN issue related with "]" at the end of the word and other unkown issue
     tag2idx = {t: i for i, t in enumerate(tags)}
 
     from keras.preprocessing.sequence import pad_sequences
@@ -69,7 +73,7 @@ def get_preprocessed_data(train_csv_path, test_csv_path):
 
 train_csv_path = 'train_set.csv'
 test_csv_path = 'test_set.csv'
-UPDATE_DATA = False
+UPDATE_DATA = True
 
 if UPDATE_DATA:
     data = get_preprocessed_data(train_csv_path, test_csv_path)
@@ -96,10 +100,10 @@ from keras.layers import LSTM, Embedding, Dense, TimeDistributed, Dropout, Bidir
 from keras_contrib.layers import CRF
 
 input = Input(shape=(max_length,))
-model = Embedding(input_dim=n_words + 1, output_dim=20,
-                  input_length=max_length, mask_zero=True)(input)  # 20-dim embedding
+model = Embedding(input_dim=n_words + 1, output_dim=50,
+                  input_length=max_length, mask_zero=True)(input)  # 50-dim embedding
 model = Bidirectional(LSTM(units=50, return_sequences=True,
-                           recurrent_dropout=0.1))(model)  # variational biLSTM
+                           recurrent_dropout=0.2))(model)  # variational biLSTM
 model = TimeDistributed(Dense(50, activation="relu"))(model)  # a dense layer as suggested by neuralNer
 crf = CRF(n_tags)  # CRF layer
 out = crf(model)  # output
@@ -108,7 +112,7 @@ model = Model(input, out)
 model.compile(optimizer="rmsprop", loss=crf.loss_function, metrics=[crf.accuracy])
 print(model.summary())
 
-history = model.fit(x_train, np.array(y_train), batch_size=32, epochs=10,
+history = model.fit(x_train, np.array(y_train), batch_size=64, epochs=30,
                     validation_split=0.1, verbose=1)
 
 # predict the name entities in the test set
@@ -124,6 +128,9 @@ def pred2label(pred):
         out_i = []
         for p in pred_i:
             p_i = np.argmax(p)
+            if type(idx2tag[p_i]) != str:
+                print(p_i)
+                print(idx2tag)
             out_i.append(idx2tag[p_i])
         out.append(out_i)
     return out
@@ -148,11 +155,15 @@ print(classification_report(flattened_pred_labels, flattened_test_labels))
 # construct the line sentence_id|char_offset|text|entity_type
 df_test = pd.read_csv(test_csv_path)
 df_test['sentence_ix'] = pd.factorize(df_test['sentence_id'])[0]
-sentence_lengths = df_test.groupby(df_test['sentence_ix'])['word_ix'].max().values
+sentence_lengths = df_test.groupby(df_test['sentence_ix'])['word_ix'].max().add(1).values
 
 unpadded_pred_labels = [pred_labels[i][:sentence_lengths[i]] for i in range(len(pred_labels))]
 
 def get_tag(tag):
+    # UNKNOWN BUG: Nan??
+    if type(tag) == float:
+        print('One NaN found!')
+        return 'drug'
     return tag.split('-')[1]
 
 def write_entity_to_file(s_ix, start_word_ix, end_word_ix, current_tag):
@@ -180,6 +191,8 @@ for s_ix in range(len(unpadded_pred_labels)):
         # ACTION: INITIALIZE NEW ENTITY
         if (start_word_ix is None and s[w_ix] != 'O'):
             # initialize current entity
+            print(get_tag(s[w_ix]))
+            print(s_ix)
             start_word_ix = w_ix
             end_word_ix = w_ix
             current_tag = get_tag(s[w_ix])
@@ -207,18 +220,22 @@ for s_ix in range(len(unpadded_pred_labels)):
            end_word_ix = w_ix
            current_tag = get_tag(s[w_ix])
 
+os.system('java -jar ../../eval/evaluateNER.jar ../../data/Test-NER/All testset_results.txt')
 
 
-"""
+
+f = open('testset_results.txt', 'w')
+
 for _, row in df_test.iterrows():
+    if row['word_ix'] >= max_length: continue
     tag = pred_labels[row['sentence_ix']][row['word_ix']]
     if tag != 'O':
         f.write('{}|{}-{}|{}|{}\n'.format(row['sentence_id'], row['offset_start'],
                 row['offset_end'], row['word'], tag.split('-')[1]))
-"""
+
+f.close()
 
 # print results
-
 os.system('java -jar ../../eval/evaluateNER.jar ../../data/Test-NER/All testset_results.txt')
 
 

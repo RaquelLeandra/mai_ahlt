@@ -6,13 +6,13 @@ from xml.dom.minidom import parse
 from os import listdir
 import pandas as pd
 
-#datadir = '../../data/Train/All'
-#save_path = 'train_set.csv'
-datadir = '../../data/Test-NER/All'
-save_path = 'test_set.csv'
+datadir = '../../data/Train/All'
+save_path = 'train_set.csv'
+#datadir = '../../data/Test-NER/All'
+#save_path = 'test_set.csv'
 
 
-def tokenize_sentence(sid, stext):
+def tokenize_sentence(f, sid, stext):
     l = []
     i = 0
     word_count = 0
@@ -26,7 +26,7 @@ def tokenize_sentence(sid, stext):
         if start < end:
             word_count += 1
             # append word info to list
-            l.append([sid, word_ix, start, end, stext[start:end+1], 'O'])
+            l.append([f, sid, word_ix, start, end, stext[start:end+1], 'O'])
         # carry on
         i += 1
 
@@ -46,7 +46,8 @@ for f in listdir(datadir):
         sid = s.attributes["id"].value  # get sentence id
         stext = s.attributes["text"].value  # get sentence text
         # get list of lists (words and their characteristics)
-        ts = tokenize_sentence(sid, stext)
+        ts = tokenize_sentence(f, sid, stext)
+        # add document filename
         entities = s.getElementsByTagName("entity")
         for e in entities:
             (start, end) = e.attributes["charOffset"].value.split(";")[0].split("-")
@@ -54,13 +55,13 @@ for f in listdir(datadir):
             end = int(end)
             etype = e.attributes["type"].value
             for w in ts:
-                if end == w[3] and start != w[2]:
-                    w[5] = 'I-' + etype
-                elif end == w[3] and start == w[2]:
-                    w[5] = 'B-' + etype
+                if end == w[4] and start != w[3]:
+                    w[6] = 'I-' + etype
+                elif end == w[4] and start == w[3]:
+                    w[6] = 'B-' + etype
         data += ts
 
 # create dataframe and transform it to csv
 df = pd.DataFrame(data)
-df.columns = ['sentence_id', 'word_ix', 'offset_start', 'offset_end', 'word', 'tag']
+df.columns = ['filename', 'sentence_id', 'word_ix', 'offset_start', 'offset_end', 'word', 'tag']
 df.to_csv(path_or_buf=save_path, index=False)
