@@ -93,17 +93,25 @@ n_words = d['n_words']
 n_tags = d['n_tags']
 tag2idx = d['tag2idx']
 
+# load embedding_matrix
+f = open('embedding_matrix.pkl','rb')
+embedding_matrix = pickle.load(f)
+embedding_dim = 300
 
 # train the model
 from keras.models import Model, Input
 from keras.layers import LSTM, Embedding, Dense, TimeDistributed, Dropout, Bidirectional
 from keras_contrib.layers import CRF
+from keras.initializers import Constant
 
 input = Input(shape=(max_length,))
-model = Embedding(input_dim=n_words + 1, output_dim=300,
-                  input_length=max_length, mask_zero=True)(input)  # 50-dim embedding
+model = Embedding(n_words, embedding_dim, embeddings_initializer=Constant(embedding_matrix),
+                input_length=max_length, trainable=False)(input)  # 50-dim embedding
 model = Bidirectional(LSTM(units=50, return_sequences=True,
                            recurrent_dropout=0.2))(model)  # variational biLSTM
+model = Bidirectional(LSTM(units=50, return_sequences=True,
+                            recurrent_dropout=0.2))(model)
+model = TimeDistributed(Dense(100, activation="relu"))(model)  # a dense layer as suggested by neuralNer
 model = TimeDistributed(Dense(50, activation="relu"))(model)  # a dense layer as suggested by neuralNer
 crf = CRF(n_tags)  # CRF layer
 out = crf(model)  # output
@@ -112,7 +120,7 @@ model = Model(input, out)
 model.compile(optimizer="adam", loss=crf.loss_function, metrics=[crf.accuracy])
 print(model.summary())
 
-history = model.fit(x_train, np.array(y_train), batch_size=64, epochs=10,
+history = model.fit(x_train, np.array(y_train), batch_size=64, epochs=40,
                     validation_split=0.1, verbose=1)
 
 # predict the name entities in the test set
@@ -128,9 +136,6 @@ def pred2label(pred):
         out_i = []
         for p in pred_i:
             p_i = np.argmax(p)
-            if type(idx2tag[p_i]) != str:
-                print(p_i)
-                print(idx2tag)
             out_i.append(idx2tag[p_i])
         out.append(out_i)
     return out
@@ -191,8 +196,6 @@ for s_ix in range(len(unpadded_pred_labels)):
         # ACTION: INITIALIZE NEW ENTITY
         if (start_word_ix is None and s[w_ix] != 'O'):
             # initialize current entity
-            print(get_tag(s[w_ix]))
-            print(s_ix)
             start_word_ix = w_ix
             end_word_ix = w_ix
             current_tag = get_tag(s[w_ix])
