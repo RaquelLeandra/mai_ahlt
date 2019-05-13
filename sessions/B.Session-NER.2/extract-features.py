@@ -60,7 +60,6 @@ def extract_features(tokens, pos_tags, info_lists):
         tokenFeatures = []
         t = tokens[k][0]
 
-
         tokenFeatures.append("form=" + t)
         tokenFeatures.append("formlower=" + t.lower())
         tokenFeatures.append("suf3=" + t[-3:])
@@ -78,8 +77,15 @@ def extract_features(tokens, pos_tags, info_lists):
             tokenFeatures.append("isDigit")
         if '-' in t:
             tokenFeatures.append("hasDash")
-        if t.lower() in info_lists['drug_list']:
-            tokenFeatures.append('inDrugList')
+        if t.lower() in info_lists['FDA_drug_list']:
+            tokenFeatures.append('inFDADrugList')
+        if t.lower() in info_lists['drugbank_structures_list']:
+            tokenFeatures.append('inDrugBankStructures')
+        if t.lower() in info_lists['drugbank_external_list']:
+            tokenFeatures.append('inDrugBankExternal')
+        if t.lower() in info_lists['drugbank_target_identifiers']:
+            tokenFeatures.append('inDrugBankTargetIdentifiers')
+
         #if t.lower() in info_lists['common_suffixes']:
         #    tokenFeatures.append('commonSuffix')
 
@@ -90,11 +96,14 @@ def extract_features(tokens, pos_tags, info_lists):
             tokenFeatures.append("suf3Prev=" + tPrev[-3:])
             tokenFeatures.append("suf4Prev=" + tPrev[-4:])
             tokenFeatures.append("postagPrev=" + pos_tags[k - 1][1])
+            if tPrev.lower() in info_lists['FDA_drug_list']:
+                tokenFeatures.append('inDrugListPrev')
             #if (tPrev.isupper()): tokenFeatures.append("isUpperPrev")
             #if (tPrev.istitle()): tokenFeatures.append("isTitlePrev")
             #if (tPrev.isdigit()): tokenFeatures.append("isDigitPrev")
         else:
             tokenFeatures.append("BoS")
+
 
         if k < len(tokens) - 1:
             tNext = tokens[k + 1][0]
@@ -103,11 +112,53 @@ def extract_features(tokens, pos_tags, info_lists):
             tokenFeatures.append("suf3Next=" + tNext[-3:])
             tokenFeatures.append("suf4Next=" + tNext[-4:])
             tokenFeatures.append("postagNext=" + pos_tags[k + 1][1])
+            if tNext.lower() in info_lists['FDA_drug_list']:
+                tokenFeatures.append('inDrugListNext')
             #if (tNext.isupper()): tokenFeatures.append("isUpperNext")
             #if (tNext.istitle()): tokenFeatures.append("isTitleNext")
             #if (tNext.isdigit()): tokenFeatures.append("isDigitNext")
         else:
             tokenFeatures.append("EoS")
+
+# extra context
+        if k > 1:
+            tPrev = tokens[k - 2][0]
+            """
+            tokenFeatures.append("formPrev2=" + tPrev)
+            tokenFeatures.append("formlowerPrev2=" + tPrev.lower())
+
+            tokenFeatures.append("suf3Prev2=" + tPrev[-3:])
+            tokenFeatures.append("suf4Prev2=" + tPrev[-4:])
+            """
+            tokenFeatures.append("postagPrev2=" + pos_tags[k - 1][1])
+            if tPrev.lower() in info_lists['FDA_drug_list']:
+                tokenFeatures.append('inDrugListPrev2')
+            #if (tPrev.isupper()): tokenFeatures.append("isUpperPrev")
+            #if (tPrev.istitle()): tokenFeatures.append("isTitlePrev")
+            #if (tPrev.isdigit()): tokenFeatures.append("isDigitPrev")
+        else:
+            tokenFeatures.append("BoS")
+
+        if k < len(tokens) - 2:
+            tNext = tokens[k + 2][0]
+            """
+            tokenFeatures.append("formNext2=" + tNext)
+            tokenFeatures.append("formlowerNext2=" + tNext.lower())
+
+            tokenFeatures.append("suf3Next2=" + tNext[-3:])
+            tokenFeatures.append("suf4Next2=" + tNext[-4:])
+            """
+            tokenFeatures.append("postagNext2=" + pos_tags[k + 1][1])
+            if tNext.lower() in info_lists['FDA_drug_list']:
+                tokenFeatures.append('inDrugListNext')
+            #if (tNext.isupper()): tokenFeatures.append("isUpperNext")
+            #if (tNext.istitle()): tokenFeatures.append("isTitleNext")
+            #if (tNext.isdigit()): tokenFeatures.append("isDigitNext")
+        else:
+            tokenFeatures.append("EoS")
+
+
+
 
         result.append(tokenFeatures)
 
@@ -116,15 +167,23 @@ def extract_features(tokens, pos_tags, info_lists):
 from collections import Counter
 def get_info_lists():
     d = {}
-    # list of drug names
-    path = 'drug_FDA_database.csv'
-    df = pd.read_csv(path, sep=';')
-    drug_list = df.DrugName.apply(str.lower).values
-    d['drug_list'] = set(drug_list)
+    # list of drug names FDA
+    df = pd.read_csv('drug_FDA_database.csv', sep=';')
+    d['FDA_drug_list'] = set(df.DrugName.apply(str.lower).values)
+    # list of drug structures DrugBank
+    df = pd.read_csv('drugbank_structures.csv')
+    d['drugbank_structures_list'] = set(df.Name.apply(str.lower).values)
+    # list of drug external links
+    df = pd.read_csv('drugbank_structures.csv')
+    d['drugbank_external_list'] = set(df.Name.apply(str.lower).values)
+    # list of drug target identifiers
+    df = pd.read_csv('drugbank_target_identifiers.csv')
+    d['drugbank_target_identifiers'] = set(df.Name.apply(str.lower).values)
+
     # list of common 4-char suffixes
-    suffixes = [x[-4:] for x in drug_list]
-    common_suffixes = [x[0] for x in Counter(suffixes).most_common()[:100]]
-    d['common_suffixes'] = common_suffixes
+    #suffixes = [x[-4:] for x in drug_list]
+    #common_suffixes = [x[0] for x in Counter(suffixes).most_common()[:100]]
+    #d['common_suffixes'] = common_suffixes
     return d
 
 

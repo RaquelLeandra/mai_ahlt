@@ -107,11 +107,11 @@ from keras.initializers import Constant
 input = Input(shape=(max_length,))
 model = Embedding(n_words, embedding_dim, embeddings_initializer=Constant(embedding_matrix),
                 input_length=max_length, trainable=False)(input)  # 50-dim embedding
-model = Bidirectional(LSTM(units=50, return_sequences=True,
-                           recurrent_dropout=0.2))(model)  # variational biLSTM
+#model = Bidirectional(LSTM(units=50, return_sequences=True,
+#                           recurrent_dropout=0.2))(model)  # variational biLSTM
 model = Bidirectional(LSTM(units=50, return_sequences=True,
                             recurrent_dropout=0.2))(model)
-model = TimeDistributed(Dense(100, activation="relu"))(model)  # a dense layer as suggested by neuralNer
+#model = TimeDistributed(Dense(100, activation="relu"))(model)  # a dense layer as suggested by neuralNer
 model = TimeDistributed(Dense(50, activation="relu"))(model)  # a dense layer as suggested by neuralNer
 crf = CRF(n_tags)  # CRF layer
 out = crf(model)  # output

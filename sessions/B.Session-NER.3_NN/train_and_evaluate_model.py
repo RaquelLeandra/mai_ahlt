@@ -101,7 +101,7 @@ from keras_contrib.layers import CRF
 
 input = Input(shape=(max_length,))
 model = Embedding(input_dim=n_words + 1, output_dim=300,
-                  input_length=max_length, mask_zero=True)(input)  # 50-dim embedding
+                  input_length=max_length)(input)  # 50-dim embedding
 model = Bidirectional(LSTM(units=50, return_sequences=True,
                            recurrent_dropout=0.2))(model)  # variational biLSTM
 model = TimeDistributed(Dense(50, activation="relu"))(model)  # a dense layer as suggested by neuralNer
@@ -112,7 +112,7 @@ model = Model(input, out)
 model.compile(optimizer="adam", loss=crf.loss_function, metrics=[crf.accuracy])
 print(model.summary())
 
-history = model.fit(x_train, np.array(y_train), batch_size=64, epochs=10,
+history = model.fit(x_train, np.array(y_train), batch_size=64, epochs=30,
                     validation_split=0.1, verbose=1)
 
 # predict the name entities in the test set
