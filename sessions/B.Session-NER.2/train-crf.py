@@ -54,7 +54,7 @@ if __name__ == '__main__':
         print(name, trainer.get(name), trainer.help(name))
 
     # Set the coefficient for L2 regularization to 0.1
-    trainer.set('feature.minfreq', 1)
+    trainer.set('feature.minfreq', 3)
     trainer.set('c2', 0.1)
     #trainer.set('c2', 0.1)
 

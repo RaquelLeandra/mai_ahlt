@@ -77,6 +77,7 @@ def extract_features(tokens, pos_tags, info_lists):
             tokenFeatures.append("isDigit")
         if '-' in t:
             tokenFeatures.append("hasDash")
+
         if t.lower() in info_lists['FDA_drug_list']:
             tokenFeatures.append('inFDADrugList')
         if t.lower() in info_lists['drugbank_structures_list']:
@@ -85,6 +86,7 @@ def extract_features(tokens, pos_tags, info_lists):
             tokenFeatures.append('inDrugBankExternal')
         if t.lower() in info_lists['drugbank_target_identifiers']:
             tokenFeatures.append('inDrugBankTargetIdentifiers')
+
 
         #if t.lower() in info_lists['common_suffixes']:
         #    tokenFeatures.append('commonSuffix')
@@ -97,10 +99,10 @@ def extract_features(tokens, pos_tags, info_lists):
             tokenFeatures.append("suf4Prev=" + tPrev[-4:])
             tokenFeatures.append("postagPrev=" + pos_tags[k - 1][1])
             if tPrev.lower() in info_lists['FDA_drug_list']:
-                tokenFeatures.append('inDrugListPrev')
-            #if (tPrev.isupper()): tokenFeatures.append("isUpperPrev")
-            #if (tPrev.istitle()): tokenFeatures.append("isTitlePrev")
-            #if (tPrev.isdigit()): tokenFeatures.append("isDigitPrev")
+               tokenFeatures.append('inDrugListPrev')
+            if (tPrev.isupper()): tokenFeatures.append("isUpperPrev")
+            if (tPrev.istitle()): tokenFeatures.append("isTitlePrev")
+            if (tPrev.isdigit()): tokenFeatures.append("isDigitPrev")
         else:
             tokenFeatures.append("BoS")
 
@@ -113,23 +115,21 @@ def extract_features(tokens, pos_tags, info_lists):
             tokenFeatures.append("suf4Next=" + tNext[-4:])
             tokenFeatures.append("postagNext=" + pos_tags[k + 1][1])
             if tNext.lower() in info_lists['FDA_drug_list']:
-                tokenFeatures.append('inDrugListNext')
-            #if (tNext.isupper()): tokenFeatures.append("isUpperNext")
-            #if (tNext.istitle()): tokenFeatures.append("isTitleNext")
-            #if (tNext.isdigit()): tokenFeatures.append("isDigitNext")
+               tokenFeatures.append('inDrugListNext')
+            if (tNext.isupper()): tokenFeatures.append("isUpperNext")
+            if (tNext.istitle()): tokenFeatures.append("isTitleNext")
+            if (tNext.isdigit()): tokenFeatures.append("isDigitNext")
         else:
             tokenFeatures.append("EoS")
-
+        """
 # extra context
         if k > 1:
             tPrev = tokens[k - 2][0]
-            """
             tokenFeatures.append("formPrev2=" + tPrev)
             tokenFeatures.append("formlowerPrev2=" + tPrev.lower())
 
             tokenFeatures.append("suf3Prev2=" + tPrev[-3:])
             tokenFeatures.append("suf4Prev2=" + tPrev[-4:])
-            """
             tokenFeatures.append("postagPrev2=" + pos_tags[k - 1][1])
             if tPrev.lower() in info_lists['FDA_drug_list']:
                 tokenFeatures.append('inDrugListPrev2')
@@ -141,13 +141,11 @@ def extract_features(tokens, pos_tags, info_lists):
 
         if k < len(tokens) - 2:
             tNext = tokens[k + 2][0]
-            """
             tokenFeatures.append("formNext2=" + tNext)
             tokenFeatures.append("formlowerNext2=" + tNext.lower())
 
             tokenFeatures.append("suf3Next2=" + tNext[-3:])
             tokenFeatures.append("suf4Next2=" + tNext[-4:])
-            """
             tokenFeatures.append("postagNext2=" + pos_tags[k + 1][1])
             if tNext.lower() in info_lists['FDA_drug_list']:
                 tokenFeatures.append('inDrugListNext')
@@ -156,7 +154,7 @@ def extract_features(tokens, pos_tags, info_lists):
             #if (tNext.isdigit()): tokenFeatures.append("isDigitNext")
         else:
             tokenFeatures.append("EoS")
-
+        """
 
 
 
@@ -174,7 +172,7 @@ def get_info_lists():
     df = pd.read_csv('drugbank_structures.csv')
     d['drugbank_structures_list'] = set(df.Name.apply(str.lower).values)
     # list of drug external links
-    df = pd.read_csv('drugbank_structures.csv')
+    df = pd.read_csv('drugbank_links.csv')
     d['drugbank_external_list'] = set(df.Name.apply(str.lower).values)
     # list of drug target identifiers
     df = pd.read_csv('drugbank_target_identifiers.csv')
