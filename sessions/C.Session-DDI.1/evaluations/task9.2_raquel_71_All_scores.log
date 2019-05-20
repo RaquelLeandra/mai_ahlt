@@ -1,14 +1,14 @@
-SCORES FOR THE GROUP: raquel RUN=6
+SCORES FOR THE GROUP: raquel RUN=71
 Gold Dataset: /All
 
 Partial Evaluation: only detection of DDI (regadless to the type)
 tp	fp	fn	total	prec	recall	F1
-32	47	852	884	0.4051	0.0362	0.0665
+273	353	611	884	0.4361	0.3088	0.3616
 
 
 Detection and Classification of DDI
 tp	fp	fn	total	prec	recall	F1
-18	61	866	884	0.2278	0.0204	0.0374
+252	374	632	884	0.4026	0.2851	0.3338
 
 
 ________________________________________________________________________
@@ -16,26 +16,26 @@ ________________________________________________________________________
 SCORES FOR DDI TYPE
 Scores for ddi with type mechanism
 tp	fp	fn	total	prec	recall	F1
-8	12	294	302	0.4	0.0265	0.0497
+56	139	246	302	0.2872	0.1854	0.2254
 
 
 Scores for ddi with type effect
 tp	fp	fn	total	prec	recall	F1
-8	37	352	360	0.1778	0.0222	0.0395
+118	162	242	360	0.4214	0.3278	0.3688
 
 
 Scores for ddi with type advise
 tp	fp	fn	total	prec	recall	F1
-2	12	219	221	0.1429	0.009	0.017
+77	71	144	221	0.5203	0.3484	0.4173
 
 
 Scores for ddi with type int
 tp	fp	fn	total	prec	recall	F1
-0	0	96	96	0	0	0
+1	2	95	96	0.3333	0.0104	0.0202
 
 
 MACRO-AVERAGE MEASURES:
 	P	R	F1
-	0.1802	0.0144	0.0267
+	0.3906	0.218	0.2798
 ________________________________________________________________________
 

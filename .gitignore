@@ -1,3 +1,4 @@
 .idea/*
 venv/*
 sessions/A.Session-NER.1/.ipynb_checkpoints/
+sessions/*/.ipynb_checkpoints/
