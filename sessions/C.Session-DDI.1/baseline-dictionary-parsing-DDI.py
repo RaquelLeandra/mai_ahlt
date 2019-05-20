@@ -5,7 +5,6 @@ from xml.dom.minidom import parse
 from nltk.corpus import stopwords
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.linear_model import LogisticRegression
-from sklearn.ensemble import RandomForestClassifier
 from nltk.stem import WordNetLemmatizer
 from nltk.tag import PerceptronTagger
 from nltk.corpus import wordnet as wn
@@ -84,8 +83,6 @@ def all_drugs_in_tree(target_drugs, leafs):
 
 def smaller_subtree_containing_the_drugs(sentence, target_drugs):
     tree_string = nlp.annotate(sentence, properties={'annotators': 'parse', 'outputFormat': 'json'})
-    if len(tree_string['sentences']) > 1:
-        print('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!', len(tree_string['sentences']))
     tagger = PerceptronTagger()
     best_subtree = None
     size = 9999999
@@ -119,8 +116,8 @@ def smaller_subtree_containing_the_drugs(sentence, target_drugs):
 def train_baseline():
     train_df = pd.read_csv(train_df_path, index_col=0)
 
-    for index, row in train_df.iterrows():
-        print(train_df.loc[index, 'sentence_text'], train_df.loc[index, ['e1', 'e2']])
+    for index, row in tqdm(train_df.iterrows()):
+        # print(train_df.loc[index, 'sentence_text'], train_df.loc[index, ['e1', 'e2']])
         new_sentence = smaller_subtree_containing_the_drugs(train_df.loc[index, 'sentence_text'],
                                                             train_df.loc[index, ['e1', 'e2']])
         train_df.loc[index, 'sentence_text'] = new_sentence

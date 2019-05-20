@@ -5,7 +5,6 @@ from xml.dom.minidom import parse
 from nltk.corpus import stopwords
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.linear_model import LogisticRegression
-from sklearn.ensemble import RandomForestClassifier
 
 stopwords = set(stopwords.words('english'))
 

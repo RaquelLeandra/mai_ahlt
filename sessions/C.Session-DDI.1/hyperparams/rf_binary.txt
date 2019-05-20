@@ -1,0 +1,11 @@
+Best parameters set found on development set:
+{'criterion': 'entropy', 'max_depth': 90, 'min_samples_leaf': 1}
+Detailed classification report:
+              precision    recall  f1-score   support
+
+ interaction       0.55      0.73      0.63      1005
+        none       0.95      0.90      0.92      5943
+
+   micro avg       0.87      0.87      0.87      6948
+   macro avg       0.75      0.81      0.78      6948
+weighted avg       0.89      0.87      0.88      6948

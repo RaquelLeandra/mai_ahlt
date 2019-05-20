@@ -4,15 +4,16 @@ import pandas as pd
 from xml.dom.minidom import parse
 from nltk.corpus import stopwords
 from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
-
+import numpy as np
 from sklearn.ensemble import VotingClassifier
 from sklearn.neural_network import MLPClassifier
 
+from utils import get_entity_dict, smaller_subtree_containing_the_drugs
+
 stopwords = set(stopwords.words('english'))
 
-output_path_name = "task9.2_raquel_56.txt"
+output_path_name = "task9.2_ensamble_cascade_90.txt"
 
 output_path = "evaluations/" + output_path_name
 results_path = output_path.replace('.txt', '_All_scores.log')
@@ -21,19 +22,15 @@ training_data = '/home/raquel/Documents/mai/ahlt/data/Train/All'
 train_df_path = '/home/raquel/Documents/mai/ahlt/data/DF/train.csv'
 
 
-def get_entity_dict(sentence_dom):
-    entities = sentence_dom.getElementsByTagName('entity')
-    entity_dict = {}
-    for entity in entities:
-        id = entity.getAttribute('id')
-        word = entity.getAttribute('text')
-        entity_dict[id] = word
-    return entity_dict
-
-
 def train_baseline():
-    train_df = pd.read_csv(train_df_path, index_col=0)
+    train_df = pd.read_csv('saved_train_nice.csv', index_col=0)
 
+    # for index, row in train_df.iterrows():
+    #     # print(train_df.loc[index, 'sentence_text'], train_df.loc[index, ['e1', 'e2']])
+    #     new_sentence = smaller_subtree_containing_the_drugs(train_df.loc[index, 'sentence_text'],
+    #                                                         train_df.loc[index, ['e1', 'e2']])
+    #     train_df.loc[index, 'sentence_text'] = new_sentence
+    # train_df.to_csv('saved_train_nice.csv')
     dictionary = {}
     for index, row in train_df.iterrows():
         d_1 = row['e1'].lower()
@@ -50,33 +47,42 @@ def train_baseline():
 
     sentences_train = train_df.sentence_text.values
     y_train = train_df['relation_type'].values
+
+    y_binary = ['none' if i == 'none' else 'interaction'for i in y_train]
     vectorizer = CountVectorizer()
     vectorizer.fit(sentences_train)
     X_train = vectorizer.transform(sentences_train)
     print('training...')
-    rf = RandomForestClassifier(n_estimators=1000, max_depth=60, n_jobs=-1,
+
+    binary_classifier = RandomForestClassifier(n_estimators=500, max_depth=90, n_jobs=-1,
                                 class_weight='balanced', random_state=0)
 
-    mlp = MLPClassifier(activation='tanh', alpha= 0.1, hidden_layer_sizes=(30, 5), learning_rate='constant')
+    binary_classifier.fit(X_train, y_binary)
+
+    rf = RandomForestClassifier(n_estimators=500, max_depth=60, n_jobs=-1,
+                                class_weight='balanced')
+
+    mlp = MLPClassifier(activation='tanh', alpha=0.1, hidden_layer_sizes=(30, 5), learning_rate='constant')
 
     classifier = VotingClassifier(estimators=[('Random Forest', rf), ('MLP', mlp)],
                                 voting='soft')
-    classifier.fit(X_train, y_train)
+    classifier.fit(X_train[np.array(y_binary)=='interaction',:], y_train[np.array(y_binary)=='interaction'])
     print('trained')
-    return vectorizer, classifier, dictionary
+    return vectorizer, binary_classifier, classifier, dictionary
 
 
-vectorizer, classifier, dictionary = train_baseline()
+vectorizer, binary_classifier, classifier, dictionary = train_baseline()
 
 
 def check_interaction(sentence):
     # uses the vectorizer and the classifier already trained
     sentence_array = vectorizer.transform([sentence])
-    y_pred = classifier.predict(sentence_array)
+    y_bin = binary_classifier.predict(sentence_array)
 
-    if y_pred[0] == 'none':
+    if y_bin[0] == 'none':
         return False, "null"
     else:
+        y_pred = classifier.predict(sentence_array)
         return True, y_pred[0]
 
 
@@ -118,7 +124,8 @@ def predict(datadir, output_path, test=False):
                         is_ddi = ddi_type != 'null'
                         # print(ddi_type)
                     except KeyError:
-                        (is_ddi, ddi_type) = check_interaction(stext)
+                        processed_sentence = smaller_subtree_containing_the_drugs(stext, [e1, e2])
+                        (is_ddi, ddi_type) = check_interaction(processed_sentence)
                     ddi = "1" if is_ddi else "0"
                     file.write(sid + "|" + id_e1 + "|" + id_e2 + "|" + ddi + "|" + ddi_type)
                     file.write('\n')
