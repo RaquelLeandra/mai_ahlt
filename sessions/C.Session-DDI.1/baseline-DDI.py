@@ -9,7 +9,7 @@ from sklearn.ensemble import RandomForestClassifier
 
 stopwords = set(stopwords.words('english'))
 
-output_path_name = "task9.2_raquel_6.txt"
+output_path_name = "task9.2_raquel_42.txt"
 
 output_path = "evaluations/" + output_path_name
 results_path = output_path.replace('.txt', '_All_scores.log')

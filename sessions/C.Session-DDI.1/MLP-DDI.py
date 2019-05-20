@@ -5,7 +5,7 @@ from xml.dom.minidom import parse
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.neural_network import MLPClassifier
 
-output_path_name = "task9.2_raquel_70.txt"
+output_path_name = "task9.2_raquel_71.txt"
 
 output_path = "evaluations/" + output_path_name
 results_path = output_path.replace('.txt', '_All_scores.log')
@@ -22,7 +22,7 @@ def train_baseline():
     vectorizer.fit(sentences_train)
     X_train = vectorizer.transform(sentences_train)
     print('training...')
-    classifier = MLPClassifier(hidden_layer_sizes=(10, 5), learning_rate='adaptive')
+    classifier = MLPClassifier(activation='tanh', alpha= 0.1, hidden_layer_sizes=(30, 5), learning_rate='constant')
     classifier.fit(X_train, y_train)
     print('trained')
     return vectorizer, classifier

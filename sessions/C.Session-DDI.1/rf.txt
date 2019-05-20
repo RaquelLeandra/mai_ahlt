@@ -1,0 +1,13 @@
+Best parameters set found on development set:
+{'criterion': 'gini', 'max_depth': None}Detailed classification report:
+              precision    recall  f1-score   support
+
+      advise       0.23      0.62      0.34       206
+      effect       0.28      0.64      0.39       422
+         int       0.08      0.68      0.14        47
+   mechanism       0.16      0.50      0.24       330
+        none       0.90      0.61      0.73      5943
+
+   micro avg       0.60      0.60      0.60      6948
+   macro avg       0.33      0.61      0.37      6948
+weighted avg       0.81      0.60      0.67      6948
