@@ -2,37 +2,39 @@ from tqdm import tqdm
 from os import listdir
 import pandas as pd
 from xml.dom.minidom import parse
-from nltk.corpus import stopwords
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.linear_model import LogisticRegression
+from utils import get_entity_dict, smaller_subtree_containing_the_drugs, preprocess
+from sklearn.preprocessing import LabelBinarizer
 
-stopwords = set(stopwords.words('english'))
 
-output_path_name = "task9.2_raquel_42.txt"
+output_path_name = "task9.2_baseline_final.txt"
 
 output_path = "evaluations/" + output_path_name
 results_path = output_path.replace('.txt', '_All_scores.log')
 datadir = '../../data/Test-DDI/DrugBank'
-training_data = '/home/raquel/Documents/mai/ahlt/data/Train/All'
-train_df_path = '/home/raquel/Documents/mai/ahlt/data/DF/train.csv'
+train_df_path = '../../data/DF/train.csv'
+processed_train_df_path = '../../data/DF/train_processed.csv'
+
+vectorizer = CountVectorizer()
+encoder = LabelBinarizer()
 
 
 def train_baseline():
     train_df = pd.read_csv(train_df_path, index_col=0)
-    sentences_train = train_df.sentence_text.values
+
+    sentences_train, dictionary, y_train_encoded = preprocess(train_df, processed_train_df_path, encoder)
     y_train = train_df['relation_type'].values
-    vectorizer = CountVectorizer()
     vectorizer.fit(sentences_train)
     X_train = vectorizer.transform(sentences_train)
     print('training...')
-    # classifier = RandomForestClassifier(n_jobs=-1, class_weight='balanced')
-    classifier = LogisticRegression()
+    classifier = LogisticRegression(class_weight='balanced')
     classifier.fit(X_train, y_train)
     print('trained')
-    return vectorizer, classifier
+    return classifier, dictionary
 
 
-vectorizer, classifier = train_baseline()
+classifier,dictionary = train_baseline()
 
 
 def check_interaction(sentence):
@@ -57,6 +59,7 @@ def predict(datadir, output_path, test=False):
             # process each sentence in the file
             sentences = tree.getElementsByTagName("sentence")
             for s in sentences:
+                entity_dict = get_entity_dict(s)
                 sid = s.attributes["id"].value  # get sentence id
                 stext = s.attributes["text"].value  # get sentence text
 
@@ -73,7 +76,17 @@ def predict(datadir, output_path, test=False):
                 for p in pairs:
                     id_e1 = p.attributes["e1"].value
                     id_e2 = p.attributes["e2"].value
-                    (is_ddi, ddi_type) = check_interaction(stext)
+
+                    e1 = entity_dict[id_e1]
+                    e2 = entity_dict[id_e2]
+
+                    try:
+                        ddi_type = dictionary[e1][e2]
+                        is_ddi = ddi_type != 'null'
+                        # print(ddi_type)
+                    except KeyError:
+                        processed_sentence = smaller_subtree_containing_the_drugs(stext, [e1, e2])
+                        (is_ddi, ddi_type) = check_interaction(processed_sentence)
                     ddi = "1" if is_ddi else "0"
                     file.write(sid + "|" + id_e1 + "|" + id_e2 + "|" + ddi + "|" + ddi_type)
                     file.write('\n')

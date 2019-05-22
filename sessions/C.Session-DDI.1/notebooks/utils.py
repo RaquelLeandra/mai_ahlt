@@ -103,7 +103,7 @@ def smaller_subtree_containing_the_drugs(sentence, target_drugs):
     return new_sentence
 
 
-def preprocess(train_df, processed_train_path,encoder, cascade=False):
+def preprocess(train_df, processed_train_path,encoder):
     try:
         train_df = pd.read_csv(processed_train_path, index_col=0)
         print('loaded preprocessed data')
@@ -117,10 +117,7 @@ def preprocess(train_df, processed_train_path,encoder, cascade=False):
         train_df.to_csv(processed_train_path)
     sentences_train = train_df.sentence_text.values
     y_train = train_df['relation_type'].values
-    if not cascade:
-        y_train_encoded = encoder.fit_transform(y_train)
-    else :
-        y_train_encoded = y_train
+    y_train_encoded = encoder.fit_transform(y_train)
 
     dictionary = {}
     for index, row in train_df.iterrows():
@@ -137,6 +134,7 @@ def preprocess(train_df, processed_train_path,encoder, cascade=False):
         dictionary[d_2][d_1] = interaction
 
     return sentences_train,dictionary, y_train_encoded
+
 
 
 def show_results(results_path,output_path= "evaluations/" + 'task9.name_90.txt'):

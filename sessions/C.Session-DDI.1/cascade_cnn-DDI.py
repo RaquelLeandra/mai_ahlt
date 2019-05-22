@@ -7,6 +7,8 @@ from sklearn.ensemble import RandomForestClassifier
 import numpy as np
 from sklearn.ensemble import VotingClassifier
 from sklearn.neural_network import MLPClassifier
+from sklearn.feature_extraction.text import CountVectorizer
+
 from sklearn.preprocessing import LabelBinarizer
 
 from keras.layers import Dense, Input, Flatten, Reshape, concatenate, Dropout
@@ -16,11 +18,11 @@ from keras import optimizers
 from keras.preprocessing.text import Tokenizer
 from keras.preprocessing.sequence import pad_sequences
 
-from utils import get_entity_dict, smaller_subtree_containing_the_drugs
+from utils import get_entity_dict, smaller_subtree_containing_the_drugs, preprocess
 
 stopwords = set(stopwords.words('english'))
 
-output_path_name = "task9.2_ensamble_cascade_90.txt"
+output_path_name = "task9.2__cascade_cnn_70.txt"
 
 output_path = "evaluations/" + output_path_name
 results_path = output_path.replace('.txt', '_All_scores.log')
@@ -30,10 +32,12 @@ train_df_path = '../../data/DF/train.csv'
 processed_train_df_path = '../../data/DF/train_processed.csv'
 
 encoder = LabelBinarizer()
+encoder_bin = LabelBinarizer()
+
 tokenizer = Tokenizer()
+vectorizer = CountVectorizer()
 
-
-def kimCNN(embedding_output_size, imput_size, vocab_size, num_labels=5):
+def kimCNN(embedding_output_size, imput_size, vocab_size, num_labels=5,loss='categorical_crossentropy'):
     """
     Convolution neural network model for sentence classification.
     Parameters
@@ -88,7 +92,7 @@ def kimCNN(embedding_output_size, imput_size, vocab_size, num_labels=5):
     model = Model(sequence_input, preds)
     adadelta = optimizers.Adadelta()
 
-    model.compile(loss='categorical_crossentropy',
+    model.compile(loss=loss,
                   optimizer=adadelta,
                   metrics=['acc'])
     model.summary()
@@ -96,38 +100,9 @@ def kimCNN(embedding_output_size, imput_size, vocab_size, num_labels=5):
     return model
 
 
-def preprocess(train_df, processed_train_path):
-    for index, row in train_df.iterrows():
-        # print(train_df.loc[index, 'sentence_text'], train_df.loc[index, ['e1', 'e2']])
-        new_sentence = smaller_subtree_containing_the_drugs(train_df.loc[index, 'sentence_text'],
-                                                            train_df.loc[index, ['e1', 'e2']])
-        train_df.loc[index, 'sentence_text'] = new_sentence
-    train_df.to_csv(processed_train_path)
-    sentences_train = train_df.sentence_text.values
-    y_train = train_df['relation_type'].values
-    y_train_encoded = encoder.fit_transform(y_train)
-
-    dictionary = {}
-    for index, row in train_df.iterrows():
-        d_1 = row['e1'].lower()
-        d_2 = row['e2'].lower()
-        interaction = row['relation_type']
-        if interaction == 'none':
-            interaction = 'null'
-        if d_1 not in dictionary:
-            dictionary[d_1] = {}
-        if d_2 not in dictionary:
-            dictionary[d_2] = {}
-        dictionary[d_1][d_2] = interaction
-        dictionary[d_2][d_1] = interaction
-
-    return sentences_train,dictionary, y_train_encoded
-
-
 def train_cnn():
     train_df = pd.read_csv(train_df_path, index_col=0)
-
-    sentences_train, dictionary, y_train_encoded = preprocess(train_df, processed_train_df_path)
+    sentences_train, dictionary, y_train = preprocess(train_df, processed_train_df_path, encoder,cascade=True)
 
     tokenizer.fit_on_texts(sentences_train)
     X_train = tokenizer.texts_to_sequences(sentences_train)
@@ -138,10 +113,28 @@ def train_cnn():
     X_train = pad_sequences(X_train, padding='post', maxlen=maxlen)
 
     word_embedding_size = 200
-    classifier = kimCNN(embedding_output_size=word_embedding_size, imput_size=X_train.shape[1], vocab_size=vocab_size,
-                        num_labels=5)
 
-    classifier.fit(X_train, y_train_encoded,
+    # Binary
+    y_binary = ['none' if i == 'none' else 'interaction' for i in y_train]
+    y_bin_encoded = encoder_bin.fit_transform(y_binary)
+
+    y_train_encoded = encoder.fit_transform(y_train[np.array(y_binary)=='interaction'])
+
+    binary_classifier = kimCNN(embedding_output_size=word_embedding_size, imput_size=X_train.shape[1],
+                               vocab_size=vocab_size,
+                               num_labels=1,loss='binary_crossentropy')
+
+    binary_classifier.fit(X_train, y_bin_encoded,
+                          epochs=30,
+                          verbose=True,
+                          batch_size=100,
+                          validation_split=0.1,
+                          class_weight='auto')
+
+    classifier = kimCNN(embedding_output_size=word_embedding_size, imput_size=X_train.shape[1], vocab_size=vocab_size,
+                        num_labels=4)
+
+    classifier.fit(X_train[np.array(y_binary)=='interaction',:], y_train_encoded,
                    epochs=30,
                    verbose=True,
                    batch_size=100,
@@ -149,10 +142,10 @@ def train_cnn():
                    class_weight='auto')
 
     print('trained')
-    return classifier, dictionary, maxlen
+    return binary_classifier, classifier, dictionary, maxlen
 
 
-classifier, dictionary, maxlen = train_cnn()
+binary_classifier, classifier, dictionary, maxlen = train_cnn()
 
 
 def check_interaction(sentence):
@@ -160,13 +153,15 @@ def check_interaction(sentence):
     sentence_array = tokenizer.texts_to_sequences([sentence])
     sentence_array = pad_sequences(sentence_array, padding='post', maxlen=maxlen)
     # print(sentence_array)
-    y_probs = classifier.predict(sentence_array)
-    y_class = np.argmax(y_probs, axis=1)
-    y_pred = encoder.classes_[y_class]
-    if y_pred[0] == 'none':
+    y_bin = binary_classifier.predict(sentence_array)
+    if y_bin[0] > 0.6:
         return False, "null"
     else:
+        y_probs = classifier.predict(sentence_array)
+        y_class = np.argmax(y_probs, axis=1)
+        y_pred = encoder.classes_[y_class]
         return True, y_pred[0]
+
 
 
 def predict(datadir, output_path, test=False):

@@ -3,7 +3,6 @@ from os import listdir
 import pandas as pd
 from xml.dom.minidom import parse
 from nltk.corpus import stopwords
-from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.ensemble import RandomForestClassifier
 import numpy as np
 from sklearn.ensemble import VotingClassifier
@@ -11,11 +10,9 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.preprocessing import LabelBinarizer
 
 from keras.layers import Dense, Input, Flatten, Reshape, concatenate, Dropout
-from keras.layers import Conv1D, Conv2D, MaxPooling1D, MaxPooling2D, Embedding
-from keras.layers import LSTM, Bidirectional
+from keras.layers import  Conv2D, MaxPooling2D, Embedding
 from keras.models import Model
 from keras import optimizers
-from keras import regularizers
 from keras.preprocessing.text import Tokenizer
 from keras.preprocessing.sequence import pad_sequences
 
@@ -29,7 +26,8 @@ output_path = "evaluations/" + output_path_name
 results_path = output_path.replace('.txt', '_All_scores.log')
 datadir = '../../data/Test-DDI/DrugBank'
 training_data = '/home/raquel/Documents/mai/ahlt/data/Train/All'
-train_df_path = '/home/raquel/Documents/mai/ahlt/data/DF/train.csv'
+train_df_path = '../../data/DF/train.csv'
+processed_train_df_path = '../../data/DF/train_processed.csv'
 
 encoder = LabelBinarizer()
 tokenizer = Tokenizer()
@@ -98,14 +96,13 @@ def kimCNN(embedding_output_size, imput_size, vocab_size, num_labels=5):
     return model
 
 
-def train_cnn():
-    train_df = pd.read_csv(train_df_path, index_col=0)
+def preprocess(train_df, processed_train_path):
     for index, row in train_df.iterrows():
         # print(train_df.loc[index, 'sentence_text'], train_df.loc[index, ['e1', 'e2']])
         new_sentence = smaller_subtree_containing_the_drugs(train_df.loc[index, 'sentence_text'],
                                                             train_df.loc[index, ['e1', 'e2']])
         train_df.loc[index, 'sentence_text'] = new_sentence
-    train_df.to_csv('saved_train_better.csv')
+    train_df.to_csv(processed_train_path)
     sentences_train = train_df.sentence_text.values
     y_train = train_df['relation_type'].values
     y_train_encoded = encoder.fit_transform(y_train)
@@ -124,6 +121,14 @@ def train_cnn():
         dictionary[d_1][d_2] = interaction
         dictionary[d_2][d_1] = interaction
 
+    return sentences_train,dictionary, y_train_encoded
+
+
+def train_cnn():
+    train_df = pd.read_csv(train_df_path, index_col=0)
+
+    sentences_train, dictionary, y_train_encoded = preprocess(train_df, processed_train_df_path)
+
     tokenizer.fit_on_texts(sentences_train)
     X_train = tokenizer.texts_to_sequences(sentences_train)
     vocab_size = len(tokenizer.word_index) + 1  # Adding 1 because of reserved 0 index
@@ -137,7 +142,7 @@ def train_cnn():
                         num_labels=5)
 
     classifier.fit(X_train, y_train_encoded,
-                   epochs=1,
+                   epochs=30,
                    verbose=True,
                    batch_size=100,
                    validation_split=0.1,
