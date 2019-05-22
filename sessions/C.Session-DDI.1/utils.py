@@ -57,7 +57,7 @@ def clean_sentence(sentence_splitted):
         if w not in to_remove:
             w = re.sub(r'([^a-zA-Z\s]+?)', '', w)
             if w:
-                clean.append(w)
+                clean.append(w.lower())
     return clean
 
 

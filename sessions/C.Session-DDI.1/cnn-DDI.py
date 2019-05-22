@@ -99,8 +99,13 @@ def kimCNN(embedding_output_size, imput_size, vocab_size, num_labels=5):
 
 
 def train_cnn():
-    train_df = pd.read_csv('saved_train_nice.csv', index_col=0)
-
+    train_df = pd.read_csv(train_df_path, index_col=0)
+    for index, row in train_df.iterrows():
+        # print(train_df.loc[index, 'sentence_text'], train_df.loc[index, ['e1', 'e2']])
+        new_sentence = smaller_subtree_containing_the_drugs(train_df.loc[index, 'sentence_text'],
+                                                            train_df.loc[index, ['e1', 'e2']])
+        train_df.loc[index, 'sentence_text'] = new_sentence
+    train_df.to_csv('saved_train_better.csv')
     sentences_train = train_df.sentence_text.values
     y_train = train_df['relation_type'].values
     y_train_encoded = encoder.fit_transform(y_train)
@@ -132,9 +137,10 @@ def train_cnn():
                         num_labels=5)
 
     classifier.fit(X_train, y_train_encoded,
-                   epochs=30,
+                   epochs=1,
                    verbose=True,
                    batch_size=100,
+                   validation_split=0.1,
                    class_weight='auto')
 
     print('trained')
