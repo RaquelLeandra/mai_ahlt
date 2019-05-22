@@ -1,0 +1,41 @@
+SCORES FOR THE GROUP: random_forest RUN=50
+Gold Dataset: /All
+
+Partial Evaluation: only detection of DDI (regadless to the type)
+tp	fp	fn	total	prec	recall	F1
+399	230	485	884	0.6343	0.4514	0.5274
+
+
+Detection and Classification of DDI
+tp	fp	fn	total	prec	recall	F1
+283	346	601	884	0.4499	0.3201	0.3741
+
+
+________________________________________________________________________
+
+SCORES FOR DDI TYPE
+Scores for ddi with type mechanism
+tp	fp	fn	total	prec	recall	F1
+90	126	212	302	0.4167	0.298	0.3475
+
+
+Scores for ddi with type effect
+tp	fp	fn	total	prec	recall	F1
+132	118	228	360	0.528	0.3667	0.4328
+
+
+Scores for ddi with type advise
+tp	fp	fn	total	prec	recall	F1
+61	97	160	221	0.3861	0.276	0.3219
+
+
+Scores for ddi with type int
+tp	fp	fn	total	prec	recall	F1
+0	5	96	96	0	0	0
+
+
+MACRO-AVERAGE MEASURES:
+	P	R	F1
+	0.3327	0.2352	0.2756
+________________________________________________________________________
+

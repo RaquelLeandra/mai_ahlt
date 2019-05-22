@@ -1,14 +1,14 @@
-SCORES FOR THE GROUP: ensamble_cascade RUN=90
+SCORES FOR THE GROUP: cascade_rf_mlp RUN=99
 Gold Dataset: /All
 
 Partial Evaluation: only detection of DDI (regadless to the type)
 tp	fp	fn	total	prec	recall	F1
-584	547	300	884	0.5164	0.6606	0.5797
+536	452	348	884	0.5425	0.6063	0.5726
 
 
 Detection and Classification of DDI
 tp	fp	fn	total	prec	recall	F1
-394	737	490	884	0.3484	0.4457	0.3911
+376	612	508	884	0.3806	0.4253	0.4017
 
 
 ________________________________________________________________________
@@ -16,26 +16,26 @@ ________________________________________________________________________
 SCORES FOR DDI TYPE
 Scores for ddi with type mechanism
 tp	fp	fn	total	prec	recall	F1
-140	222	162	302	0.3867	0.4636	0.4217
+117	178	185	302	0.3966	0.3874	0.392
 
 
 Scores for ddi with type effect
 tp	fp	fn	total	prec	recall	F1
-182	338	178	360	0.35	0.5056	0.4136
+172	293	188	360	0.3699	0.4778	0.417
 
 
 Scores for ddi with type advise
 tp	fp	fn	total	prec	recall	F1
-63	152	158	221	0.293	0.2851	0.289
+79	127	142	221	0.3835	0.3575	0.37
 
 
 Scores for ddi with type int
 tp	fp	fn	total	prec	recall	F1
-9	25	87	96	0.2647	0.0938	0.1385
+8	14	88	96	0.3636	0.0833	0.1356
 
 
 MACRO-AVERAGE MEASURES:
 	P	R	F1
-	0.3236	0.337	0.3302
+	0.3784	0.3265	0.3505
 ________________________________________________________________________
 
